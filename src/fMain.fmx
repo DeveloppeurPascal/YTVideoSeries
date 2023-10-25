@@ -1,0 +1,48 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = 'YT Video Series'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object OlfAboutDialog1: TOlfAboutDialog
+    Titre = 'YT Video Series'
+    VersionNumero = '0.0 (WIP)'
+    VersionDate = '20231025'
+    MultiResBitmap = <
+      item
+      end>
+    URL = 'https://ytvideoseries.olfsoftware.fr'
+    onURLClick = OlfAboutDialog1URLClick
+    Langue = EN
+    Left = 320
+    Top = 80
+  end
+  object MainMenu1: TMainMenu
+    Left = 304
+    Top = 224
+    object mnuMacSystem: TMenuItem
+      Text = 'mnuMacSystem'
+    end
+    object mnuFile: TMenuItem
+      Text = '&File'
+      object mnuQuit: TMenuItem
+        Locked = True
+        Text = '&Quit'
+        OnClick = mnuQuitClick
+      end
+    end
+    object mnuHelp: TMenuItem
+      Text = '&Help'
+      object mnuAbout: TMenuItem
+        Locked = True
+        Text = '&About'
+        OnClick = mnuAboutClick
+      end
+    end
+  end
+end
