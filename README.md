@@ -10,7 +10,7 @@ This code repository contains a project developed in Object Pascal language unde
 
 ## Using this software
 
-** Work in progress, the programme is not yet available in a standalone compiled version. **
+**Work in progress, the programme is not yet available in a standalone compiled version.**
 
 ~~This software is available in a directly installable or executable production version. It is distributed as shareware.~~
 

@@ -10,7 +10,7 @@ Ce dépôt de code contient un projet développé en langage Pascal Objet sous D
 
 ## Utiliser ce logiciel
 
-** Travail en cours, le programme n'est pas encore disponible en version compilée autonome. **
+**Travail en cours, le programme n'est pas encore disponible en version compilée autonome.**
 
 ~~Ce logiciel est disponible dans une version de production directement installable ou exécutable. Il est distribué en shareware.~~
 
