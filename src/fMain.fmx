@@ -3,7 +3,7 @@ object frmMain: TfrmMain
   Top = 0
   Caption = 'YT Video Series'
   ClientHeight = 480
-  ClientWidth = 640
+  ClientWidth = 800
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
@@ -12,10 +12,12 @@ object frmMain: TfrmMain
   object OlfAboutDialog1: TOlfAboutDialog
     Titre = 'YT Video Series'
     VersionNumero = '0.0 (WIP)'
-    VersionDate = '20231025'
+    VersionDate = '20231027'
     MultiResBitmap = <
       item
       end>
+    Images = DMLogo.ProgIcon
+    ImageIndex = 0
     URL = 'https://ytvideoseries.olfsoftware.fr'
     onURLClick = OlfAboutDialog1URLClick
     Langue = EN
@@ -34,6 +36,51 @@ object frmMain: TfrmMain
         Locked = True
         Text = '&Quit'
         OnClick = mnuQuitClick
+      end
+    end
+    object mnuData: TMenuItem
+      Text = '&Data'
+      object mnuTube: TMenuItem
+        Locked = True
+        Text = '&Tube'
+        OnClick = mnuTubeClick
+      end
+      object mnuSerial: TMenuItem
+        Locked = True
+        Text = '&Serial'
+        OnClick = mnuSerialClick
+      end
+      object mnuSeason: TMenuItem
+        Enabled = False
+        Locked = True
+        Text = 'Seaso&n'
+      end
+      object mnuVideo: TMenuItem
+        Enabled = False
+        Locked = True
+        Text = '&Video'
+      end
+    end
+    object mnuTools: TMenuItem
+      Text = 'T&ools'
+      object mnuOptions: TMenuItem
+        Enabled = False
+        Locked = True
+        Text = '&Options'
+      end
+      object MenuItem1: TMenuItem
+        Locked = True
+        Text = '-'
+      end
+      object mnuBackupDB: TMenuItem
+        Enabled = False
+        Locked = True
+        Text = '&Backup database'
+      end
+      object mnuRestoreDB: TMenuItem
+        Enabled = False
+        Locked = True
+        Text = '&Restore database'
       end
     end
     object mnuHelp: TMenuItem
