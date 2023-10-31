@@ -35,7 +35,6 @@ type
 implementation
 
 {$R *.fmx}
-{ TFrame1 }
 
 constructor TRootFrame.Create(AOwner: TComponent);
 begin
