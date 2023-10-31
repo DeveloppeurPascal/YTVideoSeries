@@ -3,10 +3,20 @@ unit fMain;
 interface
 
 uses
-  System.SysUtils, System.Types, System.UITypes, System.Classes,
+  System.SysUtils,
+  System.Types,
+  System.UITypes,
+  System.Classes,
   System.Variants,
-  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
-  Olf.FMX.AboutDialog, FMX.Menus, uDMLogo, cadRootFrame;
+  FMX.Types,
+  FMX.Controls,
+  FMX.Forms,
+  FMX.Graphics,
+  FMX.Dialogs,
+  Olf.FMX.AboutDialog,
+  FMX.Menus,
+  uDMLogo,
+  cadRootFrame;
 
 type
   TfrmMain = class(TForm)
@@ -33,6 +43,7 @@ type
     procedure OlfAboutDialog1URLClick(const AURL: string);
     procedure mnuTubeClick(Sender: TObject);
     procedure mnuSerialClick(Sender: TObject);
+    procedure mnuSeasonClick(Sender: TObject);
   private
     FCurrentScreen: TRootFrame;
     procedure SetCurrentScreen(const Value: TRootFrame);
@@ -51,7 +62,10 @@ implementation
 {$R *.fmx}
 
 uses
-  u_urlOpen, fSerialList, fTubeList;
+  u_urlOpen,
+  fSeasonCRUD,
+  fSerialCRUD,
+  fTubeCRUD;
 
 procedure TfrmMain.FormCreate(Sender: TObject);
 begin
@@ -84,14 +98,19 @@ begin
   close;
 end;
 
+procedure TfrmMain.mnuSeasonClick(Sender: TObject);
+begin
+  CurrentScreen := TfrmSeasonCRUD.GetInstance<TfrmSeasonCRUD>(self);
+end;
+
 procedure TfrmMain.mnuSerialClick(Sender: TObject);
 begin
-  CurrentScreen := TfrmSerialList.GetInstance<TfrmSerialList>(self);
+  CurrentScreen := TfrmSerialCRUD.GetInstance<TfrmSerialCRUD>(self);
 end;
 
 procedure TfrmMain.mnuTubeClick(Sender: TObject);
 begin
-  CurrentScreen := tfrmTubeList.GetInstance<tfrmTubeList>(self);
+  CurrentScreen := tfrmTubeCRUD.GetInstance<tfrmTubeCRUD>(self);
 end;
 
 procedure TfrmMain.OlfAboutDialog1URLClick(const AURL: string);
