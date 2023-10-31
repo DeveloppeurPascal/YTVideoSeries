@@ -136,10 +136,43 @@ object db: Tdb
           #9'"tube_code",'
           #9'"video_code"'
           ');')
+      end
+      item
+        Name = 'v1'
+        SQL.Strings = (
+          'CREATE TABLE "season_tube" ('
+          #9'"tube_code" INTEGER NOT NULL DEFAULT 0,'
+          #9'"season_code" INTEGER NOT NULL DEFAULT 0,'
+          #9'"url" TEXT NOT NULL DEFAULT "",'
+          #9'"label" TEXT NOT NULL DEFAULT "",'
+          #9'"comment" TEXT NOT NULL DEFAULT ""'
+          ');'
+          ''
+          'ALTER TABLE "video_tube" add "label" TEXT NOT NULL DEFAULT "";'
+          #9
+          'ALTER TABLE "video_tube" add "embed" TEXT NOT NULL DEFAULT "";'
+          ''
+          'ALTER TABLE "serial_tube" add "label" TEXT NOT NULL DEFAULT "";'
+          ''
+          'CREATE INDEX "link_season_tube" ON "season_tube" ('
+          #9'"season_code",'
+          #9'"tube_code"'
+          ');'
+          ''
+          'CREATE INDEX "link_tube_season" ON "season_tube" ('
+          #9'"tube_code",'
+          #9'"season_code"'
+          ');')
       end>
     Connection = FDConnection1
     Params = <>
     Macros = <>
+    FetchOptions.AssignedValues = [evItems, evAutoClose, evAutoFetchAll]
+    FetchOptions.AutoClose = False
+    FetchOptions.Items = [fiBlobs, fiDetails]
+    ResourceOptions.AssignedValues = [rvMacroCreate, rvMacroExpand, rvDirectExecute, rvPersistent]
+    ResourceOptions.MacroCreate = False
+    ResourceOptions.DirectExecute = True
     Left = 432
     Top = 168
   end

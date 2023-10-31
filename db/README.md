@@ -21,6 +21,7 @@
 - tube_code
 - serial_code
 - url : URL de la série (ou playlist) sur le tube concerné
+- label : nom de la série
 - comment : description de la série (utilisé en playlist)
 
 ## Saison (season)
@@ -33,6 +34,14 @@
 - url : url où consulter cette saison
 - record_date : date d'enregistrement
 - comment : description de la saison (utilisé en playlist)
+
+## Lien entre saison et tube (season_tube)
+
+- tube_code
+- season_code
+- url : URL de la série (ou playlist) sur le tube concerné
+- label : nom de la saison
+- comment : description de la série (utilisé en playlist)
 
 ## Episode (video)
 
@@ -51,4 +60,6 @@
 - video_code
 - publish_date : date de publication de la vidéo sur le tube
 - url : URL de l'épisode sur le tube concerné
+- embed : code du player vidéo intégré
+- label : nom de l'épisode
 - comment : description de l'épisode (utilisé en page vidéo)
