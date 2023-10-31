@@ -1,8 +1,0 @@
-inherited frmSerialList: TfrmSerialList
-  object Label1: TLabel
-    Position.X = 104.000000000000000000
-    Position.Y = 112.000000000000000000
-    Text = 'Serial List'
-    TabOrder = 0
-  end
-end
