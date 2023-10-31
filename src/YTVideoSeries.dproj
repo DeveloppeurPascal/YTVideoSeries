@@ -369,13 +369,18 @@
             <FormType>fmx</FormType>
             <DesignClass>TFrame</DesignClass>
         </DCCReference>
-        <DCCReference Include="fTubeList.pas">
-            <Form>frmTubeList</Form>
+        <DCCReference Include="fTubeCRUD.pas">
+            <Form>frmTubeCRUD</Form>
             <FormType>fmx</FormType>
             <DesignClass>TFrame</DesignClass>
         </DCCReference>
-        <DCCReference Include="fSerialList.pas">
-            <Form>frmSerialList</Form>
+        <DCCReference Include="fSerialCRUD.pas">
+            <Form>frmSerialCRUD</Form>
+            <FormType>fmx</FormType>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="fSeasonCRUD.pas">
+            <Form>frmSeasonCRUD</Form>
             <FormType>fmx</FormType>
             <DesignClass>TFrame</DesignClass>
         </DCCReference>

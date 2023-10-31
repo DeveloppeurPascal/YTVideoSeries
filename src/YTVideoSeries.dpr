@@ -10,8 +10,9 @@ uses
   uDB in 'uDB.pas' {db: TDataModule},
   uDMLogo in 'uDMLogo.pas' {DMLogo: TDataModule},
   cadRootFrame in 'cadRootFrame.pas' {RootFrame: TFrame},
-  fTubeList in 'fTubeList.pas' {frmTubeList: TFrame},
-  fSerialList in 'fSerialList.pas' {frmSerialList: TFrame};
+  fTubeCRUD in 'fTubeCRUD.pas' {frmTubeCRUD: TFrame},
+  fSerialCRUD in 'fSerialCRUD.pas' {frmSerialCRUD: TFrame},
+  fSeasonCRUD in 'fSeasonCRUD.pas' {frmSeasonCRUD: TFrame};
 
 {$R *.res}
 
