@@ -4,6 +4,7 @@ object frmMain: TfrmMain
   Caption = 'YT Video Series'
   ClientHeight = 480
   ClientWidth = 800
+  Position = ScreenCenter
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
@@ -51,9 +52,9 @@ object frmMain: TfrmMain
         OnClick = mnuSerialClick
       end
       object mnuSeason: TMenuItem
-        Enabled = False
         Locked = True
         Text = 'Seaso&n'
+        OnClick = mnuSeasonClick
       end
       object mnuVideo: TMenuItem
         Enabled = False
