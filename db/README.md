@@ -48,6 +48,7 @@
 - code
 - id
 - label : nom de l'épisode
+- serial_code
 - season_code
 - order_in_season : ordre de l'épisode dans la saison
 - record_date : date d'enregistrement
