@@ -1,0 +1,436 @@
+inherited frmVideoCRUD: TfrmVideoCRUD
+  Size.Width = 881.000000000000000000
+  Size.Height = 731.000000000000000000
+  object lLeft: TLayout
+    Align = Left
+    Size.Width = 300.000000000000000000
+    Size.Height = 731.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object cbSerialFilter: TComboBox
+      Align = Top
+      Size.Width = 300.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      OnChange = cbSerialFilterChange
+    end
+    object cbSeasonFilter: TComboBox
+      Align = Top
+      Position.Y = 22.000000000000000000
+      Size.Width = 300.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      OnChange = cbSeasonFilterChange
+    end
+    object BindNavigator1: TBindNavigator
+      Align = Bottom
+      Position.Y = 706.000000000000000000
+      Size.Width = 300.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      DataSource = BindSourceDB1
+      xRadius = 4.000000000000000000
+      yRadius = 4.000000000000000000
+    end
+    object ListView1: TListView
+      ItemAppearanceClassName = 'TImageListItemBottomDetailAppearance'
+      ItemEditAppearanceClassName = 'TImageListItemBottomDetailShowCheckAppearance'
+      HeaderAppearanceClassName = 'TListHeaderObjects'
+      FooterAppearanceClassName = 'TListHeaderObjects'
+      AlternatingColors = True
+      Align = Client
+      Size.Width = 300.000000000000000000
+      Size.Height = 662.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      ItemAppearanceObjects.ItemObjects.Image.Visible = False
+      SearchVisible = True
+    end
+  end
+  object Splitter1: TSplitter
+    Align = Left
+    Cursor = crHSplit
+    MinSize = 20.000000000000000000
+    Position.X = 300.000000000000000000
+    Size.Width = 10.000000000000000000
+    Size.Height = 731.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object sbRight: TVertScrollBox
+    Align = Client
+    Size.Width = 571.000000000000000000
+    Size.Height = 731.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Viewport.Width = 555.000000000000000000
+    Viewport.Height = 731.000000000000000000
+    object lblLabel: TLabel
+      Align = Top
+      FocusControl = edtLabel
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 10.000000000000000000
+      Size.Width = 535.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = '&Label'
+      TabOrder = 0
+    end
+    object edtLabel: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 1
+      Position.X = 10.000000000000000000
+      Position.Y = 37.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Size.Width = 535.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object lblURL: TLabel
+      Align = Top
+      FocusControl = edtURL
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 318.000000000000000000
+      Size.Width = 535.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = '&URL'
+      TabOrder = 9
+    end
+    object edtURL: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 10
+      Position.X = 10.000000000000000000
+      Position.Y = 345.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 37.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Size.Width = 508.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      OnChangeTracking = edtURLChangeTracking
+      object btnOpenURL: TButton
+        Align = Right
+        Margins.Right = -27.000000000000000000
+        Position.X = 513.000000000000000000
+        Size.Width = 22.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = '>'
+        OnClick = btnOpenURLClick
+      end
+    end
+    object lblComment: TLabel
+      Align = Top
+      FocusControl = mmoComment
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 387.000000000000000000
+      Size.Width = 535.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = '&Comment'
+      TabOrder = 11
+    end
+    object lblRecordDate: TLabel
+      Align = Top
+      FocusControl = edtRecordDate
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 249.000000000000000000
+      Size.Width = 535.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = '&Record date'
+      TabOrder = 7
+    end
+    object edtRecordDate: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 8
+      Position.X = 10.000000000000000000
+      Position.Y = 276.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Size.Width = 535.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object edtVideoNumber: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 6
+      Position.X = 10.000000000000000000
+      Position.Y = 207.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Size.Width = 535.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object lblVideoNumber: TLabel
+      Align = Top
+      FocusControl = edtVideoNumber
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 180.000000000000000000
+      Size.Width = 535.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Video &number'
+      TabOrder = 5
+    end
+    object lblSerial: TLabel
+      Align = Top
+      FocusControl = btnSerialSelect
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 79.000000000000000000
+      Size.Width = 535.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = '&Serial and season'
+      TabOrder = 2
+    end
+    object edtSerialLabel: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 4
+      ReadOnly = True
+      Position.X = 10.000000000000000000
+      Position.Y = 138.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 37.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Size.Width = 508.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      object btnSerialSelect: TButton
+        Align = Right
+        Margins.Right = -27.000000000000000000
+        Position.X = 513.000000000000000000
+        Size.Width = 22.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        Text = '...'
+        OnClick = btnSerialSelectClick
+      end
+    end
+    object mmoComment: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      DataDetectorTypes = []
+      Align = Top
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 414.000000000000000000
+      Size.Width = 535.000000000000000000
+      Size.Height = 400.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 12
+      Viewport.Width = 531.000000000000000000
+      Viewport.Height = 396.000000000000000000
+    end
+    object edtSaisonLabel: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 3
+      ReadOnly = True
+      Position.X = 10.000000000000000000
+      Position.Y = 106.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 535.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object FDTable1: TFDTable
+    OnCalcFields = FDTable1CalcFields
+    IndexFieldNames = 'code'
+    Connection = db.FDConnection1
+    ResourceOptions.AssignedValues = [rvEscapeExpand]
+    TableName = 'video'
+    Left = 128
+    Top = 344
+    object FDTable1code: TFDAutoIncField
+      FieldName = 'code'
+      Origin = 'code'
+      ProviderFlags = [pfInWhere, pfInKey]
+      ReadOnly = True
+    end
+    object FDTable1id: TWideMemoField
+      FieldName = 'id'
+      Origin = 'id'
+      Required = True
+      BlobType = ftWideMemo
+    end
+    object FDTable1label: TWideMemoField
+      FieldName = 'label'
+      Origin = 'label'
+      Required = True
+      BlobType = ftWideMemo
+    end
+    object FDTable1serial_code: TIntegerField
+      FieldName = 'serial_code'
+      Origin = 'serial_code'
+      Required = True
+    end
+    object FDTable1season_code: TIntegerField
+      FieldName = 'season_code'
+      Origin = 'season_code'
+      Required = True
+    end
+    object FDTable1order_in_season: TIntegerField
+      FieldName = 'order_in_season'
+      Origin = 'order_in_season'
+      Required = True
+    end
+    object FDTable1record_date: TWideMemoField
+      FieldName = 'record_date'
+      Origin = 'record_date'
+      Required = True
+      BlobType = ftWideMemo
+    end
+    object FDTable1url: TWideMemoField
+      FieldName = 'url'
+      Origin = 'url'
+      Required = True
+      BlobType = ftWideMemo
+    end
+    object FDTable1comment: TWideMemoField
+      FieldName = 'comment'
+      Origin = 'comment'
+      Required = True
+      BlobType = ftWideMemo
+    end
+    object FDTable1SerialLabel: TStringField
+      FieldKind = fkCalculated
+      FieldName = 'SerialLabel'
+      Calculated = True
+    end
+    object FDTable1SeasonLabel: TStringField
+      FieldKind = fkCalculated
+      FieldName = 'SeasonLabel'
+      Calculated = True
+    end
+    object FDTable1SerialSeasonLabel: TStringField
+      FieldKind = fkCalculated
+      FieldName = 'SerialSeasonLabel'
+      Calculated = True
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = FDTable1
+    ScopeMappings = <>
+    Left = 424
+    Top = 352
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object LinkListControlToField1: TLinkListControlToField
+      Category = 'Liaisons rapides'
+      DataSource = BindSourceDB1
+      FieldName = 'label'
+      Control = ListView1
+      FillExpressions = <
+        item
+          SourceMemberName = 'SerialSeasonLabel'
+          ControlMemberName = 'Detail'
+        end>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkControlToField1: TLinkControlToField
+      Category = 'Liaisons rapides'
+      DataSource = BindSourceDB1
+      FieldName = 'SeasonLabel'
+      Control = edtSaisonLabel
+      Track = False
+    end
+    object LinkControlToField2: TLinkControlToField
+      Category = 'Liaisons rapides'
+      DataSource = BindSourceDB1
+      FieldName = 'SerialLabel'
+      Control = edtSerialLabel
+      Track = False
+    end
+    object LinkControlToField3: TLinkControlToField
+      Category = 'Liaisons rapides'
+      DataSource = BindSourceDB1
+      FieldName = 'label'
+      Control = edtLabel
+      Track = False
+    end
+    object LinkControlToField4: TLinkControlToField
+      Category = 'Liaisons rapides'
+      DataSource = BindSourceDB1
+      FieldName = 'order_in_season'
+      Control = edtVideoNumber
+      Track = False
+    end
+    object LinkControlToField5: TLinkControlToField
+      Category = 'Liaisons rapides'
+      DataSource = BindSourceDB1
+      FieldName = 'record_date'
+      Control = edtRecordDate
+      Track = False
+    end
+    object LinkControlToField6: TLinkControlToField
+      Category = 'Liaisons rapides'
+      DataSource = BindSourceDB1
+      FieldName = 'url'
+      Control = edtURL
+      Track = False
+    end
+    object LinkControlToField7: TLinkControlToField
+      Category = 'Liaisons rapides'
+      DataSource = BindSourceDB1
+      FieldName = 'comment'
+      Control = mmoComment
+      Track = False
+    end
+  end
+end
