@@ -3,17 +3,26 @@
 * admin tubes
 x => CRUD
 => accès admin séries
+=> écran de sélection d'un tube
+
 * admin séries
 x => CRUD
 => choix tubes associés
 => accès admin saisons (de cette série)
 => accès admin épisodes (de cette série)
+=> écran de sélection d'une série
+
 * admin saisons
 x => CRUD
 => accès admin épisodes (de cette série)
+=> écran de sélection d'une saison
+
 * admin épisodes
-=> CRUD
+x => CRUD
 => infos tubes associés
+
+
+
 * génération du descriptif d'un épisode pour un tube à copier/coller sur sa fiche lors de la publication de la vidéo
 * export de la base vers backup (ZIP) (#6)
 * import de la base depuis un backup (ZIP) (#7)
