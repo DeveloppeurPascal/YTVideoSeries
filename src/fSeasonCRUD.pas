@@ -52,9 +52,8 @@ uses
 type
   TfrmSeasonCRUD = class(TRootFrame)
     FDTable1: TFDTable;
-    Layout1: TLayout;
+    lLeft: TLayout;
     Splitter1: TSplitter;
-    Layout2: TLayout;
     BindNavigator1: TBindNavigator;
     ListView1: TListView;
     cbSerialFilter: TComboBox;
@@ -70,8 +69,6 @@ type
     edtSeasonNumber: TEdit;
     lblSeasonNumber: TLabel;
     lblSerial: TLabel;
-    lblSerialLabel: TLabel;
-    btnSerialSelect: TButton;
     BindSourceDB1: TBindSourceDB;
     BindingsList1: TBindingsList;
     LinkListControlToField1: TLinkListControlToField;
@@ -89,16 +86,23 @@ type
     LinkControlToField3: TLinkControlToField;
     LinkControlToField4: TLinkControlToField;
     LinkControlToField5: TLinkControlToField;
-    LinkPropertyToFieldText: TLinkPropertyToField;
+    sbRight: TVertScrollBox;
+    edtSerialLabel: TEdit;
+    btnSerialSelect: TButton;
+    LinkControlToField6: TLinkControlToField;
     procedure FDTable1CalcFields(DataSet: TDataSet);
     procedure btnOpenURLClick(Sender: TObject);
     procedure edtURLChangeTracking(Sender: TObject);
     procedure btnSerialSelectClick(Sender: TObject);
+    procedure cbSerialFilterChange(Sender: TObject);
   private
-    { Déclarations privées }
+  protected
+    procedure SetTableFilter;
+    procedure FillSerialFilter;
   public
     procedure OnShow; override;
     procedure OnHide; override;
+    function GetFormTitle: string; override;
   end;
 
 implementation
@@ -108,8 +112,6 @@ implementation
 uses
   u_urlOpen;
 
-// TODO : gérer sélection par série (cbSerialFilter)
-// TODO : change edtSeasonNumber to allow only numbers
 procedure TfrmSeasonCRUD.btnOpenURLClick(Sender: TObject);
 begin
   if not edtURL.Text.IsEmpty then
@@ -118,9 +120,13 @@ end;
 
 procedure TfrmSeasonCRUD.btnSerialSelectClick(Sender: TObject);
 begin
-  inherited;
   // TODO : afficher la fenêtre de sélection de la série (prérenseignée à l'actuelle)
   // TODO : modifier la série et le libellé associés à cette fiche
+end;
+
+procedure TfrmSeasonCRUD.cbSerialFilterChange(Sender: TObject);
+begin
+  SetTableFilter;
 end;
 
 procedure TfrmSeasonCRUD.edtURLChangeTracking(Sender: TObject);
@@ -146,6 +152,47 @@ begin
     end;
 end;
 
+procedure TfrmSeasonCRUD.FillSerialFilter;
+var
+  qry: TFDQuery;
+begin
+  cbSerialFilter.Clear;
+  cbSerialFilter.ListItems[cbSerialFilter.Items.Add('')].Tag := -1;
+  qry := TFDQuery.Create(self);
+  try
+    qry.Connection := DB.FDConnection1;
+    qry.Open('select code, label from serial order by label');
+    qry.First;
+    while not qry.Eof do
+    begin
+      cbSerialFilter.ListItems[cbSerialFilter.Items.Add(qry.FieldByName('label')
+        .asstring)].Tag := qry.FieldByName('code').AsInteger;
+      qry.Next;
+    end;
+  finally
+    qry.Free;
+  end;
+end;
+
+function TfrmSeasonCRUD.GetFormTitle: string;
+begin
+  result := 'Season CRUD';
+end;
+
+procedure TfrmSeasonCRUD.SetTableFilter;
+begin
+  if assigned(cbSerialFilter.Selected) then
+    case cbSerialFilter.Selected.Tag of
+      - 1:
+        FDTable1.Filtered := false;
+    else
+      FDTable1.Filter := 'serial_code=' + cbSerialFilter.Selected.Tag.ToString;
+      FDTable1.Filtered := true;
+    end
+  else
+    FDTable1.Filtered := false;
+end;
+
 procedure TfrmSeasonCRUD.OnHide;
 begin
   // TODO : tester si champ en saisie pour demander confirmation avant
@@ -157,9 +204,10 @@ procedure TfrmSeasonCRUD.OnShow;
 begin
   inherited;
   btnOpenURL.Enabled := false;
-//lblSerialLabel.Text := '';
+  // lblSerialLabel.Text := '';
   FDTable1.BeforePost := DB.InitDefaultFieldsValues;
   FDTable1.Active := true;
+  FillSerialFilter;
 end;
 
 end.

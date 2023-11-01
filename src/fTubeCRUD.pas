@@ -52,7 +52,6 @@ type
   TfrmTubeCRUD = class(TRootFrame)
     ListView1: TListView;
     Splitter1: TSplitter;
-    Layout1: TLayout;
     FDTable1: TFDTable;
     lblLabel: TLabel;
     edtLabel: TEdit;
@@ -66,9 +65,10 @@ type
     LinkControlToField1: TLinkControlToField;
     LinkControlToField2: TLinkControlToField;
     LinkControlToField3: TLinkControlToField;
-    Layout2: TLayout;
+    lLeft: TLayout;
     BindNavigator1: TBindNavigator;
     btnOpenURL: TButton;
+    sbRight: TVertScrollBox;
     procedure edtURLChangeTracking(Sender: TObject);
     procedure btnOpenURLClick(Sender: TObject);
   private
@@ -76,6 +76,7 @@ type
   public
     procedure OnShow; override;
     procedure OnHide; override;
+    function GetFormTitle: string; override;
   end;
 
 implementation
@@ -94,6 +95,11 @@ end;
 procedure TfrmTubeCRUD.edtURLChangeTracking(Sender: TObject);
 begin
   btnOpenURL.Enabled := not edtURL.Text.IsEmpty;
+end;
+
+function TfrmTubeCRUD.GetFormTitle: string;
+begin
+  result := 'Tube CRUD';
 end;
 
 procedure TfrmTubeCRUD.OnHide;

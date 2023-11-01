@@ -7,9 +7,9 @@ object db: Tdb
       
         'Database=C:\Users\patrickpremartin\Documents\Embarcadero\Studio\' +
         'Projets\YTVideoSeries\db\DBStructure.db'
+      'LockingMode=Normal'
       'DriverID=SQLite')
     ConnectedStoredUsage = [auDesignTime]
-    Connected = True
     LoginPrompt = False
     AfterConnect = FDConnection1AfterConnect
     BeforeConnect = FDConnection1BeforeConnect
@@ -162,6 +162,33 @@ object db: Tdb
           'CREATE INDEX "link_tube_season" ON "season_tube" ('
           #9'"tube_code",'
           #9'"season_code"'
+          ');')
+      end
+      item
+        Name = 'v2'
+        SQL.Strings = (
+          
+            'ALTER TABLE "video" add "serial_code" INTEGER NOT NULL DEFAULT 0' +
+            ';'
+          #9
+          'CREATE INDEX "video_by_serial_season_label" ON "video" ('
+          #9'"serial_code",'
+          #9'"season_code",'
+          #9'"label",'
+          #9'"code"'
+          ');'
+          ''
+          'CREATE INDEX "video_by_serial_season_order" ON "video" ('
+          #9'"serial_code",'
+          #9'"season_code",'
+          #9'"order_in_season",'
+          #9'"code"'
+          ');'
+          ''
+          'CREATE INDEX "video_by_serial_label" ON "video" ('
+          #9'"serial_code",'
+          #9'"label",'
+          #9'"code"'
           ');')
       end>
     Connection = FDConnection1

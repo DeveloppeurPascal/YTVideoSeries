@@ -108,6 +108,7 @@ procedure Tdb.FDConnection1BeforeConnect(Sender: TObject);
 begin
   FDConnection1.Params.Clear;
   FDConnection1.Params.AddPair('DriverID', 'SQLite');
+    FDConnection1.Params.AddPair('LockingMode', 'Normal');
   FDConnection1.Params.AddPair('Database', dbname + '.db');
 end;
 

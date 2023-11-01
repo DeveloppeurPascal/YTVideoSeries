@@ -1,5 +1,5 @@
 inherited frmSerialCRUD: TfrmSerialCRUD
-  object Layout1: TLayout
+  object lLeft: TLayout
     Align = Left
     Size.Width = 300.000000000000000000
     Size.Height = 480.000000000000000000
@@ -16,6 +16,7 @@ inherited frmSerialCRUD: TfrmSerialCRUD
       Size.Height = 455.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 0
+      ItemAppearanceObjects.ItemObjects.Accessory.Visible = False
       ItemAppearanceObjects.ItemObjects.Image.Visible = False
       SearchVisible = True
     end
@@ -40,12 +41,14 @@ inherited frmSerialCRUD: TfrmSerialCRUD
     Size.Height = 480.000000000000000000
     Size.PlatformDefault = False
   end
-  object Layout2: TLayout
+  object sbRight: TVertScrollBox
     Align = Client
     Size.Width = 490.000000000000000000
     Size.Height = 480.000000000000000000
     Size.PlatformDefault = False
-    TabOrder = 2
+    TabOrder = 5
+    Viewport.Width = 474.000000000000000000
+    Viewport.Height = 480.000000000000000000
     object lblLabel: TLabel
       Align = Top
       FocusControl = edtLabel
@@ -55,7 +58,7 @@ inherited frmSerialCRUD: TfrmSerialCRUD
       Margins.Bottom = 5.000000000000000000
       Position.X = 10.000000000000000000
       Position.Y = 10.000000000000000000
-      Size.Width = 470.000000000000000000
+      Size.Width = 454.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
       Text = '&Label'
@@ -71,7 +74,7 @@ inherited frmSerialCRUD: TfrmSerialCRUD
       Margins.Top = 5.000000000000000000
       Margins.Right = 10.000000000000000000
       Margins.Bottom = 10.000000000000000000
-      Size.Width = 470.000000000000000000
+      Size.Width = 454.000000000000000000
       Size.Height = 22.000000000000000000
       Size.PlatformDefault = False
     end
@@ -84,7 +87,7 @@ inherited frmSerialCRUD: TfrmSerialCRUD
       Margins.Bottom = 5.000000000000000000
       Position.X = 10.000000000000000000
       Position.Y = 79.000000000000000000
-      Size.Width = 470.000000000000000000
+      Size.Width = 454.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
       Text = '&URL'
@@ -100,14 +103,14 @@ inherited frmSerialCRUD: TfrmSerialCRUD
       Margins.Top = 5.000000000000000000
       Margins.Right = 37.000000000000000000
       Margins.Bottom = 10.000000000000000000
-      Size.Width = 443.000000000000000000
+      Size.Width = 427.000000000000000000
       Size.Height = 22.000000000000000000
       Size.PlatformDefault = False
       OnChangeTracking = edtURLChangeTracking
       object btnOpenURL: TButton
         Align = Right
         Margins.Right = -27.000000000000000000
-        Position.X = 448.000000000000000000
+        Position.X = 432.000000000000000000
         Size.Width = 22.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
@@ -125,7 +128,7 @@ inherited frmSerialCRUD: TfrmSerialCRUD
       Margins.Bottom = 5.000000000000000000
       Position.X = 10.000000000000000000
       Position.Y = 148.000000000000000000
-      Size.Width = 470.000000000000000000
+      Size.Width = 454.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
       Text = '&Comment'
@@ -134,17 +137,19 @@ inherited frmSerialCRUD: TfrmSerialCRUD
     object mmoComment: TMemo
       Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
       DataDetectorTypes = []
-      Align = Client
+      Align = Top
       Margins.Left = 10.000000000000000000
       Margins.Top = 5.000000000000000000
       Margins.Right = 10.000000000000000000
       Margins.Bottom = 10.000000000000000000
-      Size.Width = 470.000000000000000000
-      Size.Height = 295.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 175.000000000000000000
+      Size.Width = 454.000000000000000000
+      Size.Height = 400.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 5
-      Viewport.Width = 470.000000000000000000
-      Viewport.Height = 295.000000000000000000
+      Viewport.Width = 454.000000000000000000
+      Viewport.Height = 400.000000000000000000
     end
   end
   object FDTable1: TFDTable

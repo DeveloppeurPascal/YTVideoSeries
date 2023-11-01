@@ -9,21 +9,15 @@ Coordinates=210,254,55,33
 Coordinates=10,10,89,195
 Visible=True
 
-[Layout1]
+[]
 Coordinates=140,254,53,33
 Visible=True
-
-[]
-Coordinates=235,232,91,36
 
 [BindSourceDB1]
 Coordinates=361,10,92,213
 
 [BindingsList1]
 Coordinates=136,87,82,33
-
-[Layout2]
-Coordinates=118,209,53,33
 
 [BindNavigator1]
 Coordinates=118,139,90,51
@@ -48,4 +42,7 @@ Coordinates=73,254,84,51
 
 [btnOpenURL]
 Coordinates=118,1,77,51
+
+[lLeft]
+Coordinates=118,209,53,33
 

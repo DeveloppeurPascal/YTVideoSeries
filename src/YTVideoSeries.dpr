@@ -12,7 +12,8 @@ uses
   cadRootFrame in 'cadRootFrame.pas' {RootFrame: TFrame},
   fTubeCRUD in 'fTubeCRUD.pas' {frmTubeCRUD: TFrame},
   fSerialCRUD in 'fSerialCRUD.pas' {frmSerialCRUD: TFrame},
-  fSeasonCRUD in 'fSeasonCRUD.pas' {frmSeasonCRUD: TFrame};
+  fSeasonCRUD in 'fSeasonCRUD.pas' {frmSeasonCRUD: TFrame},
+  fVideoCRUD in 'fVideoCRUD.pas' {frmVideoCRUD: TFrame};
 
 {$R *.res}
 

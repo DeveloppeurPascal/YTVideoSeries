@@ -1,5 +1,5 @@
 inherited frmSeasonCRUD: TfrmSeasonCRUD
-  object Layout1: TLayout
+  object lLeft: TLayout
     Align = Left
     Size.Width = 300.000000000000000000
     Size.Height = 480.000000000000000000
@@ -11,7 +11,7 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
       Size.Width = 300.000000000000000000
       Size.Height = 25.000000000000000000
       Size.PlatformDefault = False
-      TabOrder = 0
+      TabOrder = 2
       DataSource = BindSourceDB1
       xRadius = 4.000000000000000000
       yRadius = 4.000000000000000000
@@ -27,6 +27,7 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
       Size.Height = 433.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 1
+      ItemAppearanceObjects.ItemObjects.Accessory.Visible = False
       ItemAppearanceObjects.ItemObjects.Image.Visible = False
       SearchVisible = True
     end
@@ -35,7 +36,8 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
       Size.Width = 300.000000000000000000
       Size.Height = 22.000000000000000000
       Size.PlatformDefault = False
-      TabOrder = 2
+      TabOrder = 0
+      OnChange = cbSerialFilterChange
     end
   end
   object Splitter1: TSplitter
@@ -47,12 +49,14 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
     Size.Height = 480.000000000000000000
     Size.PlatformDefault = False
   end
-  object Layout2: TLayout
+  object sbRight: TVertScrollBox
     Align = Client
     Size.Width = 490.000000000000000000
     Size.Height = 480.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 3
+    Viewport.Width = 474.000000000000000000
+    Viewport.Height = 480.000000000000000000
     object lblLabel: TLabel
       Align = Top
       FocusControl = edtLabel
@@ -62,23 +66,23 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
       Margins.Bottom = 5.000000000000000000
       Position.X = 10.000000000000000000
       Position.Y = 10.000000000000000000
-      Size.Width = 470.000000000000000000
+      Size.Width = 454.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
       Text = '&Label'
-      TabOrder = 6
+      TabOrder = 0
     end
     object edtLabel: TEdit
       Touch.InteractiveGestures = [LongTap, DoubleTap]
       Align = Top
-      TabOrder = 7
+      TabOrder = 1
       Position.X = 10.000000000000000000
       Position.Y = 37.000000000000000000
       Margins.Left = 10.000000000000000000
       Margins.Top = 5.000000000000000000
       Margins.Right = 10.000000000000000000
       Margins.Bottom = 10.000000000000000000
-      Size.Width = 470.000000000000000000
+      Size.Width = 454.000000000000000000
       Size.Height = 22.000000000000000000
       Size.PlatformDefault = False
     end
@@ -90,8 +94,8 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
       Margins.Right = 10.000000000000000000
       Margins.Bottom = 5.000000000000000000
       Position.X = 10.000000000000000000
-      Position.Y = 281.000000000000000000
-      Size.Width = 470.000000000000000000
+      Position.Y = 286.000000000000000000
+      Size.Width = 454.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
       Text = '&URL'
@@ -102,19 +106,19 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
       Align = Top
       TabOrder = 9
       Position.X = 10.000000000000000000
-      Position.Y = 308.000000000000000000
+      Position.Y = 313.000000000000000000
       Margins.Left = 10.000000000000000000
       Margins.Top = 5.000000000000000000
       Margins.Right = 37.000000000000000000
       Margins.Bottom = 10.000000000000000000
-      Size.Width = 443.000000000000000000
+      Size.Width = 427.000000000000000000
       Size.Height = 22.000000000000000000
       Size.PlatformDefault = False
       OnChangeTracking = edtURLChangeTracking
       object btnOpenURL: TButton
         Align = Right
         Margins.Right = -27.000000000000000000
-        Position.X = 448.000000000000000000
+        Position.X = 432.000000000000000000
         Size.Width = 22.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
@@ -131,8 +135,8 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
       Margins.Right = 10.000000000000000000
       Margins.Bottom = 5.000000000000000000
       Position.X = 10.000000000000000000
-      Position.Y = 350.000000000000000000
-      Size.Width = 470.000000000000000000
+      Position.Y = 355.000000000000000000
+      Size.Width = 454.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
       Text = '&Comment'
@@ -141,17 +145,19 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
     object mmoComment: TMemo
       Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
       DataDetectorTypes = []
-      Align = Client
+      Align = Top
       Margins.Left = 10.000000000000000000
       Margins.Top = 5.000000000000000000
       Margins.Right = 10.000000000000000000
       Margins.Bottom = 10.000000000000000000
-      Size.Width = 470.000000000000000000
-      Size.Height = 93.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 382.000000000000000000
+      Size.Width = 454.000000000000000000
+      Size.Height = 400.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 11
-      Viewport.Width = 466.000000000000000000
-      Viewport.Height = 89.000000000000000000
+      Viewport.Width = 454.000000000000000000
+      Viewport.Height = 400.000000000000000000
     end
     object lblRecordDate: TLabel
       Align = Top
@@ -161,38 +167,38 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
       Margins.Right = 10.000000000000000000
       Margins.Bottom = 5.000000000000000000
       Position.X = 10.000000000000000000
-      Position.Y = 212.000000000000000000
-      Size.Width = 470.000000000000000000
+      Position.Y = 217.000000000000000000
+      Size.Width = 454.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
       Text = '&Record date'
-      TabOrder = 3
+      TabOrder = 6
     end
     object edtRecordDate: TEdit
       Touch.InteractiveGestures = [LongTap, DoubleTap]
       Align = Top
-      TabOrder = 5
+      TabOrder = 7
       Position.X = 10.000000000000000000
-      Position.Y = 239.000000000000000000
+      Position.Y = 244.000000000000000000
       Margins.Left = 10.000000000000000000
       Margins.Top = 5.000000000000000000
       Margins.Right = 10.000000000000000000
       Margins.Bottom = 10.000000000000000000
-      Size.Width = 470.000000000000000000
+      Size.Width = 454.000000000000000000
       Size.Height = 22.000000000000000000
       Size.PlatformDefault = False
     end
     object edtSeasonNumber: TEdit
       Touch.InteractiveGestures = [LongTap, DoubleTap]
       Align = Top
-      TabOrder = 4
+      TabOrder = 5
       Position.X = 10.000000000000000000
-      Position.Y = 170.000000000000000000
+      Position.Y = 175.000000000000000000
       Margins.Left = 10.000000000000000000
       Margins.Top = 5.000000000000000000
       Margins.Right = 10.000000000000000000
       Margins.Bottom = 10.000000000000000000
-      Size.Width = 470.000000000000000000
+      Size.Width = 454.000000000000000000
       Size.Height = 22.000000000000000000
       Size.PlatformDefault = False
     end
@@ -204,12 +210,12 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
       Margins.Right = 10.000000000000000000
       Margins.Bottom = 5.000000000000000000
       Position.X = 10.000000000000000000
-      Position.Y = 143.000000000000000000
-      Size.Width = 470.000000000000000000
+      Position.Y = 148.000000000000000000
+      Size.Width = 454.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
       Text = 'Season &number'
-      TabOrder = 2
+      TabOrder = 4
     end
     object lblSerial: TLabel
       Align = Top
@@ -220,30 +226,32 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
       Margins.Bottom = 5.000000000000000000
       Position.X = 10.000000000000000000
       Position.Y = 79.000000000000000000
-      Size.Width = 470.000000000000000000
+      Size.Width = 454.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
       Text = '&Serial'
-      TabOrder = 1
+      TabOrder = 2
     end
-    object lblSerialLabel: TLabel
+    object edtSerialLabel: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
       Align = Top
-      FocusControl = edtSeasonNumber
-      Margins.Left = 10.000000000000000000
-      Margins.Top = 5.000000000000000000
-      Margins.Right = 10.000000000000000000
-      Margins.Bottom = 10.000000000000000000
+      TabOrder = 3
+      ReadOnly = True
       Position.X = 10.000000000000000000
       Position.Y = 106.000000000000000000
-      Size.Width = 470.000000000000000000
-      Size.Height = 17.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 37.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Size.Width = 427.000000000000000000
+      Size.Height = 22.000000000000000000
       Size.PlatformDefault = False
-      TabOrder = 0
       object btnSerialSelect: TButton
         Align = Right
-        Position.X = 448.000000000000000000
+        Margins.Right = -27.000000000000000000
+        Position.X = 432.000000000000000000
         Size.Width = 22.000000000000000000
-        Size.Height = 17.000000000000000000
+        Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 4
         Text = '...'
@@ -328,7 +336,7 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
       Control = ListView1
       FillExpressions = <
         item
-          SourceMemberName = 'url'
+          SourceMemberName = 'SerialLabel'
           ControlMemberName = 'Detail'
         end>
       FillHeaderExpressions = <>
@@ -369,12 +377,12 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
       Control = mmoComment
       Track = False
     end
-    object LinkPropertyToFieldText: TLinkPropertyToField
+    object LinkControlToField6: TLinkControlToField
       Category = 'Liaisons rapides'
       DataSource = BindSourceDB1
       FieldName = 'SerialLabel'
-      Component = lblSerialLabel
-      ComponentProperty = 'Text'
+      Control = edtSerialLabel
+      Track = False
     end
   end
 end

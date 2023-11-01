@@ -30,6 +30,7 @@ type
     procedure OnShow; virtual;
     procedure OnHide; virtual;
     constructor Create(AOwner: TComponent); override;
+    function GetFormTitle: string; virtual; abstract;
   end;
 
 implementation

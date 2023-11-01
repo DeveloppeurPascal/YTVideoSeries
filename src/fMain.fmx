@@ -2,8 +2,12 @@ object frmMain: TfrmMain
   Left = 0
   Top = 0
   Caption = 'YT Video Series'
-  ClientHeight = 480
+  ClientHeight = 600
   ClientWidth = 800
+  Padding.Left = 10.000000000000000000
+  Padding.Top = 10.000000000000000000
+  Padding.Right = 10.000000000000000000
+  Padding.Bottom = 10.000000000000000000
   Position = ScreenCenter
   FormFactor.Width = 320
   FormFactor.Height = 480
@@ -13,7 +17,7 @@ object frmMain: TfrmMain
   object OlfAboutDialog1: TOlfAboutDialog
     Titre = 'YT Video Series'
     VersionNumero = '0.0 (WIP)'
-    VersionDate = '20231027'
+    VersionDate = '20231101'
     MultiResBitmap = <
       item
       end>
@@ -57,9 +61,9 @@ object frmMain: TfrmMain
         OnClick = mnuSeasonClick
       end
       object mnuVideo: TMenuItem
-        Enabled = False
         Locked = True
         Text = '&Video'
+        OnClick = mnuVideoClick
       end
     end
     object mnuTools: TMenuItem

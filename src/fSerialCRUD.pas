@@ -50,9 +50,8 @@ uses
 
 type
   TfrmSerialCRUD = class(TRootFrame)
-    Layout1: TLayout;
+    lLeft: TLayout;
     Splitter1: TSplitter;
-    Layout2: TLayout;
     ListView1: TListView;
     BindNavigator1: TBindNavigator;
     FDTable1: TFDTable;
@@ -69,6 +68,7 @@ type
     LinkControlToField1: TLinkControlToField;
     LinkControlToField2: TLinkControlToField;
     LinkControlToField3: TLinkControlToField;
+    sbRight: TVertScrollBox;
     procedure btnOpenURLClick(Sender: TObject);
     procedure edtURLChangeTracking(Sender: TObject);
   private
@@ -76,6 +76,7 @@ type
   public
     procedure OnShow; override;
     procedure OnHide; override;
+    function GetFormTitle: string; override;
   end;
 
 implementation
@@ -94,6 +95,11 @@ end;
 procedure TfrmSerialCRUD.edtURLChangeTracking(Sender: TObject);
 begin
   btnOpenURL.Enabled := not edtURL.Text.IsEmpty;
+end;
+
+function TfrmSerialCRUD.GetFormTitle: string;
+begin
+  result := 'Serial CRUD';
 end;
 
 procedure TfrmSerialCRUD.OnHide;

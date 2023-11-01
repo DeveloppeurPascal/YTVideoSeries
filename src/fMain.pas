@@ -44,10 +44,12 @@ type
     procedure mnuTubeClick(Sender: TObject);
     procedure mnuSerialClick(Sender: TObject);
     procedure mnuSeasonClick(Sender: TObject);
+    procedure mnuVideoClick(Sender: TObject);
   private
     FCurrentScreen: TRootFrame;
     procedure SetCurrentScreen(const Value: TRootFrame);
-    { Déclarations privées }
+  protected
+    procedure SetFormTitle;
   public
     { Déclarations publiques }
     property CurrentScreen: TRootFrame read FCurrentScreen
@@ -65,7 +67,8 @@ uses
   u_urlOpen,
   fSeasonCRUD,
   fSerialCRUD,
-  fTubeCRUD;
+  fTubeCRUD,
+  fVideoCRUD;
 
 procedure TfrmMain.FormCreate(Sender: TObject);
 begin
@@ -79,12 +82,7 @@ begin
   mnuMacSystem.Visible := false;
 {$ENDIF}
   mnuAbout.text := mnuAbout.text + ' ' + OlfAboutDialog1.Titre;
-{$IFDEF DEBUG}
-  caption := '[DEBUG] ' + OlfAboutDialog1.Titre + ' v' +
-    OlfAboutDialog1.VersionNumero;
-{$ELSE}
-  caption := OlfAboutDialog1.Titre + ' v' + OlfAboutDialog1.VersionNumero;
-{$ENDIF}
+  SetFormTitle;
   FCurrentScreen := nil;
 end;
 
@@ -113,6 +111,11 @@ begin
   CurrentScreen := tfrmTubeCRUD.GetInstance<tfrmTubeCRUD>(self);
 end;
 
+procedure TfrmMain.mnuVideoClick(Sender: TObject);
+begin
+  CurrentScreen := TfrmVideoCRUD.GetInstance<TfrmVideoCRUD>(self);
+end;
+
 procedure TfrmMain.OlfAboutDialog1URLClick(const AURL: string);
 begin
   url_Open_In_Browser(AURL);
@@ -128,6 +131,19 @@ begin
     FCurrentScreen.Parent := self;
     FCurrentScreen.onshow;
   end;
+    SetFormTitle;
+end;
+
+procedure TfrmMain.SetFormTitle;
+begin
+{$IFDEF DEBUG}
+  caption := '[DEBUG] ' + OlfAboutDialog1.Titre + ' v' +
+    OlfAboutDialog1.VersionNumero;
+{$ELSE}
+  caption := OlfAboutDialog1.Titre + ' v' + OlfAboutDialog1.VersionNumero;
+{$ENDIF}
+  if assigned(FCurrentScreen) then
+    caption := caption + ' - ' + FCurrentScreen.GetFormTitle;
 end;
 
 initialization
