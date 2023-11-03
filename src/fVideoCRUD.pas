@@ -96,6 +96,10 @@ type
     LinkControlToField6: TLinkControlToField;
     LinkControlToField7: TLinkControlToField;
     FDTable1SerialSeasonLabel: TStringField;
+    lblKeywords: TLabel;
+    edtKeywords: TEdit;
+    FDTable1keyword: TWideMemoField;
+    LinkControlToField8: TLinkControlToField;
     procedure FDTable1CalcFields(DataSet: TDataSet);
     procedure btnSerialSelectClick(Sender: TObject);
     procedure btnOpenURLClick(Sender: TObject);
@@ -121,7 +125,7 @@ implementation
 {$R *.fmx}
 
 uses
-  u_urlOpen;
+  u_urlOpen, fSelectRecord;
 
 procedure TfrmVideoCRUD.btnOpenURLClick(Sender: TObject);
 begin
@@ -130,9 +134,21 @@ begin
 end;
 
 procedure TfrmVideoCRUD.btnSerialSelectClick(Sender: TObject);
+var
+  code: integer;
 begin
-  // TODO : afficher la fenêtre de sélection de la saison/série (prérenseignée à l'actuelle)
-  // TODO : modifier la série/saison et les libellés associés à cette fiche
+  code := TfrmSelectRecord.FromSeasonTable;
+  if (code >= 0) then
+  begin
+    if assigned(ListView1.Selected) then
+      FDTable1.Edit
+    else
+      FDTable1.insert;
+    FDTable1.FieldByName('season_code').AsInteger := code;
+    FDTable1.FieldByName('serial_code').AsInteger :=
+      DB.FDConnection1.ExecSQLScalar
+      ('select serial_code from season where code=:c', [code]);
+  end;
 end;
 
 procedure TfrmVideoCRUD.cbSeasonFilterChange(Sender: TObject);
@@ -161,7 +177,7 @@ begin
   else
     try
       LSerialLabel := DB.FDConnection1.ExecSQLScalar
-        ('select label from serial where code=%c',
+        ('select label from serial where code=:c',
         [DataSet.FieldByName('serial_code').AsInteger]);
       DataSet.FieldByName('SerialLabel').asstring := LSerialLabel;
     except
@@ -173,7 +189,7 @@ begin
   else
     try
       LSeasonLabel := DB.FDConnection1.ExecSQLScalar
-        ('select label from season where code=%c',
+        ('select label from season where code=:c',
         [DataSet.FieldByName('season_code').AsInteger]);
       DataSet.FieldByName('SeasonLabel').asstring := LSeasonLabel;
     except

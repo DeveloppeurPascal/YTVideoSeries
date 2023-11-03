@@ -90,6 +90,10 @@ type
     edtSerialLabel: TEdit;
     btnSerialSelect: TButton;
     LinkControlToField6: TLinkControlToField;
+    FDTable1keyword: TWideMemoField;
+    lblKeywords: TLabel;
+    edtKeywords: TEdit;
+    LinkControlToField7: TLinkControlToField;
     procedure FDTable1CalcFields(DataSet: TDataSet);
     procedure btnOpenURLClick(Sender: TObject);
     procedure edtURLChangeTracking(Sender: TObject);
@@ -110,7 +114,7 @@ implementation
 {$R *.fmx}
 
 uses
-  u_urlOpen;
+  u_urlOpen, fSelectRecord;
 
 procedure TfrmSeasonCRUD.btnOpenURLClick(Sender: TObject);
 begin
@@ -119,9 +123,18 @@ begin
 end;
 
 procedure TfrmSeasonCRUD.btnSerialSelectClick(Sender: TObject);
+var
+  code: integer;
 begin
-  // TODO : afficher la fenêtre de sélection de la série (prérenseignée à l'actuelle)
-  // TODO : modifier la série et le libellé associés à cette fiche
+  code := TfrmSelectRecord.FromSerialTable;
+  if (code >= 0) then
+  begin
+    if assigned(ListView1.Selected) then
+      FDTable1.Edit
+    else
+      FDTable1.insert;
+    FDTable1.FieldByName('serial_code').AsInteger := code;
+  end;
 end;
 
 procedure TfrmSeasonCRUD.cbSerialFilterChange(Sender: TObject);
@@ -144,7 +157,7 @@ begin
   else
     try
       LSerialLabel := DB.FDConnection1.ExecSQLScalar
-        ('select label from serial where code=%c',
+        ('select label from serial where code=:c',
         [DataSet.FieldByName('serial_code').AsInteger]);
       DataSet.FieldByName('SerialLabel').asstring := LSerialLabel;
     except
@@ -204,7 +217,6 @@ procedure TfrmSeasonCRUD.OnShow;
 begin
   inherited;
   btnOpenURL.Enabled := false;
-  // lblSerialLabel.Text := '';
   FDTable1.BeforePost := DB.InitDefaultFieldsValues;
   FDTable1.Active := true;
   FillSerialFilter;

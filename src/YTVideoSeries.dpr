@@ -13,7 +13,8 @@ uses
   fTubeCRUD in 'fTubeCRUD.pas' {frmTubeCRUD: TFrame},
   fSerialCRUD in 'fSerialCRUD.pas' {frmSerialCRUD: TFrame},
   fSeasonCRUD in 'fSeasonCRUD.pas' {frmSeasonCRUD: TFrame},
-  fVideoCRUD in 'fVideoCRUD.pas' {frmVideoCRUD: TFrame};
+  fVideoCRUD in 'fVideoCRUD.pas' {frmVideoCRUD: TFrame},
+  fSelectRecord in 'fSelectRecord.pas' {frmSelectRecord};
 
 {$R *.res}
 

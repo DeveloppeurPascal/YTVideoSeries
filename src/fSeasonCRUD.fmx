@@ -1,13 +1,15 @@
 inherited frmSeasonCRUD: TfrmSeasonCRUD
+  Size.Width = 993.000000000000000000
+  Size.Height = 804.000000000000000000
   object lLeft: TLayout
     Align = Left
     Size.Width = 300.000000000000000000
-    Size.Height = 480.000000000000000000
+    Size.Height = 804.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 1
     object BindNavigator1: TBindNavigator
       Align = Bottom
-      Position.Y = 455.000000000000000000
+      Position.Y = 779.000000000000000000
       Size.Width = 300.000000000000000000
       Size.Height = 25.000000000000000000
       Size.PlatformDefault = False
@@ -24,7 +26,7 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
       AlternatingColors = True
       Align = Client
       Size.Width = 300.000000000000000000
-      Size.Height = 433.000000000000000000
+      Size.Height = 757.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 1
       ItemAppearanceObjects.ItemObjects.Accessory.Visible = False
@@ -46,17 +48,17 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
     MinSize = 20.000000000000000000
     Position.X = 300.000000000000000000
     Size.Width = 10.000000000000000000
-    Size.Height = 480.000000000000000000
+    Size.Height = 804.000000000000000000
     Size.PlatformDefault = False
   end
   object sbRight: TVertScrollBox
     Align = Client
-    Size.Width = 490.000000000000000000
-    Size.Height = 480.000000000000000000
+    Size.Width = 683.000000000000000000
+    Size.Height = 804.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 3
-    Viewport.Width = 474.000000000000000000
-    Viewport.Height = 480.000000000000000000
+    Viewport.Width = 667.000000000000000000
+    Viewport.Height = 804.000000000000000000
     object lblLabel: TLabel
       Align = Top
       FocusControl = edtLabel
@@ -66,7 +68,7 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
       Margins.Bottom = 5.000000000000000000
       Position.X = 10.000000000000000000
       Position.Y = 10.000000000000000000
-      Size.Width = 454.000000000000000000
+      Size.Width = 647.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
       Text = '&Label'
@@ -82,7 +84,7 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
       Margins.Top = 5.000000000000000000
       Margins.Right = 10.000000000000000000
       Margins.Bottom = 10.000000000000000000
-      Size.Width = 454.000000000000000000
+      Size.Width = 647.000000000000000000
       Size.Height = 22.000000000000000000
       Size.PlatformDefault = False
     end
@@ -95,7 +97,7 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
       Margins.Bottom = 5.000000000000000000
       Position.X = 10.000000000000000000
       Position.Y = 286.000000000000000000
-      Size.Width = 454.000000000000000000
+      Size.Width = 647.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
       Text = '&URL'
@@ -111,14 +113,14 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
       Margins.Top = 5.000000000000000000
       Margins.Right = 37.000000000000000000
       Margins.Bottom = 10.000000000000000000
-      Size.Width = 427.000000000000000000
+      Size.Width = 620.000000000000000000
       Size.Height = 22.000000000000000000
       Size.PlatformDefault = False
       OnChangeTracking = edtURLChangeTracking
       object btnOpenURL: TButton
         Align = Right
         Margins.Right = -27.000000000000000000
-        Position.X = 432.000000000000000000
+        Position.X = 625.000000000000000000
         Size.Width = 22.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
@@ -136,7 +138,7 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
       Margins.Bottom = 5.000000000000000000
       Position.X = 10.000000000000000000
       Position.Y = 355.000000000000000000
-      Size.Width = 454.000000000000000000
+      Size.Width = 647.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
       Text = '&Comment'
@@ -152,11 +154,11 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
       Margins.Bottom = 10.000000000000000000
       Position.X = 10.000000000000000000
       Position.Y = 382.000000000000000000
-      Size.Width = 454.000000000000000000
+      Size.Width = 647.000000000000000000
       Size.Height = 400.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 11
-      Viewport.Width = 454.000000000000000000
+      Viewport.Width = 647.000000000000000000
       Viewport.Height = 400.000000000000000000
     end
     object lblRecordDate: TLabel
@@ -168,7 +170,7 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
       Margins.Bottom = 5.000000000000000000
       Position.X = 10.000000000000000000
       Position.Y = 217.000000000000000000
-      Size.Width = 454.000000000000000000
+      Size.Width = 647.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
       Text = '&Record date'
@@ -184,7 +186,7 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
       Margins.Top = 5.000000000000000000
       Margins.Right = 10.000000000000000000
       Margins.Bottom = 10.000000000000000000
-      Size.Width = 454.000000000000000000
+      Size.Width = 647.000000000000000000
       Size.Height = 22.000000000000000000
       Size.PlatformDefault = False
     end
@@ -198,7 +200,7 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
       Margins.Top = 5.000000000000000000
       Margins.Right = 10.000000000000000000
       Margins.Bottom = 10.000000000000000000
-      Size.Width = 454.000000000000000000
+      Size.Width = 647.000000000000000000
       Size.Height = 22.000000000000000000
       Size.PlatformDefault = False
     end
@@ -211,7 +213,7 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
       Margins.Bottom = 5.000000000000000000
       Position.X = 10.000000000000000000
       Position.Y = 148.000000000000000000
-      Size.Width = 454.000000000000000000
+      Size.Width = 647.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
       Text = 'Season &number'
@@ -226,7 +228,7 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
       Margins.Bottom = 5.000000000000000000
       Position.X = 10.000000000000000000
       Position.Y = 79.000000000000000000
-      Size.Width = 454.000000000000000000
+      Size.Width = 647.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
       Text = '&Serial'
@@ -243,13 +245,13 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
       Margins.Top = 5.000000000000000000
       Margins.Right = 37.000000000000000000
       Margins.Bottom = 10.000000000000000000
-      Size.Width = 427.000000000000000000
+      Size.Width = 620.000000000000000000
       Size.Height = 22.000000000000000000
       Size.PlatformDefault = False
       object btnSerialSelect: TButton
         Align = Right
         Margins.Right = -27.000000000000000000
-        Position.X = 432.000000000000000000
+        Position.X = 625.000000000000000000
         Size.Width = 22.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
@@ -257,6 +259,35 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
         Text = '...'
         OnClick = btnSerialSelectClick
       end
+    end
+    object lblKeywords: TLabel
+      Align = Top
+      FocusControl = edtKeywords
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 802.000000000000000000
+      Size.Width = 647.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = '&Keywords'
+      TabOrder = 12
+    end
+    object edtKeywords: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 13
+      Position.X = 10.000000000000000000
+      Position.Y = 829.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Size.Width = 647.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
     end
   end
   object FDTable1: TFDTable
@@ -266,8 +297,8 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
     Connection = db.FDConnection1
     ResourceOptions.AssignedValues = [rvEscapeExpand]
     TableName = 'season'
-    Left = 488
-    Top = 216
+    Left = 176
+    Top = 240
     object FDTable1SerialLabel: TStringField
       FieldKind = fkCalculated
       FieldName = 'SerialLabel'
@@ -317,18 +348,24 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
       Required = True
       BlobType = ftWideMemo
     end
+    object FDTable1keyword: TWideMemoField
+      FieldName = 'keyword'
+      Origin = 'keyword'
+      Required = True
+      BlobType = ftWideMemo
+    end
   end
   object BindSourceDB1: TBindSourceDB
     DataSet = FDTable1
     ScopeMappings = <>
-    Left = 392
-    Top = 232
+    Left = 120
+    Top = 168
   end
   object BindingsList1: TBindingsList
     Methods = <>
     OutputConverters = <>
-    Left = 20
-    Top = 5
+    Left = 36
+    Top = 85
     object LinkListControlToField1: TLinkListControlToField
       Category = 'Liaisons rapides'
       DataSource = BindSourceDB1
@@ -382,6 +419,13 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
       DataSource = BindSourceDB1
       FieldName = 'SerialLabel'
       Control = edtSerialLabel
+      Track = False
+    end
+    object LinkControlToField7: TLinkControlToField
+      Category = 'Liaisons rapides'
+      DataSource = BindSourceDB1
+      FieldName = 'keyword'
+      Control = edtKeywords
       Track = False
     end
   end

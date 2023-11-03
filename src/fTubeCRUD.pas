@@ -57,8 +57,8 @@ type
     edtLabel: TEdit;
     lblURL: TLabel;
     edtURL: TEdit;
-    lblTemplate: TLabel;
-    mmoTemplate: TMemo;
+    lblTemplateComment: TLabel;
+    mmoTemplateComment: TMemo;
     BindSourceDB1: TBindSourceDB;
     BindingsList1: TBindingsList;
     LinkListControlToField1: TLinkListControlToField;
@@ -69,6 +69,12 @@ type
     BindNavigator1: TBindNavigator;
     btnOpenURL: TButton;
     sbRight: TVertScrollBox;
+    lblTemplateLabel: TLabel;
+    lblTemplateKeywords: TLabel;
+    mmoTemplateLabel: TMemo;
+    mmoTemplateKeywords: TMemo;
+    LinkControlToField4: TLinkControlToField;
+    LinkControlToField5: TLinkControlToField;
     procedure edtURLChangeTracking(Sender: TObject);
     procedure btnOpenURLClick(Sender: TObject);
   private

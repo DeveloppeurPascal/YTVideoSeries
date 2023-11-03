@@ -14,13 +14,10 @@ Coordinates=140,254,53,33
 Visible=True
 
 [BindSourceDB1]
-Coordinates=361,10,92,213
+Coordinates=460,0,92,267
 
 [BindingsList1]
 Coordinates=136,87,82,33
-
-[BindNavigator1]
-Coordinates=118,139,90,51
 
 [lblLabel]
 Coordinates=10,254,53,51
@@ -28,21 +25,39 @@ Coordinates=10,254,53,51
 [lblURL]
 Coordinates=190,10,47,51
 
-[lblTemplate]
-Coordinates=127,10,71,51
-
 [edtLabel]
 Coordinates=253,10,56,51
 
 [edtURL]
-Coordinates=307,10,50,51
-
-[mmoTemplate]
-Coordinates=73,254,84,51
+Coordinates=1000,70,50,51
 
 [btnOpenURL]
 Coordinates=118,1,77,51
 
 [lLeft]
-Coordinates=118,209,53,33
+Coordinates=118,209,40,33
+
+[sbRight]
+Coordinates=281,87,52,33
+Visible=True
+
+[mmoTemplateComment]
+Coordinates=720,200,131,51
+Visible=True
+
+[lblTemplateComment]
+Coordinates=620,50,119,51
+Visible=True
+
+[mmoTemplateKeywords]
+Coordinates=710,260,133,51
+
+[lblTemplateKeywords]
+Coordinates=960,340,120,51
+
+[lblTemplateLabel]
+Coordinates=385,286,98,51
+
+[mmoTemplateLabel]
+Coordinates=790,120,111,51
 

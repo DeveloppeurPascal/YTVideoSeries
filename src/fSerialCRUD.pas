@@ -69,6 +69,9 @@ type
     LinkControlToField2: TLinkControlToField;
     LinkControlToField3: TLinkControlToField;
     sbRight: TVertScrollBox;
+    lblKeywords: TLabel;
+    edtKeywords: TEdit;
+    LinkControlToField4: TLinkControlToField;
     procedure btnOpenURLClick(Sender: TObject);
     procedure edtURLChangeTracking(Sender: TObject);
   private

@@ -1,20 +1,17 @@
 ﻿[Splitter1]
-Coordinates=150,322,55,33
+Coordinates=890,350,55,33
 
 [edtLabel]
-Coordinates=440,20,56,51
+Coordinates=440,50,56,51
 
 [edtURL]
-Coordinates=460,70,50,51
+Coordinates=460,120,50,51
 
 [lblLabel]
-Coordinates=630,40,53,51
-
-[BindNavigator1]
-Coordinates=342,254,90,51
+Coordinates=910,10,53,51
 
 [lblURL]
-Coordinates=590,110,47,51
+Coordinates=930,90,47,51
 
 [FDTable1]
 Coordinates=190,10,60,33
@@ -24,24 +21,36 @@ Visible=False
 Coordinates=10,10,89,195
 
 [btnOpenURL]
-Coordinates=152,254,77,51
+Coordinates=910,260,77,51
 
 []
 Coordinates=80,322,53,33
 
 [BindSourceDB1]
-Coordinates=230,0,92,213
+Coordinates=230,0,92,231
 
 [BindingsList1]
 Coordinates=334,87,82,33
 
 [lblComment]
-Coordinates=251,254,71,51
+Coordinates=860,180,73,51
 
 [mmoComment]
-Coordinates=450,170,84,51
+Coordinates=450,190,86,51
 Visible=True
 
 [lLeft]
-Coordinates=10,322,53,33
+Coordinates=780,400,40,33
+
+[sbRight]
+Coordinates=820,130,52,33
+
+[edtKeywords]
+Coordinates=480,260,79,51
+
+[lblKeywords]
+Coordinates=760,280,75,51
+
+[BindNavigator1]
+Coordinates=520,0,90,51
 

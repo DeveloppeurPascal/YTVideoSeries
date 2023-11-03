@@ -1,8 +1,9 @@
 inherited frmSerialCRUD: TfrmSerialCRUD
+  Size.Height = 827.000000000000000000
   object lLeft: TLayout
     Align = Left
     Size.Width = 300.000000000000000000
-    Size.Height = 480.000000000000000000
+    Size.Height = 827.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 0
     object ListView1: TListView
@@ -13,7 +14,7 @@ inherited frmSerialCRUD: TfrmSerialCRUD
       AlternatingColors = True
       Align = Client
       Size.Width = 300.000000000000000000
-      Size.Height = 455.000000000000000000
+      Size.Height = 802.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 0
       ItemAppearanceObjects.ItemObjects.Accessory.Visible = False
@@ -22,7 +23,7 @@ inherited frmSerialCRUD: TfrmSerialCRUD
     end
     object BindNavigator1: TBindNavigator
       Align = Bottom
-      Position.Y = 455.000000000000000000
+      Position.Y = 802.000000000000000000
       Size.Width = 300.000000000000000000
       Size.Height = 25.000000000000000000
       Size.PlatformDefault = False
@@ -38,17 +39,17 @@ inherited frmSerialCRUD: TfrmSerialCRUD
     MinSize = 20.000000000000000000
     Position.X = 300.000000000000000000
     Size.Width = 10.000000000000000000
-    Size.Height = 480.000000000000000000
+    Size.Height = 827.000000000000000000
     Size.PlatformDefault = False
   end
   object sbRight: TVertScrollBox
     Align = Client
     Size.Width = 490.000000000000000000
-    Size.Height = 480.000000000000000000
+    Size.Height = 827.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 5
-    Viewport.Width = 474.000000000000000000
-    Viewport.Height = 480.000000000000000000
+    Viewport.Width = 490.000000000000000000
+    Viewport.Height = 827.000000000000000000
     object lblLabel: TLabel
       Align = Top
       FocusControl = edtLabel
@@ -58,7 +59,7 @@ inherited frmSerialCRUD: TfrmSerialCRUD
       Margins.Bottom = 5.000000000000000000
       Position.X = 10.000000000000000000
       Position.Y = 10.000000000000000000
-      Size.Width = 454.000000000000000000
+      Size.Width = 470.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
       Text = '&Label'
@@ -74,7 +75,7 @@ inherited frmSerialCRUD: TfrmSerialCRUD
       Margins.Top = 5.000000000000000000
       Margins.Right = 10.000000000000000000
       Margins.Bottom = 10.000000000000000000
-      Size.Width = 454.000000000000000000
+      Size.Width = 470.000000000000000000
       Size.Height = 22.000000000000000000
       Size.PlatformDefault = False
     end
@@ -87,7 +88,7 @@ inherited frmSerialCRUD: TfrmSerialCRUD
       Margins.Bottom = 5.000000000000000000
       Position.X = 10.000000000000000000
       Position.Y = 79.000000000000000000
-      Size.Width = 454.000000000000000000
+      Size.Width = 470.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
       Text = '&URL'
@@ -103,14 +104,14 @@ inherited frmSerialCRUD: TfrmSerialCRUD
       Margins.Top = 5.000000000000000000
       Margins.Right = 37.000000000000000000
       Margins.Bottom = 10.000000000000000000
-      Size.Width = 427.000000000000000000
+      Size.Width = 443.000000000000000000
       Size.Height = 22.000000000000000000
       Size.PlatformDefault = False
       OnChangeTracking = edtURLChangeTracking
       object btnOpenURL: TButton
         Align = Right
         Margins.Right = -27.000000000000000000
-        Position.X = 432.000000000000000000
+        Position.X = 448.000000000000000000
         Size.Width = 22.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
@@ -128,7 +129,7 @@ inherited frmSerialCRUD: TfrmSerialCRUD
       Margins.Bottom = 5.000000000000000000
       Position.X = 10.000000000000000000
       Position.Y = 148.000000000000000000
-      Size.Width = 454.000000000000000000
+      Size.Width = 470.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
       Text = '&Comment'
@@ -144,12 +145,41 @@ inherited frmSerialCRUD: TfrmSerialCRUD
       Margins.Bottom = 10.000000000000000000
       Position.X = 10.000000000000000000
       Position.Y = 175.000000000000000000
-      Size.Width = 454.000000000000000000
+      Size.Width = 470.000000000000000000
       Size.Height = 400.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 5
-      Viewport.Width = 454.000000000000000000
-      Viewport.Height = 400.000000000000000000
+      Viewport.Width = 466.000000000000000000
+      Viewport.Height = 396.000000000000000000
+    end
+    object lblKeywords: TLabel
+      Align = Top
+      FocusControl = edtKeywords
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 595.000000000000000000
+      Size.Width = 470.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = '&Keywords'
+      TabOrder = 6
+    end
+    object edtKeywords: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 7
+      Position.X = 10.000000000000000000
+      Position.Y = 622.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Size.Width = 470.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
     end
   end
   object FDTable1: TFDTable
@@ -158,14 +188,14 @@ inherited frmSerialCRUD: TfrmSerialCRUD
     Connection = db.FDConnection1
     ResourceOptions.AssignedValues = [rvEscapeExpand]
     TableName = 'serial'
-    Left = 384
-    Top = 240
+    Left = 64
+    Top = 208
   end
   object BindSourceDB1: TBindSourceDB
     DataSet = FDTable1
     ScopeMappings = <>
-    Left = 392
-    Top = 248
+    Left = 88
+    Top = 304
   end
   object BindingsList1: TBindingsList
     Methods = <>
@@ -204,6 +234,13 @@ inherited frmSerialCRUD: TfrmSerialCRUD
       DataSource = BindSourceDB1
       FieldName = 'comment'
       Control = mmoComment
+      Track = False
+    end
+    object LinkControlToField4: TLinkControlToField
+      Category = 'Liaisons rapides'
+      DataSource = BindSourceDB1
+      FieldName = 'keyword'
+      Control = edtKeywords
       Track = False
     end
   end

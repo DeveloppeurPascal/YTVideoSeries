@@ -1,20 +1,20 @@
 ﻿[edtURL]
-Coordinates=560,170,50,51
+Coordinates=560,210,50,51
 
 [FDTable1comment]
 Coordinates=367,351,106,33
 
 [lblSerial]
-Coordinates=494,10,54,51
+Coordinates=880,140,54,51
 
 [Splitter1]
-Coordinates=283,330,55,33
+Coordinates=940,270,55,33
 
 [FDTable1SerialLabel]
 Coordinates=511,1,115,33
 
 [mmoComment]
-Coordinates=540,230,86,51
+Coordinates=660,250,86,51
 
 [FDTable1SeasonLabel]
 Coordinates=511,53,124,33
@@ -26,10 +26,10 @@ Coordinates=350,430,88,123
 Coordinates=770,300,93,51
 
 [edtRecordDate]
-Coordinates=540,120,87,51
+Coordinates=680,160,87,51
 
 [edtVideoNumber]
-Coordinates=520,70,96,51
+Coordinates=560,90,96,51
 
 [cbSerialFilter]
 Coordinates=680,450,84,123
@@ -45,10 +45,10 @@ Coordinates=10,10,60,33
 Visible=False
 
 [lblLabel]
-Coordinates=108,330,53,51
+Coordinates=960,320,53,51
 
 [btnSerialSelect]
-Coordinates=10,330,88,51
+Coordinates=800,430,88,51
 
 [lblRecordDate]
 Coordinates=780,200,84,51
@@ -57,17 +57,14 @@ Coordinates=780,200,84,51
 Coordinates=511,157,125,33
 
 [lblComment]
-Coordinates=167,269,73,51
+Coordinates=940,160,73,51
 Visible=True
 
 [ListView1]
-Coordinates=103,10,89,195
-
-[BindNavigator1]
-Coordinates=100,190,90,51
+Coordinates=30,110,89,195
 
 [lLeft]
-Coordinates=233,330,40,33
+Coordinates=940,380,40,33
 
 [FDTable1url]
 Coordinates=373,507,73,33
@@ -76,16 +73,16 @@ Coordinates=373,507,73,33
 Coordinates=540,300,84,51
 
 [edtLabel]
-Coordinates=610,0,56,51
+Coordinates=450,40,56,51
 
 [btnOpenURL]
 Coordinates=721,10,77,51
 
 [lblURL]
-Coordinates=110,269,47,51
+Coordinates=880,70,47,51
 
 [sbRight]
-Coordinates=171,330,52,33
+Coordinates=920,440,52,33
 Visible=True
 
 [FDTable1label]
@@ -107,11 +104,23 @@ Coordinates=511,313,117,33
 Coordinates=511,261,82,33
 
 [BindSourceDB1]
-Coordinates=310,50,92,321
+Coordinates=310,50,92,339
 
 [BindingsList1]
 Coordinates=121,170,82,33
 
 [FDTable1SerialSeasonLabel]
 Coordinates=211,1,152,33
+
+[FDTable1keyword]
+Coordinates=440,420,102,33
+
+[edtKeywords]
+Coordinates=540,430,79,51
+
+[lblKeywords]
+Coordinates=970,60,75,51
+
+[BindNavigator1]
+Coordinates=120,20,90,51
 

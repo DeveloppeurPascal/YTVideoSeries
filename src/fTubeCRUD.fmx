@@ -1,19 +1,21 @@
 inherited frmTubeCRUD: TfrmTubeCRUD
+  Size.Width = 1024.000000000000000000
+  Size.Height = 844.000000000000000000
   object Splitter1: TSplitter
     Align = Left
     Cursor = crHSplit
     MinSize = 20.000000000000000000
     Position.X = 300.000000000000000000
     Size.Width = 10.000000000000000000
-    Size.Height = 480.000000000000000000
+    Size.Height = 844.000000000000000000
     Size.PlatformDefault = False
   end
   object lLeft: TLayout
     Align = Left
     Size.Width = 300.000000000000000000
-    Size.Height = 480.000000000000000000
+    Size.Height = 844.000000000000000000
     Size.PlatformDefault = False
-    TabOrder = 4
+    TabOrder = 2
     object ListView1: TListView
       ItemAppearanceClassName = 'TImageListItemBottomDetailAppearance'
       ItemEditAppearanceClassName = 'TImageListItemBottomDetailShowCheckAppearance'
@@ -22,7 +24,7 @@ inherited frmTubeCRUD: TfrmTubeCRUD
       AlternatingColors = True
       Align = Client
       Size.Width = 300.000000000000000000
-      Size.Height = 455.000000000000000000
+      Size.Height = 819.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 0
       ItemAppearanceObjects.ItemObjects.Accessory.Visible = False
@@ -31,7 +33,7 @@ inherited frmTubeCRUD: TfrmTubeCRUD
     end
     object BindNavigator1: TBindNavigator
       Align = Bottom
-      Position.Y = 455.000000000000000000
+      Position.Y = 819.000000000000000000
       Size.Width = 300.000000000000000000
       Size.Height = 25.000000000000000000
       Size.PlatformDefault = False
@@ -43,12 +45,12 @@ inherited frmTubeCRUD: TfrmTubeCRUD
   end
   object sbRight: TVertScrollBox
     Align = Client
-    Size.Width = 490.000000000000000000
-    Size.Height = 480.000000000000000000
+    Size.Width = 714.000000000000000000
+    Size.Height = 844.000000000000000000
     Size.PlatformDefault = False
-    TabOrder = 8
-    Viewport.Width = 474.000000000000000000
-    Viewport.Height = 480.000000000000000000
+    TabOrder = 6
+    Viewport.Width = 714.000000000000000000
+    Viewport.Height = 844.000000000000000000
     object lblLabel: TLabel
       Align = Top
       FocusControl = edtLabel
@@ -58,7 +60,7 @@ inherited frmTubeCRUD: TfrmTubeCRUD
       Margins.Bottom = 5.000000000000000000
       Position.X = 10.000000000000000000
       Position.Y = 10.000000000000000000
-      Size.Width = 454.000000000000000000
+      Size.Width = 694.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
       Text = '&Label'
@@ -74,7 +76,7 @@ inherited frmTubeCRUD: TfrmTubeCRUD
       Margins.Top = 5.000000000000000000
       Margins.Right = 10.000000000000000000
       Margins.Bottom = 10.000000000000000000
-      Size.Width = 454.000000000000000000
+      Size.Width = 694.000000000000000000
       Size.Height = 22.000000000000000000
       Size.PlatformDefault = False
     end
@@ -87,7 +89,7 @@ inherited frmTubeCRUD: TfrmTubeCRUD
       Margins.Bottom = 5.000000000000000000
       Position.X = 10.000000000000000000
       Position.Y = 79.000000000000000000
-      Size.Width = 454.000000000000000000
+      Size.Width = 694.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
       Text = '&URL'
@@ -103,14 +105,14 @@ inherited frmTubeCRUD: TfrmTubeCRUD
       Margins.Top = 5.000000000000000000
       Margins.Right = 37.000000000000000000
       Margins.Bottom = 10.000000000000000000
-      Size.Width = 427.000000000000000000
+      Size.Width = 667.000000000000000000
       Size.Height = 22.000000000000000000
       Size.PlatformDefault = False
       OnChangeTracking = edtURLChangeTracking
       object btnOpenURL: TButton
         Align = Right
         Margins.Right = -27.000000000000000000
-        Position.X = 432.000000000000000000
+        Position.X = 672.000000000000000000
         Size.Width = 22.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
@@ -119,22 +121,69 @@ inherited frmTubeCRUD: TfrmTubeCRUD
         OnClick = btnOpenURLClick
       end
     end
-    object lblTemplate: TLabel
+    object lblTemplateComment: TLabel
       Align = Top
-      FocusControl = mmoTemplate
+      FocusControl = mmoTemplateComment
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 295.000000000000000000
+      Size.Width = 694.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Template for generated &comments'
+      TabOrder = 6
+    end
+    object mmoTemplateComment: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      DataDetectorTypes = []
+      Align = Top
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 322.000000000000000000
+      Size.Width = 694.000000000000000000
+      Size.Height = 100.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 7
+      Viewport.Width = 690.000000000000000000
+      Viewport.Height = 96.000000000000000000
+    end
+    object lblTemplateLabel: TLabel
+      Align = Top
+      FocusControl = mmoTemplateLabel
       Margins.Left = 10.000000000000000000
       Margins.Top = 10.000000000000000000
       Margins.Right = 10.000000000000000000
       Margins.Bottom = 5.000000000000000000
       Position.X = 10.000000000000000000
       Position.Y = 148.000000000000000000
-      Size.Width = 454.000000000000000000
+      Size.Width = 694.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
-      Text = '&Template'
+      Text = '&Template for generated labels'
       TabOrder = 4
     end
-    object mmoTemplate: TMemo
+    object lblTemplateKeywords: TLabel
+      Align = Top
+      FocusControl = mmoTemplateKeywords
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 442.000000000000000000
+      Size.Width = 694.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Template for generated &keywords'
+      TabOrder = 8
+    end
+    object mmoTemplateLabel: TMemo
       Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
       DataDetectorTypes = []
       Align = Top
@@ -144,12 +193,29 @@ inherited frmTubeCRUD: TfrmTubeCRUD
       Margins.Bottom = 10.000000000000000000
       Position.X = 10.000000000000000000
       Position.Y = 175.000000000000000000
-      Size.Width = 454.000000000000000000
-      Size.Height = 400.000000000000000000
+      Size.Width = 694.000000000000000000
+      Size.Height = 100.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 5
-      Viewport.Width = 454.000000000000000000
-      Viewport.Height = 400.000000000000000000
+      Viewport.Width = 690.000000000000000000
+      Viewport.Height = 96.000000000000000000
+    end
+    object mmoTemplateKeywords: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      DataDetectorTypes = []
+      Align = Top
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 469.000000000000000000
+      Size.Width = 694.000000000000000000
+      Size.Height = 100.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 9
+      Viewport.Width = 690.000000000000000000
+      Viewport.Height = 96.000000000000000000
     end
   end
   object FDTable1: TFDTable
@@ -202,8 +268,22 @@ inherited frmTubeCRUD: TfrmTubeCRUD
     object LinkControlToField3: TLinkControlToField
       Category = 'Liaisons rapides'
       DataSource = BindSourceDB1
-      FieldName = 'template'
-      Control = mmoTemplate
+      FieldName = 'tpl_comment'
+      Control = mmoTemplateComment
+      Track = False
+    end
+    object LinkControlToField4: TLinkControlToField
+      Category = 'Liaisons rapides'
+      DataSource = BindSourceDB1
+      FieldName = 'tpl_label'
+      Control = mmoTemplateLabel
+      Track = False
+    end
+    object LinkControlToField5: TLinkControlToField
+      Category = 'Liaisons rapides'
+      DataSource = BindSourceDB1
+      FieldName = 'tpl_keyword'
+      Control = mmoTemplateKeywords
       Track = False
     end
   end
