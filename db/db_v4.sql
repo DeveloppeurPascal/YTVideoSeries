@@ -1,0 +1,1 @@
+alter table tube drop template;
