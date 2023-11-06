@@ -47,9 +47,6 @@ Visible=False
 [lblLabel]
 Coordinates=960,320,53,51
 
-[btnSerialSelect]
-Coordinates=800,430,88,51
-
 [lblRecordDate]
 Coordinates=780,200,84,51
 
@@ -101,7 +98,7 @@ Coordinates=520,350,90,51
 Coordinates=511,313,117,33
 
 []
-Coordinates=511,261,82,33
+Coordinates=800,430,88,51
 
 [BindSourceDB1]
 Coordinates=310,50,92,339

@@ -1,0 +1,114 @@
+object frmRootTubeLink: TfrmRootTubeLink
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 860
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object lTop: TLayout
+    Align = Top
+    Size.Width = 860.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Label1: TLabel
+      Align = Center
+      AutoSize = True
+      Size.Width = 120.000000000000000000
+      Size.Height = 16.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Label1'
+      TabOrder = 0
+    end
+  end
+  object lLeft: TLayout
+    Align = Left
+    Position.Y = 50.000000000000000000
+    Size.Width = 300.000000000000000000
+    Size.Height = 380.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object ListView1: TListView
+      ItemAppearanceClassName = 'TListItemAppearance'
+      ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+      HeaderAppearanceClassName = 'TListHeaderObjects'
+      FooterAppearanceClassName = 'TListHeaderObjects'
+      AlternatingColors = True
+      Align = Client
+      Size.Width = 300.000000000000000000
+      Size.Height = 355.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      SearchVisible = True
+    end
+    object BindNavigator1: TBindNavigator
+      Align = Bottom
+      Position.Y = 355.000000000000000000
+      Size.Width = 300.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      xRadius = 4.000000000000000000
+      yRadius = 4.000000000000000000
+    end
+  end
+  object Splitter1: TSplitter
+    Align = Left
+    Cursor = crHSplit
+    MinSize = 20.000000000000000000
+    Position.X = 300.000000000000000000
+    Position.Y = 50.000000000000000000
+    Size.Width = 10.000000000000000000
+    Size.Height = 380.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object sRight: TVertScrollBox
+    Align = Client
+    Size.Width = 550.000000000000000000
+    Size.Height = 380.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Viewport.Width = 550.000000000000000000
+    Viewport.Height = 380.000000000000000000
+    object lBottomMargin: TLayout
+      Align = Top
+      Size.Width = 550.000000000000000000
+      Size.Height = 20.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 10
+    end
+  end
+  object lBottom: TLayout
+    Align = Bottom
+    Position.Y = 430.000000000000000000
+    Size.Width = 860.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    object btnClose: TButton
+      Align = Right
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Position.X = 770.000000000000000000
+      Position.Y = 10.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = '&Close'
+      OnClick = btnCloseClick
+    end
+  end
+  object FDQuery1: TFDQuery
+    ActiveStoredUsage = [auDesignTime]
+    Connection = db.FDConnection1
+    Left = 640
+    Top = 152
+  end
+end

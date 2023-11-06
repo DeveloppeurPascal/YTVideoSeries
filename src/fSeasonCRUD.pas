@@ -94,11 +94,14 @@ type
     lblKeywords: TLabel;
     edtKeywords: TEdit;
     LinkControlToField7: TLinkControlToField;
+    btnVideos: TButton;
+    lBottomMargin: TLayout;
     procedure FDTable1CalcFields(DataSet: TDataSet);
     procedure btnOpenURLClick(Sender: TObject);
     procedure edtURLChangeTracking(Sender: TObject);
     procedure btnSerialSelectClick(Sender: TObject);
     procedure cbSerialFilterChange(Sender: TObject);
+    procedure btnVideosClick(Sender: TObject);
   private
   protected
     procedure SetTableFilter;
@@ -114,7 +117,10 @@ implementation
 {$R *.fmx}
 
 uses
-  u_urlOpen, fSelectRecord;
+  u_urlOpen,
+  fSelectRecord,
+  fMain,
+  fVideoCRUD;
 
 procedure TfrmSeasonCRUD.btnOpenURLClick(Sender: TObject);
 begin
@@ -135,6 +141,14 @@ begin
       FDTable1.insert;
     FDTable1.FieldByName('serial_code').AsInteger := code;
   end;
+end;
+
+procedure TfrmSeasonCRUD.btnVideosClick(Sender: TObject);
+begin
+  // TODO : tester si record en ajout/modif pour demander confirmation avant
+  frmmain.CurrentScreen := TfrmVideoCRUD.GetInstance<TfrmVideoCRUD>(self,
+    FDTable1.FieldByName('serial_code').AsInteger, FDTable1.FieldByName('code')
+    .AsInteger);
 end;
 
 procedure TfrmSeasonCRUD.cbSerialFilterChange(Sender: TObject);
@@ -168,9 +182,12 @@ end;
 procedure TfrmSeasonCRUD.FillSerialFilter;
 var
   qry: TFDQuery;
+  NewItemIndex: integer;
 begin
   cbSerialFilter.Clear;
   cbSerialFilter.ListItems[cbSerialFilter.Items.Add('')].Tag := -1;
+  if (ffiltercode1 = -1) then
+    cbSerialFilter.itemindex := 0;
   qry := TFDQuery.Create(self);
   try
     qry.Connection := DB.FDConnection1;
@@ -178,8 +195,12 @@ begin
     qry.First;
     while not qry.Eof do
     begin
-      cbSerialFilter.ListItems[cbSerialFilter.Items.Add(qry.FieldByName('label')
-        .asstring)].Tag := qry.FieldByName('code').AsInteger;
+      NewItemIndex := cbSerialFilter.Items.Add(qry.FieldByName('label')
+        .asstring);
+      cbSerialFilter.ListItems[NewItemIndex].Tag := qry.FieldByName('code')
+        .AsInteger;
+      if (ffiltercode1 = qry.FieldByName('code').AsInteger) then
+        cbSerialFilter.itemindex := NewItemIndex;
       qry.Next;
     end;
   finally
@@ -208,7 +229,7 @@ end;
 
 procedure TfrmSeasonCRUD.OnHide;
 begin
-  // TODO : tester si champ en saisie pour demander confirmation avant
+  // TODO : tester si record en ajout/modif pour demander confirmation avant
   FDTable1.Active := false;
   inherited;
 end;

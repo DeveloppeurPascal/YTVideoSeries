@@ -14,7 +14,8 @@ uses
   fSerialCRUD in 'fSerialCRUD.pas' {frmSerialCRUD: TFrame},
   fSeasonCRUD in 'fSeasonCRUD.pas' {frmSeasonCRUD: TFrame},
   fVideoCRUD in 'fVideoCRUD.pas' {frmVideoCRUD: TFrame},
-  fSelectRecord in 'fSelectRecord.pas' {frmSelectRecord};
+  fSelectRecord in 'fSelectRecord.pas' {frmSelectRecord},
+  fRootTubeLink in 'fRootTubeLink.pas' {frmRootTubeLink};
 
 {$R *.res}
 
@@ -23,5 +24,6 @@ begin
   Application.CreateForm(Tdb, db);
   Application.CreateForm(TDMLogo, DMLogo);
   Application.CreateForm(TfrmMain, frmMain);
+  Application.CreateForm(TfrmRootTubeLink, frmRootTubeLink);
   Application.Run;
 end.

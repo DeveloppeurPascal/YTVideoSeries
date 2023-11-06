@@ -70,7 +70,6 @@ type
     lblVideoNumber: TLabel;
     lblSerial: TLabel;
     edtSerialLabel: TEdit;
-    btnSerialSelect: TButton;
     mmoComment: TMemo;
     FDTable1: TFDTable;
     FDTable1code: TFDAutoIncField;
@@ -100,12 +99,15 @@ type
     edtKeywords: TEdit;
     FDTable1keyword: TWideMemoField;
     LinkControlToField8: TLinkControlToField;
+    btnSerialSelect: TButton;
+    lBottomMargin: TLayout;
     procedure FDTable1CalcFields(DataSet: TDataSet);
     procedure btnSerialSelectClick(Sender: TObject);
     procedure btnOpenURLClick(Sender: TObject);
     procedure edtURLChangeTracking(Sender: TObject);
     procedure cbSerialFilterChange(Sender: TObject);
     procedure cbSeasonFilterChange(Sender: TObject);
+    procedure FDTable1AfterInsert(DataSet: TDataSet);
   private
   protected
     procedure SetTableFilter;
@@ -159,11 +161,23 @@ end;
 procedure TfrmVideoCRUD.cbSerialFilterChange(Sender: TObject);
 begin
   SetTableFilter;
+  FillSeasonFilter;
 end;
 
 procedure TfrmVideoCRUD.edtURLChangeTracking(Sender: TObject);
 begin
   btnOpenURL.Enabled := not edtURL.Text.IsEmpty;
+end;
+
+procedure TfrmVideoCRUD.FDTable1AfterInsert(DataSet: TDataSet);
+begin
+  if assigned(cbSerialFilter.Selected) and (cbSerialFilter.Selected.Tag > -1)
+  then
+    DataSet.FieldByName('serial_code').AsInteger := cbSerialFilter.Selected.Tag;
+
+  if assigned(cbSeasonFilter.Selected) and (cbSeasonFilter.Selected.Tag > -1)
+  then
+    DataSet.FieldByName('season_code').AsInteger := cbSeasonFilter.Selected.Tag;
 end;
 
 procedure TfrmVideoCRUD.FDTable1CalcFields(DataSet: TDataSet);
@@ -208,29 +222,75 @@ begin
 end;
 
 procedure TfrmVideoCRUD.FillSeasonFilter;
+var
+  qry: TFDQuery;
+  NewItemIndex: integer;
 begin
-  // TODO : gérer sélection par saison (cbSeasonFilter)
+  cbSeasonFilter.beginupdate;
+  try
+    cbSeasonFilter.Clear;
+    cbSeasonFilter.ListItems[cbSeasonFilter.Items.Add('')].Tag := -1;
+    if (ffiltercode2 = -1) then
+      cbSeasonFilter.itemindex := 0;
+    qry := TFDQuery.Create(self);
+    try
+      qry.Connection := DB.FDConnection1;
+      if assigned(cbSerialFilter.Selected) and (cbSerialFilter.Selected.Tag > -1)
+      then
+        qry.Open('select code, label from season where serial_code=:c order by label',
+          [cbSerialFilter.Selected.Tag])
+      else
+        qry.Open('select code, label from season order by label');
+      qry.First;
+      while not qry.Eof do
+      begin
+        NewItemIndex := cbSeasonFilter.Items.Add(qry.FieldByName('label')
+          .asstring);
+        cbSeasonFilter.ListItems[NewItemIndex].Tag := qry.FieldByName('code')
+          .AsInteger;
+        if (ffiltercode2 = qry.FieldByName('code').AsInteger) then
+          cbSeasonFilter.itemindex := NewItemIndex;
+        qry.Next;
+      end;
+    finally
+      qry.Free;
+    end;
+  finally
+    cbSeasonFilter.endupdate;
+  end;
 end;
 
 procedure TfrmVideoCRUD.FillSerialFilter;
 var
   qry: TFDQuery;
+  NewItemIndex: integer;
 begin
-  cbSerialFilter.Clear;
-  cbSerialFilter.ListItems[cbSerialFilter.Items.Add('')].Tag := -1;
-  qry := TFDQuery.Create(self);
+  cbSerialFilter.beginupdate;
   try
-    qry.Connection := DB.FDConnection1;
-    qry.Open('select code, label from serial order by label');
-    qry.First;
-    while not qry.Eof do
-    begin
-      cbSerialFilter.ListItems[cbSerialFilter.Items.Add(qry.FieldByName('label')
-        .asstring)].Tag := qry.FieldByName('code').AsInteger;
-      qry.Next;
+    cbSerialFilter.Clear;
+    cbSerialFilter.ListItems[cbSerialFilter.Items.Add('')].Tag := -1;
+    if (ffiltercode1 = -1) then
+      cbSerialFilter.itemindex := 0;
+    qry := TFDQuery.Create(self);
+    try
+      qry.Connection := DB.FDConnection1;
+      qry.Open('select code, label from serial order by label');
+      qry.First;
+      while not qry.Eof do
+      begin
+        NewItemIndex := cbSerialFilter.Items.Add(qry.FieldByName('label')
+          .asstring);
+        cbSerialFilter.ListItems[NewItemIndex].Tag := qry.FieldByName('code')
+          .AsInteger;
+        if (ffiltercode1 = qry.FieldByName('code').AsInteger) then
+          cbSerialFilter.itemindex := NewItemIndex;
+        qry.Next;
+      end;
+    finally
+      qry.Free;
     end;
   finally
-    qry.Free;
+    cbSerialFilter.endupdate;
   end;
 end;
 
@@ -241,7 +301,7 @@ end;
 
 procedure TfrmVideoCRUD.OnHide;
 begin
-  // TODO : tester si champ en saisie pour demander confirmation avant
+  // TODO : tester si record en ajout/modif pour demander confirmation avant
   FDTable1.Active := false;
   inherited;
 end;
@@ -258,17 +318,30 @@ begin
 end;
 
 procedure TfrmVideoCRUD.SetTableFilter;
+var
+  where: string;
 begin
-  if assigned(cbSerialFilter.Selected) then
-    case cbSerialFilter.Selected.Tag of
-      - 1:
-        FDTable1.Filtered := false;
+  where := '';
+
+  if assigned(cbSerialFilter.Selected) and (cbSerialFilter.Selected.Tag > -1)
+  then
+    where := '(serial_code=' + cbSerialFilter.Selected.Tag.ToString + ')';
+
+  if assigned(cbSeasonFilter.Selected) and (cbSeasonFilter.Selected.Tag > -1)
+  then
+    if where.IsEmpty then
+      where := '(season_code=' + cbSeasonFilter.Selected.Tag.ToString + ')'
     else
-      FDTable1.Filter := 'serial_code=' + cbSerialFilter.Selected.Tag.ToString;
-      FDTable1.Filtered := true;
-    end
+      where := where + ' and (season_code=' +
+        cbSeasonFilter.Selected.Tag.ToString + ')';
+
+  if where.IsEmpty then
+    FDTable1.Filtered := false
   else
-    FDTable1.Filtered := false;
+  begin
+    FDTable1.Filter := where;
+    FDTable1.Filtered := true;
+  end;
 end;
 
 end.

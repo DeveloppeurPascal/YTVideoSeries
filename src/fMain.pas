@@ -131,7 +131,7 @@ begin
     FCurrentScreen.Parent := self;
     FCurrentScreen.onshow;
   end;
-    SetFormTitle;
+  SetFormTitle;
 end;
 
 procedure TfrmMain.SetFormTitle;
@@ -150,6 +150,9 @@ initialization
 
 {$IFDEF DEBUG}
   ReportMemoryLeaksOnShutdown := true;
+{$ENDIF}
+{$IFDEF MACOS}
+globalusemetal := true;
 {$ENDIF}
 
 end.

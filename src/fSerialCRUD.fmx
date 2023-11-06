@@ -1,9 +1,9 @@
 inherited frmSerialCRUD: TfrmSerialCRUD
-  Size.Height = 827.000000000000000000
+  Size.Height = 713.000000000000000000
   object lLeft: TLayout
     Align = Left
     Size.Width = 300.000000000000000000
-    Size.Height = 827.000000000000000000
+    Size.Height = 713.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 0
     object ListView1: TListView
@@ -14,7 +14,7 @@ inherited frmSerialCRUD: TfrmSerialCRUD
       AlternatingColors = True
       Align = Client
       Size.Width = 300.000000000000000000
-      Size.Height = 802.000000000000000000
+      Size.Height = 688.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 0
       ItemAppearanceObjects.ItemObjects.Accessory.Visible = False
@@ -23,7 +23,7 @@ inherited frmSerialCRUD: TfrmSerialCRUD
     end
     object BindNavigator1: TBindNavigator
       Align = Bottom
-      Position.Y = 802.000000000000000000
+      Position.Y = 688.000000000000000000
       Size.Width = 300.000000000000000000
       Size.Height = 25.000000000000000000
       Size.PlatformDefault = False
@@ -39,17 +39,17 @@ inherited frmSerialCRUD: TfrmSerialCRUD
     MinSize = 20.000000000000000000
     Position.X = 300.000000000000000000
     Size.Width = 10.000000000000000000
-    Size.Height = 827.000000000000000000
+    Size.Height = 713.000000000000000000
     Size.PlatformDefault = False
   end
   object sbRight: TVertScrollBox
     Align = Client
     Size.Width = 490.000000000000000000
-    Size.Height = 827.000000000000000000
+    Size.Height = 713.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 5
-    Viewport.Width = 490.000000000000000000
-    Viewport.Height = 827.000000000000000000
+    Viewport.Width = 474.000000000000000000
+    Viewport.Height = 713.000000000000000000
     object lblLabel: TLabel
       Align = Top
       FocusControl = edtLabel
@@ -59,7 +59,7 @@ inherited frmSerialCRUD: TfrmSerialCRUD
       Margins.Bottom = 5.000000000000000000
       Position.X = 10.000000000000000000
       Position.Y = 10.000000000000000000
-      Size.Width = 470.000000000000000000
+      Size.Width = 454.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
       Text = '&Label'
@@ -75,7 +75,7 @@ inherited frmSerialCRUD: TfrmSerialCRUD
       Margins.Top = 5.000000000000000000
       Margins.Right = 10.000000000000000000
       Margins.Bottom = 10.000000000000000000
-      Size.Width = 470.000000000000000000
+      Size.Width = 454.000000000000000000
       Size.Height = 22.000000000000000000
       Size.PlatformDefault = False
     end
@@ -88,7 +88,7 @@ inherited frmSerialCRUD: TfrmSerialCRUD
       Margins.Bottom = 5.000000000000000000
       Position.X = 10.000000000000000000
       Position.Y = 79.000000000000000000
-      Size.Width = 470.000000000000000000
+      Size.Width = 454.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
       Text = '&URL'
@@ -104,14 +104,14 @@ inherited frmSerialCRUD: TfrmSerialCRUD
       Margins.Top = 5.000000000000000000
       Margins.Right = 37.000000000000000000
       Margins.Bottom = 10.000000000000000000
-      Size.Width = 443.000000000000000000
+      Size.Width = 427.000000000000000000
       Size.Height = 22.000000000000000000
       Size.PlatformDefault = False
       OnChangeTracking = edtURLChangeTracking
       object btnOpenURL: TButton
         Align = Right
         Margins.Right = -27.000000000000000000
-        Position.X = 448.000000000000000000
+        Position.X = 432.000000000000000000
         Size.Width = 22.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
@@ -129,7 +129,7 @@ inherited frmSerialCRUD: TfrmSerialCRUD
       Margins.Bottom = 5.000000000000000000
       Position.X = 10.000000000000000000
       Position.Y = 148.000000000000000000
-      Size.Width = 470.000000000000000000
+      Size.Width = 454.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
       Text = '&Comment'
@@ -145,12 +145,12 @@ inherited frmSerialCRUD: TfrmSerialCRUD
       Margins.Bottom = 10.000000000000000000
       Position.X = 10.000000000000000000
       Position.Y = 175.000000000000000000
-      Size.Width = 470.000000000000000000
+      Size.Width = 454.000000000000000000
       Size.Height = 400.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 5
-      Viewport.Width = 466.000000000000000000
-      Viewport.Height = 396.000000000000000000
+      Viewport.Width = 454.000000000000000000
+      Viewport.Height = 400.000000000000000000
     end
     object lblKeywords: TLabel
       Align = Top
@@ -161,7 +161,7 @@ inherited frmSerialCRUD: TfrmSerialCRUD
       Margins.Bottom = 5.000000000000000000
       Position.X = 10.000000000000000000
       Position.Y = 595.000000000000000000
-      Size.Width = 470.000000000000000000
+      Size.Width = 454.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
       Text = '&Keywords'
@@ -177,9 +177,47 @@ inherited frmSerialCRUD: TfrmSerialCRUD
       Margins.Top = 5.000000000000000000
       Margins.Right = 10.000000000000000000
       Margins.Bottom = 10.000000000000000000
-      Size.Width = 470.000000000000000000
+      Size.Width = 454.000000000000000000
       Size.Height = 22.000000000000000000
       Size.PlatformDefault = False
+    end
+    object btnSeasons: TButton
+      Align = Top
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 664.000000000000000000
+      Size.Width = 454.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 9
+      Text = 'Edit its seasons'
+      OnClick = btnSeasonsClick
+    end
+    object btnVideos: TButton
+      Align = Top
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 706.000000000000000000
+      Size.Width = 454.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 8
+      Text = 'Edit its videos'
+      OnClick = btnVideosClick
+    end
+    object lBottomMargin: TLayout
+      Align = Top
+      Position.Y = 738.000000000000000000
+      Size.Width = 474.000000000000000000
+      Size.Height = 20.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 10
     end
   end
   object FDTable1: TFDTable

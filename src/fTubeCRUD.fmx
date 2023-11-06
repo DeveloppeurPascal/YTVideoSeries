@@ -217,6 +217,14 @@ inherited frmTubeCRUD: TfrmTubeCRUD
       Viewport.Width = 690.000000000000000000
       Viewport.Height = 96.000000000000000000
     end
+    object lBottomMargin: TLayout
+      Align = Top
+      Position.Y = 579.000000000000000000
+      Size.Width = 714.000000000000000000
+      Size.Height = 20.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 10
+    end
   end
   object FDTable1: TFDTable
     Active = True

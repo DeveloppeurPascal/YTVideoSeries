@@ -22,8 +22,12 @@ type
   class var
     FInstanceList: TDictionary<string, TRootFrame>;
     FDirectCreate: boolean;
+
+  protected
+    FFilterCode1, FFilterCode2: integer;
   public
-    class function GetInstance<T: TRootFrame>(AOwner: TComponent): T;
+    class function GetInstance<T: TRootFrame>(AOwner: TComponent;
+      FilterCode1: integer = -1; FilterCode2: integer = -1): T;
     destructor Destroy; override;
     procedure Initialize; virtual;
     procedure Finalize; virtual;
@@ -40,7 +44,11 @@ implementation
 constructor TRootFrame.Create(AOwner: TComponent);
 begin
   if not FDirectCreate then
-    inherited
+  begin
+    inherited;
+    FFilterCode1 := -1;
+    FFilterCode2 := -1;
+  end
   else
     raise exception.Create('Use GetInstance<T>');
 end;
@@ -56,7 +64,8 @@ begin
   // nothing to do at this level
 end;
 
-class function TRootFrame.GetInstance<T>(AOwner: TComponent): T;
+class function TRootFrame.GetInstance<T>(AOwner: TComponent;
+  FilterCode1, FilterCode2: integer): T;
 var
   rf: TRootFrame;
 begin
@@ -66,13 +75,19 @@ begin
       result := T.Create(AOwner);
       FDirectCreate := true;
       result.Align := TAlignLayout.Client;
+      result.FFilterCode1 := FilterCode1;
+      result.FFilterCode2 := FilterCode2;
       result.Initialize;
       FInstanceList.Add(ClassName, result);
     except
       result := nil;
     end
   else
+  begin
     result := T(rf);
+    result.FFilterCode1 := FilterCode1;
+    result.FFilterCode2 := FilterCode2;
+  end;
 end;
 
 procedure TRootFrame.Initialize;

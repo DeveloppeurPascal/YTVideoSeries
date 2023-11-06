@@ -101,12 +101,12 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
       Text = '&URL'
-      TabOrder = 8
+      TabOrder = 9
     end
     object edtURL: TEdit
       Touch.InteractiveGestures = [LongTap, DoubleTap]
       Align = Top
-      TabOrder = 9
+      TabOrder = 10
       Position.X = 10.000000000000000000
       Position.Y = 313.000000000000000000
       Margins.Left = 10.000000000000000000
@@ -142,7 +142,7 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
       Text = '&Comment'
-      TabOrder = 10
+      TabOrder = 11
     end
     object mmoComment: TMemo
       Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
@@ -157,7 +157,7 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
       Size.Width = 647.000000000000000000
       Size.Height = 400.000000000000000000
       Size.PlatformDefault = False
-      TabOrder = 11
+      TabOrder = 12
       Viewport.Width = 647.000000000000000000
       Viewport.Height = 400.000000000000000000
     end
@@ -273,12 +273,12 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
       Text = '&Keywords'
-      TabOrder = 12
+      TabOrder = 13
     end
     object edtKeywords: TEdit
       Touch.InteractiveGestures = [LongTap, DoubleTap]
       Align = Top
-      TabOrder = 13
+      TabOrder = 14
       Position.X = 10.000000000000000000
       Position.Y = 829.000000000000000000
       Margins.Left = 10.000000000000000000
@@ -288,6 +288,29 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
       Size.Width = 647.000000000000000000
       Size.Height = 22.000000000000000000
       Size.PlatformDefault = False
+    end
+    object btnVideos: TButton
+      Align = Top
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 871.000000000000000000
+      Size.Width = 647.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 8
+      Text = 'Edit its videos'
+      OnClick = btnVideosClick
+    end
+    object lBottomMargin: TLayout
+      Align = Top
+      Position.Y = 903.000000000000000000
+      Size.Width = 667.000000000000000000
+      Size.Height = 20.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 15
     end
   end
   object FDTable1: TFDTable

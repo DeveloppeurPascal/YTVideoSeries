@@ -75,6 +75,7 @@ type
     mmoTemplateKeywords: TMemo;
     LinkControlToField4: TLinkControlToField;
     LinkControlToField5: TLinkControlToField;
+    lBottomMargin: TLayout;
     procedure edtURLChangeTracking(Sender: TObject);
     procedure btnOpenURLClick(Sender: TObject);
   private
@@ -110,7 +111,7 @@ end;
 
 procedure TfrmTubeCRUD.OnHide;
 begin
-  // TODO : tester si champ en saisie pour demander confirmation avant
+  // TODO : tester si record en ajout/modif pour demander confirmation avant
   FDTable1.Active := false;
   inherited;
 end;

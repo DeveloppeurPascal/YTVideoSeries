@@ -72,8 +72,13 @@ type
     lblKeywords: TLabel;
     edtKeywords: TEdit;
     LinkControlToField4: TLinkControlToField;
+    btnSeasons: TButton;
+    btnVideos: TButton;
+    lBottomMargin: TLayout;
     procedure btnOpenURLClick(Sender: TObject);
     procedure edtURLChangeTracking(Sender: TObject);
+    procedure btnSeasonsClick(Sender: TObject);
+    procedure btnVideosClick(Sender: TObject);
   private
     { Déclarations privées }
   public
@@ -87,12 +92,29 @@ implementation
 {$R *.fmx}
 
 uses
-  u_urlOpen;
+  u_urlOpen,
+  fMain,
+  fSeasonCRUD,
+  fVideoCRUD;
 
 procedure TfrmSerialCRUD.btnOpenURLClick(Sender: TObject);
 begin
   if not edtURL.Text.IsEmpty then
     url_Open_In_Browser(edtURL.Text);
+end;
+
+procedure TfrmSerialCRUD.btnSeasonsClick(Sender: TObject);
+begin
+  // TODO : tester si record en ajout/modif pour demander confirmation avant
+  frmmain.CurrentScreen := TfrmSeasonCRUD.GetInstance<TfrmSeasonCRUD>(self,
+    FDTable1.FieldByName('code').AsInteger);
+end;
+
+procedure TfrmSerialCRUD.btnVideosClick(Sender: TObject);
+begin
+  // TODO : tester si record en ajout/modif pour demander confirmation avant
+  frmmain.CurrentScreen := TfrmVideoCRUD.GetInstance<TfrmVideoCRUD>(self,
+    FDTable1.FieldByName('code').AsInteger);
 end;
 
 procedure TfrmSerialCRUD.edtURLChangeTracking(Sender: TObject);
@@ -107,7 +129,7 @@ end;
 
 procedure TfrmSerialCRUD.OnHide;
 begin
-  // TODO : tester si champ en saisie pour demander confirmation avant
+  // TODO : tester si record en ajout/modif pour demander confirmation avant
   FDTable1.Active := false;
   inherited;
 end;
