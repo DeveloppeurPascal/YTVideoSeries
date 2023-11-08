@@ -79,6 +79,7 @@ inherited frmVideoCRUD: TfrmVideoCRUD
       Size.Width = 611.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
+      TextSettings.Trimming = None
       Text = '&Label'
       TabOrder = 0
     end
@@ -108,6 +109,7 @@ inherited frmVideoCRUD: TfrmVideoCRUD
       Size.Width = 611.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
+      TextSettings.Trimming = None
       Text = '&URL'
       TabOrder = 9
     end
@@ -134,6 +136,7 @@ inherited frmVideoCRUD: TfrmVideoCRUD
         Size.PlatformDefault = False
         TabOrder = 0
         Text = '>'
+        TextSettings.Trimming = None
         OnClick = btnOpenURLClick
       end
     end
@@ -149,6 +152,7 @@ inherited frmVideoCRUD: TfrmVideoCRUD
       Size.Width = 611.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
+      TextSettings.Trimming = None
       Text = '&Comment'
       TabOrder = 11
     end
@@ -164,6 +168,7 @@ inherited frmVideoCRUD: TfrmVideoCRUD
       Size.Width = 611.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
+      TextSettings.Trimming = None
       Text = '&Record date'
       TabOrder = 7
     end
@@ -207,11 +212,13 @@ inherited frmVideoCRUD: TfrmVideoCRUD
       Size.Width = 611.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
+      TextSettings.Trimming = None
       Text = 'Video &number'
       TabOrder = 5
     end
     object lblSerial: TLabel
       Align = Top
+      FocusControl = btnSerialSelect
       Margins.Left = 10.000000000000000000
       Margins.Top = 10.000000000000000000
       Margins.Right = 10.000000000000000000
@@ -221,6 +228,7 @@ inherited frmVideoCRUD: TfrmVideoCRUD
       Size.Width = 611.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
+      TextSettings.Trimming = None
       Text = '&Serial and season'
       TabOrder = 2
     end
@@ -253,8 +261,8 @@ inherited frmVideoCRUD: TfrmVideoCRUD
       Size.Height = 400.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 12
-      Viewport.Width = 611.000000000000000000
-      Viewport.Height = 400.000000000000000000
+      Viewport.Width = 607.000000000000000000
+      Viewport.Height = 396.000000000000000000
     end
     object edtSaisonLabel: TEdit
       Touch.InteractiveGestures = [LongTap, DoubleTap]
@@ -279,6 +287,7 @@ inherited frmVideoCRUD: TfrmVideoCRUD
         Size.PlatformDefault = False
         TabOrder = 4
         Text = '...'
+        TextSettings.Trimming = None
         OnClick = btnSerialSelectClick
       end
     end
@@ -294,6 +303,7 @@ inherited frmVideoCRUD: TfrmVideoCRUD
       Size.Width = 611.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
+      TextSettings.Trimming = None
       Text = '&Keywords'
       TabOrder = 13
     end
@@ -313,11 +323,27 @@ inherited frmVideoCRUD: TfrmVideoCRUD
     end
     object lBottomMargin: TLayout
       Align = Top
-      Position.Y = 893.000000000000000000
+      Position.Y = 935.000000000000000000
       Size.Width = 631.000000000000000000
       Size.Height = 20.000000000000000000
       Size.PlatformDefault = False
+      TabOrder = 16
+    end
+    object btnTubesLinks: TButton
+      Align = Top
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 903.000000000000000000
+      Size.Width = 611.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
       TabOrder = 15
+      Text = 'Edit its tubes'
+      TextSettings.Trimming = None
+      OnClick = btnTubesLinksClick
     end
   end
   object FDTable1: TFDTable
@@ -333,7 +359,6 @@ inherited frmVideoCRUD: TfrmVideoCRUD
       FieldName = 'code'
       Origin = 'code'
       ProviderFlags = [pfInWhere, pfInKey]
-      ReadOnly = True
     end
     object FDTable1id: TWideMemoField
       FieldName = 'id'

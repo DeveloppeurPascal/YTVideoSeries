@@ -1,0 +1,267 @@
+inherited frmVideoTubeLinkCRUD: TfrmVideoTubeLinkCRUD
+  Caption = 'frmVideoTubeLinkCRUD'
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  inherited sRight: TVertScrollBox
+    Viewport.Width = 474.000000000000000000
+    Viewport.Height = 550.000000000000000000
+    inherited lBottomMargin: TLayout
+      Size.Width = 474.000000000000000000
+      TabOrder = 12
+    end
+    object edtKeywords: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 11
+      Position.X = 10.000000000000000000
+      Position.Y = 858.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Size.Width = 454.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object edtLabel: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 1
+      Position.X = 10.000000000000000000
+      Position.Y = 57.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Size.Width = 454.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object edtURL: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 5
+      Position.X = 10.000000000000000000
+      Position.Y = 195.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 37.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Size.Width = 427.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      OnChangeTracking = edtURLChangeTracking
+      object btnOpenURL: TButton
+        Align = Right
+        Margins.Right = -27.000000000000000000
+        Position.X = 432.000000000000000000
+        Size.Width = 22.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = '>'
+        TextSettings.Trimming = None
+        OnClick = btnOpenURLClick
+      end
+    end
+    object lblComment: TLabel
+      Align = Top
+      FocusControl = mmoComment
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 384.000000000000000000
+      Size.Width = 454.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Trimming = None
+      Text = '&Comment'
+      TabOrder = 8
+    end
+    object lblKeywords: TLabel
+      Align = Top
+      FocusControl = edtKeywords
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 831.000000000000000000
+      Size.Width = 454.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Trimming = None
+      Text = '&Keywords'
+      TabOrder = 10
+    end
+    object lblLabel: TLabel
+      Align = Top
+      FocusControl = edtLabel
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 30.000000000000000000
+      Size.Width = 454.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Trimming = None
+      Text = '&Label'
+      TabOrder = 0
+    end
+    object lblURL: TLabel
+      Align = Top
+      FocusControl = edtURL
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 168.000000000000000000
+      Size.Width = 454.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Trimming = None
+      Text = '&URL'
+      TabOrder = 4
+    end
+    object mmoComment: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      DataDetectorTypes = []
+      Align = Top
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 411.000000000000000000
+      Size.Width = 454.000000000000000000
+      Size.Height = 400.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 9
+      Viewport.Width = 454.000000000000000000
+      Viewport.Height = 400.000000000000000000
+    end
+    object lblRecordDate: TLabel
+      Align = Top
+      FocusControl = edtRecordDate
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 99.000000000000000000
+      Size.Width = 454.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Trimming = None
+      Text = '&Record date'
+      TabOrder = 2
+    end
+    object edtRecordDate: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 3
+      Position.X = 10.000000000000000000
+      Position.Y = 126.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Size.Width = 454.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object lblEmbed: TLabel
+      Align = Top
+      FocusControl = mmoEmbed
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 237.000000000000000000
+      Size.Width = 454.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Trimming = None
+      Text = '&Embed'
+      TabOrder = 6
+    end
+    object mmoEmbed: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      DataDetectorTypes = []
+      Align = Top
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 264.000000000000000000
+      Size.Width = 454.000000000000000000
+      Size.Height = 100.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 7
+      Viewport.Width = 454.000000000000000000
+      Viewport.Height = 100.000000000000000000
+    end
+  end
+  inherited FDTable1: TFDTable
+    TableName = 'video_tube'
+    Left = 112
+    Top = 296
+    object FDTable1tube_code: TIntegerField
+      FieldName = 'tube_code'
+      Origin = 'tube_code'
+      Required = True
+    end
+    object FDTable1video_code: TIntegerField
+      FieldName = 'video_code'
+      Origin = 'video_code'
+      Required = True
+    end
+    object FDTable1publish_date: TWideMemoField
+      FieldName = 'publish_date'
+      Origin = 'publish_date'
+      Required = True
+      BlobType = ftWideMemo
+    end
+    object FDTable1url: TWideMemoField
+      FieldName = 'url'
+      Origin = 'url'
+      Required = True
+      BlobType = ftWideMemo
+    end
+    object FDTable1comment: TWideMemoField
+      FieldName = 'comment'
+      Origin = 'comment'
+      Required = True
+      BlobType = ftWideMemo
+    end
+    object FDTable1label: TWideMemoField
+      FieldName = 'label'
+      Origin = 'label'
+      Required = True
+      BlobType = ftWideMemo
+    end
+    object FDTable1embed: TWideMemoField
+      FieldName = 'embed'
+      Origin = 'embed'
+      Required = True
+      BlobType = ftWideMemo
+    end
+    object FDTable1keyword: TWideMemoField
+      FieldName = 'keyword'
+      Origin = 'keyword'
+      Required = True
+      BlobType = ftWideMemo
+    end
+  end
+  inherited BindSourceDB1: TBindSourceDB
+    Left = 96
+    Top = 184
+  end
+end

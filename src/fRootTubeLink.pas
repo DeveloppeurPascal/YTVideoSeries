@@ -34,11 +34,17 @@ uses
   FireDAC.Comp.Client,
   FMX.Bind.Navigator,
   FMX.ListView,
-  uDB;
+  uDB,
+  System.Rtti,
+  System.Bindings.Outputs,
+  FMX.Bind.Editors,
+  Data.Bind.EngExt,
+  FMX.Bind.DBEngExt,
+  Data.Bind.Components,
+  Data.Bind.DBScope;
 
 type
   TfrmRootTubeLink = class(TForm)
-    lTop: TLayout;
     lLeft: TLayout;
     Splitter1: TSplitter;
     sRight: TVertScrollBox;
@@ -47,20 +53,40 @@ type
     BindNavigator1: TBindNavigator;
     lBottom: TLayout;
     btnClose: TButton;
-    Label1: TLabel;
-    FDQuery1: TFDQuery;
+    FDTable1: TFDTable;
+    FDTable1TubeLabel: TStringField;
+    BindSourceDB1: TBindSourceDB;
+    BindingsList1: TBindingsList;
+    LinkListControlToField1: TLinkListControlToField;
     procedure btnCloseClick(Sender: TObject);
-    procedure FormCreate(Sender: TObject);
     procedure FDTable1AfterInsert(DataSet: TDataSet);
+    procedure FDTable1CalcFields(DataSet: TDataSet);
+    procedure ListView1Change(Sender: TObject);
+    procedure FDTable1BeforePost(DataSet: TDataSet);
+    procedure FormCloseQuery(Sender: TObject; var CanClose: Boolean);
   private
     { Déclarations privées }
-    FManualInsert: boolean;
-    FTableName: string;
+  protected
     FFilterFieldName: string;
     FFilterFieldValue: integer;
-  protected
+    /// <summary>
+    /// used to fill the edit fields with default values (or use Live Bindings in descendant forms)
+    /// </summary>
+    procedure initFieldsForInsert; virtual;
+    /// <summary>
+    /// used to fill the edit fields with record fields values (or use Live Bindings in descendant forms)
+    /// </summary>
+    procedure initFieldsFromTable; virtual;
+    /// <summary>
+    /// used to fill the record fields values from the edit fields (or use Live Bindings in descendant forms)
+    /// </summary>
+    procedure FillTableFromFields; virtual;
+    /// <summary>
+    /// Fill the caption of the form
+    /// </summary>
+    function GetLabelFromTheFilter: string; virtual; abstract;
   public
-    constructor Create(AOwner: TComponent; ATableName, AFilterFieldName: string;
+    constructor Create(AOwner: TComponent; AFilterFieldName: string;
       AFilterFieldValue: integer);
   end;
 
@@ -80,38 +106,80 @@ begin
 end;
 
 constructor TfrmRootTubeLink.Create(AOwner: TComponent;
-  ATableName, AFilterFieldName: string; AFilterFieldValue: integer);
+  AFilterFieldName: string; AFilterFieldValue: integer);
 begin
   inherited Create(AOwner);
-  FDQuery1.Open('select ' + ATableName + '.*, tube.label as tube_label from ' +
-    ATableName + ',tube where (' + ATableName + '.tube_code=tube.code) and (' +
-    ATableName + '.' + AFilterFieldName + '=' + AFilterFieldValue.tostring +
-    ') order by tube_label');
+  FFilterFieldName := AFilterFieldName;
+  FFilterFieldValue := AFilterFieldValue;
+
+  caption := GetLabelFromTheFilter;
+
+  FDTable1.Filter := FFilterFieldName + '=' + FFilterFieldValue.tostring;
+  FDTable1.Filtered := true;
+  FDTable1.Open;
 end;
 
 procedure TfrmRootTubeLink.FDTable1AfterInsert(DataSet: TDataSet);
 var
+  SelectedTubeCode: integer;
   code: integer;
 begin
-  // if not FManualInsert then
-  // begin
-  // code := TfrmSelectRecord.FromSerialTable;
-  // if (code >= 0) then
-  // begin
-  // if assigned(ListView1.Selected) then
-  // FDTable1.Edit
-  // else
-  // FDTable1.insert;
-  // FDTable1.FieldByName('serial_code').AsInteger := code;
-  // cancel;
-  // end;
-  // end;
-  // TODO : sélectionner tube pour remplir le champ correspondant et vérifier qu'il n'y est pas déjà
+  SelectedTubeCode := TfrmSelectRecord.FromTubeTable;
+  if (SelectedTubeCode < 0) then
+    FDTable1.Cancel
+  else
+  begin
+    code := DB.FDConnection1.execsqlscalar('select tube_code from ' +
+      FDTable1.TableName + ' where (tube_code=:tc) and (' + FFilterFieldName +
+      '=:fc)', [SelectedTubeCode, FFilterFieldValue]);
+    if code = SelectedTubeCode then
+      FDTable1.Cancel
+    else
+    begin
+      FDTable1.FieldByName('tube_code').AsInteger := SelectedTubeCode;
+      FDTable1.FieldByName(FFilterFieldName).AsInteger := FFilterFieldValue;
+      initFieldsForInsert;
+    end;
+  end;
 end;
 
-procedure TfrmRootTubeLink.FormCreate(Sender: TObject);
+procedure TfrmRootTubeLink.FDTable1BeforePost(DataSet: TDataSet);
 begin
-  FManualInsert := false;
+  FillTableFromFields;
+  DB.InitDefaultFieldsValues(DataSet);
+end;
+
+procedure TfrmRootTubeLink.FDTable1CalcFields(DataSet: TDataSet);
+begin
+  DataSet.FieldByName('TubeLabel').AsString := DB.FDConnection1.execsqlscalar
+    ('select label from tube where code=:c',
+    [DataSet.FieldByName('tube_code').AsInteger]);
+end;
+
+procedure TfrmRootTubeLink.FillTableFromFields;
+begin
+  // Do nothing at this level
+end;
+
+procedure TfrmRootTubeLink.FormCloseQuery(Sender: TObject;
+  var CanClose: Boolean);
+begin
+  // TODO : tester si record en ajout/modif pour demander confirmation avant
+end;
+
+procedure TfrmRootTubeLink.initFieldsForInsert;
+begin
+  // Do nothing at this level
+end;
+
+procedure TfrmRootTubeLink.initFieldsFromTable;
+begin
+  // Do nothing at this level
+end;
+
+procedure TfrmRootTubeLink.ListView1Change(Sender: TObject);
+begin
+  initFieldsFromTable;
 end;
 
 end.

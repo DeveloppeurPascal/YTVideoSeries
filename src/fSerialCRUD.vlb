@@ -54,3 +54,6 @@ Coordinates=760,280,75,51
 [BindNavigator1]
 Coordinates=520,0,90,51
 
+[frmSerialTubeLinkCRUD.FDTable1]
+Visible=False
+

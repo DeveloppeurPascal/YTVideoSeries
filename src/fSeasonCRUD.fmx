@@ -71,6 +71,7 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
       Size.Width = 647.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
+      TextSettings.Trimming = None
       Text = '&Label'
       TabOrder = 0
     end
@@ -100,13 +101,14 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
       Size.Width = 647.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
+      TextSettings.Trimming = None
       Text = '&URL'
-      TabOrder = 9
+      TabOrder = 8
     end
     object edtURL: TEdit
       Touch.InteractiveGestures = [LongTap, DoubleTap]
       Align = Top
-      TabOrder = 10
+      TabOrder = 9
       Position.X = 10.000000000000000000
       Position.Y = 313.000000000000000000
       Margins.Left = 10.000000000000000000
@@ -126,6 +128,7 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
         Size.PlatformDefault = False
         TabOrder = 0
         Text = '>'
+        TextSettings.Trimming = None
         OnClick = btnOpenURLClick
       end
     end
@@ -141,8 +144,9 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
       Size.Width = 647.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
+      TextSettings.Trimming = None
       Text = '&Comment'
-      TabOrder = 11
+      TabOrder = 10
     end
     object mmoComment: TMemo
       Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
@@ -157,7 +161,7 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
       Size.Width = 647.000000000000000000
       Size.Height = 400.000000000000000000
       Size.PlatformDefault = False
-      TabOrder = 12
+      TabOrder = 11
       Viewport.Width = 647.000000000000000000
       Viewport.Height = 400.000000000000000000
     end
@@ -173,6 +177,7 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
       Size.Width = 647.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
+      TextSettings.Trimming = None
       Text = '&Record date'
       TabOrder = 6
     end
@@ -216,6 +221,7 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
       Size.Width = 647.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
+      TextSettings.Trimming = None
       Text = 'Season &number'
       TabOrder = 4
     end
@@ -231,6 +237,7 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
       Size.Width = 647.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
+      TextSettings.Trimming = None
       Text = '&Serial'
       TabOrder = 2
     end
@@ -257,6 +264,7 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
         Size.PlatformDefault = False
         TabOrder = 4
         Text = '...'
+        TextSettings.Trimming = None
         OnClick = btnSerialSelectClick
       end
     end
@@ -272,13 +280,14 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
       Size.Width = 647.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
+      TextSettings.Trimming = None
       Text = '&Keywords'
-      TabOrder = 13
+      TabOrder = 12
     end
     object edtKeywords: TEdit
       Touch.InteractiveGestures = [LongTap, DoubleTap]
       Align = Top
-      TabOrder = 14
+      TabOrder = 13
       Position.X = 10.000000000000000000
       Position.Y = 829.000000000000000000
       Margins.Left = 10.000000000000000000
@@ -300,17 +309,34 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
       Size.Width = 647.000000000000000000
       Size.Height = 22.000000000000000000
       Size.PlatformDefault = False
-      TabOrder = 8
+      TabOrder = 14
       Text = 'Edit its videos'
+      TextSettings.Trimming = None
       OnClick = btnVideosClick
     end
     object lBottomMargin: TLayout
       Align = Top
-      Position.Y = 903.000000000000000000
+      Position.Y = 945.000000000000000000
       Size.Width = 667.000000000000000000
       Size.Height = 20.000000000000000000
       Size.PlatformDefault = False
+      TabOrder = 16
+    end
+    object btnTubesLinks: TButton
+      Align = Top
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 913.000000000000000000
+      Size.Width = 647.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
       TabOrder = 15
+      Text = 'Edit its tubes'
+      TextSettings.Trimming = None
+      OnClick = btnTubesLinksClick
     end
   end
   object FDTable1: TFDTable
@@ -331,7 +357,6 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
       FieldName = 'code'
       Origin = 'code'
       ProviderFlags = [pfInWhere, pfInKey]
-      ReadOnly = True
     end
     object FDTable1id: TWideMemoField
       FieldName = 'id'

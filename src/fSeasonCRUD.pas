@@ -96,12 +96,14 @@ type
     LinkControlToField7: TLinkControlToField;
     btnVideos: TButton;
     lBottomMargin: TLayout;
+    btnTubesLinks: TButton;
     procedure FDTable1CalcFields(DataSet: TDataSet);
     procedure btnOpenURLClick(Sender: TObject);
     procedure edtURLChangeTracking(Sender: TObject);
     procedure btnSerialSelectClick(Sender: TObject);
     procedure cbSerialFilterChange(Sender: TObject);
     procedure btnVideosClick(Sender: TObject);
+    procedure btnTubesLinksClick(Sender: TObject);
   private
   protected
     procedure SetTableFilter;
@@ -120,7 +122,8 @@ uses
   u_urlOpen,
   fSelectRecord,
   fMain,
-  fVideoCRUD;
+  fVideoCRUD,
+  fSeasonTubeLinkCRUD;
 
 procedure TfrmSeasonCRUD.btnOpenURLClick(Sender: TObject);
 begin
@@ -140,6 +143,19 @@ begin
     else
       FDTable1.insert;
     FDTable1.FieldByName('serial_code').AsInteger := code;
+  end;
+end;
+
+procedure TfrmSeasonCRUD.btnTubesLinksClick(Sender: TObject);
+var
+  frm: TfrmSeasonTubeLinkCRUD;
+begin
+  frm := TfrmSeasonTubeLinkCRUD.Create(self, 'season_code',
+    FDTable1.FieldByName('code').AsInteger);
+  try
+    frm.ShowModal;
+  finally
+    frm.Free;
   end;
 end;
 

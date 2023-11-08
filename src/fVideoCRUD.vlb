@@ -121,3 +121,6 @@ Coordinates=970,60,75,51
 [BindNavigator1]
 Coordinates=120,20,90,51
 
+[frmVideoTubeLinkCRUD.FDTable1]
+Visible=False
+

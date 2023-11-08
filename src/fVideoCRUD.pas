@@ -101,6 +101,7 @@ type
     LinkControlToField8: TLinkControlToField;
     btnSerialSelect: TButton;
     lBottomMargin: TLayout;
+    btnTubesLinks: TButton;
     procedure FDTable1CalcFields(DataSet: TDataSet);
     procedure btnSerialSelectClick(Sender: TObject);
     procedure btnOpenURLClick(Sender: TObject);
@@ -108,6 +109,7 @@ type
     procedure cbSerialFilterChange(Sender: TObject);
     procedure cbSeasonFilterChange(Sender: TObject);
     procedure FDTable1AfterInsert(DataSet: TDataSet);
+    procedure btnTubesLinksClick(Sender: TObject);
   private
   protected
     procedure SetTableFilter;
@@ -127,7 +129,9 @@ implementation
 {$R *.fmx}
 
 uses
-  u_urlOpen, fSelectRecord;
+  u_urlOpen,
+  fSelectRecord,
+  fVideoTubeLinkCRUD;
 
 procedure TfrmVideoCRUD.btnOpenURLClick(Sender: TObject);
 begin
@@ -150,6 +154,19 @@ begin
     FDTable1.FieldByName('serial_code').AsInteger :=
       DB.FDConnection1.ExecSQLScalar
       ('select serial_code from season where code=:c', [code]);
+  end;
+end;
+
+procedure TfrmVideoCRUD.btnTubesLinksClick(Sender: TObject);
+var
+  frm: TfrmVideoTubeLinkCRUD;
+begin
+  frm := TfrmVideoTubeLinkCRUD.Create(self, 'video_code',
+    FDTable1.FieldByName('code').AsInteger);
+  try
+    frm.ShowModal;
+  finally
+    frm.Free;
   end;
 end;
 

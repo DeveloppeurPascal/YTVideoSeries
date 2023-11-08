@@ -23,7 +23,7 @@ object frmSelectRecord: TfrmSelectRecord
     TabOrder = 0
     ItemAppearanceObjects.ItemObjects.Accessory.Visible = False
     ItemAppearanceObjects.ItemObjects.Image.Visible = False
-    OnItemClick = ListView1ItemClick
+    OnChange = ListView1Change
     SearchVisible = True
   end
   object GridPanelLayout1: TGridPanelLayout
@@ -67,9 +67,11 @@ object frmSelectRecord: TfrmSelectRecord
       Size.PlatformDefault = False
       TabOrder = 0
       Text = '&Select'
+      TextSettings.Trimming = None
     end
     object btnCancel: TButton
       Align = Client
+      Cancel = True
       ModalResult = 2
       Margins.Left = 5.000000000000000000
       Margins.Top = 5.000000000000000000
@@ -80,6 +82,7 @@ object frmSelectRecord: TfrmSelectRecord
       Size.PlatformDefault = False
       TabOrder = 1
       Text = '&Cancel'
+      TextSettings.Trimming = None
     end
   end
   object FDQuery1: TFDQuery

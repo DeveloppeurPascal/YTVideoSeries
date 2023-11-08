@@ -75,10 +75,12 @@ type
     btnSeasons: TButton;
     btnVideos: TButton;
     lBottomMargin: TLayout;
+    btnTubesLinks: TButton;
     procedure btnOpenURLClick(Sender: TObject);
     procedure edtURLChangeTracking(Sender: TObject);
     procedure btnSeasonsClick(Sender: TObject);
     procedure btnVideosClick(Sender: TObject);
+    procedure btnTubesLinksClick(Sender: TObject);
   private
     { Déclarations privées }
   public
@@ -95,7 +97,8 @@ uses
   u_urlOpen,
   fMain,
   fSeasonCRUD,
-  fVideoCRUD;
+  fVideoCRUD,
+  fSerialTubeLinkCRUD;
 
 procedure TfrmSerialCRUD.btnOpenURLClick(Sender: TObject);
 begin
@@ -108,6 +111,19 @@ begin
   // TODO : tester si record en ajout/modif pour demander confirmation avant
   frmmain.CurrentScreen := TfrmSeasonCRUD.GetInstance<TfrmSeasonCRUD>(self,
     FDTable1.FieldByName('code').AsInteger);
+end;
+
+procedure TfrmSerialCRUD.btnTubesLinksClick(Sender: TObject);
+var
+  frm: TfrmSerialTubeLinkCRUD;
+begin
+  frm := TfrmSerialTubeLinkCRUD.Create(self, 'serial_code',
+    FDTable1.FieldByName('code').AsInteger);
+  try
+    frm.ShowModal;
+  finally
+    frm.Free;
+  end;
 end;
 
 procedure TfrmSerialCRUD.btnVideosClick(Sender: TObject);

@@ -1,8 +1,5 @@
 unit fSelectRecord;
 
-// TODO : prérenseigner la sélection avec la valeur actuelle (si elle existe)
-// TODO : ressortir aussi le libellé de la ligne pour ne pas le recharger après
-
 interface
 
 uses
@@ -55,8 +52,7 @@ type
     BindingsList1: TBindingsList;
     LinkListControlToField1: TLinkListControlToField;
     procedure FormCreate(Sender: TObject);
-    procedure ListView1ItemClick(const Sender: TObject;
-      const AItem: TListViewItem);
+    procedure ListView1Change(Sender: TObject);
   private
     { Déclarations privées }
     class function CreateAndShowSelectForm(ASQL: string): integer;
@@ -78,6 +74,13 @@ begin
   frm := TfrmSelectRecord.Create(nil);
   try
     frm.FDQuery1.Open(ASQL);
+    if frm.ListView1.ItemCount > 0 then
+    begin
+      // TODO : prérenseigner la sélection avec la valeur actuelle (si elle existe)
+      frm.ListView1.Itemindex := 0; // don't call onChange event
+      if assigned(frm.ListView1.OnChange) then
+        frm.ListView1.OnChange(frm.ListView1);
+    end;
     case frm.ShowModal of
       mrCancel:
         result := -1;
@@ -125,10 +128,9 @@ begin
   end;
 end;
 
-procedure TfrmSelectRecord.ListView1ItemClick(const Sender: TObject;
-  const AItem: TListViewItem);
+procedure TfrmSelectRecord.ListView1Change(Sender: TObject);
 begin
-  btnSelect.Enabled := true;
+  btnSelect.Enabled := ListView1.Itemindex >= 0;
 end;
 
 end.

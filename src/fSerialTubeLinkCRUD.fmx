@@ -1,55 +1,15 @@
-inherited frmSerialCRUD: TfrmSerialCRUD
-  Size.Height = 713.000000000000000000
-  object lLeft: TLayout
-    Align = Left
-    Size.Width = 300.000000000000000000
-    Size.Height = 713.000000000000000000
-    Size.PlatformDefault = False
-    TabOrder = 0
-    object ListView1: TListView
-      ItemAppearanceClassName = 'TImageListItemBottomDetailAppearance'
-      ItemEditAppearanceClassName = 'TImageListItemBottomDetailShowCheckAppearance'
-      HeaderAppearanceClassName = 'TListHeaderObjects'
-      FooterAppearanceClassName = 'TListHeaderObjects'
-      AlternatingColors = True
-      Align = Client
-      Size.Width = 300.000000000000000000
-      Size.Height = 688.000000000000000000
-      Size.PlatformDefault = False
-      TabOrder = 0
-      ItemAppearanceObjects.ItemObjects.Accessory.Visible = False
-      ItemAppearanceObjects.ItemObjects.Image.Visible = False
-      SearchVisible = True
-    end
-    object BindNavigator1: TBindNavigator
-      Align = Bottom
-      Position.Y = 688.000000000000000000
-      Size.Width = 300.000000000000000000
-      Size.Height = 25.000000000000000000
-      Size.PlatformDefault = False
-      TabOrder = 1
-      DataSource = BindSourceDB1
-      xRadius = 4.000000000000000000
-      yRadius = 4.000000000000000000
-    end
-  end
-  object Splitter1: TSplitter
-    Align = Left
-    Cursor = crHSplit
-    MinSize = 20.000000000000000000
-    Position.X = 300.000000000000000000
-    Size.Width = 10.000000000000000000
-    Size.Height = 713.000000000000000000
-    Size.PlatformDefault = False
-  end
-  object sbRight: TVertScrollBox
-    Align = Client
-    Size.Width = 490.000000000000000000
-    Size.Height = 713.000000000000000000
-    Size.PlatformDefault = False
-    TabOrder = 5
+inherited frmSerialTubeLinkCRUD: TfrmSerialTubeLinkCRUD
+  Caption = 'frmRootTubeLink1'
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  inherited sRight: TVertScrollBox
     Viewport.Width = 474.000000000000000000
-    Viewport.Height = 713.000000000000000000
+    Viewport.Height = 550.000000000000000000
+    inherited lBottomMargin: TLayout
+      Position.Y = 654.000000000000000000
+      Size.Width = 474.000000000000000000
+      TabOrder = 8
+    end
     object lblLabel: TLabel
       Align = Top
       FocusControl = edtLabel
@@ -153,8 +113,8 @@ inherited frmSerialCRUD: TfrmSerialCRUD
       Size.Height = 400.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 5
-      Viewport.Width = 454.000000000000000000
-      Viewport.Height = 400.000000000000000000
+      Viewport.Width = 450.000000000000000000
+      Viewport.Height = 396.000000000000000000
     end
     object lblKeywords: TLabel
       Align = Top
@@ -186,115 +146,71 @@ inherited frmSerialCRUD: TfrmSerialCRUD
       Size.Height = 22.000000000000000000
       Size.PlatformDefault = False
     end
-    object btnSeasons: TButton
-      Align = Top
-      Margins.Left = 10.000000000000000000
-      Margins.Top = 10.000000000000000000
-      Margins.Right = 10.000000000000000000
-      Margins.Bottom = 10.000000000000000000
-      Position.X = 10.000000000000000000
-      Position.Y = 664.000000000000000000
-      Size.Width = 454.000000000000000000
-      Size.Height = 22.000000000000000000
-      Size.PlatformDefault = False
-      TabOrder = 8
-      Text = 'Edit its seasons'
-      TextSettings.Trimming = None
-      OnClick = btnSeasonsClick
-    end
-    object btnVideos: TButton
-      Align = Top
-      Margins.Left = 10.000000000000000000
-      Margins.Top = 10.000000000000000000
-      Margins.Right = 10.000000000000000000
-      Margins.Bottom = 10.000000000000000000
-      Position.X = 10.000000000000000000
-      Position.Y = 706.000000000000000000
-      Size.Width = 454.000000000000000000
-      Size.Height = 22.000000000000000000
-      Size.PlatformDefault = False
-      TabOrder = 9
-      Text = 'Edit its videos'
-      TextSettings.Trimming = None
-      OnClick = btnVideosClick
-    end
-    object lBottomMargin: TLayout
-      Align = Top
-      Position.Y = 780.000000000000000000
-      Size.Width = 474.000000000000000000
-      Size.Height = 20.000000000000000000
-      Size.PlatformDefault = False
-      TabOrder = 11
-    end
-    object btnTubesLinks: TButton
-      Align = Top
-      Margins.Left = 10.000000000000000000
-      Margins.Top = 10.000000000000000000
-      Margins.Right = 10.000000000000000000
-      Margins.Bottom = 10.000000000000000000
-      Position.X = 10.000000000000000000
-      Position.Y = 748.000000000000000000
-      Size.Width = 454.000000000000000000
-      Size.Height = 22.000000000000000000
-      Size.PlatformDefault = False
-      TabOrder = 10
-      Text = 'Edit its tubes'
-      TextSettings.Trimming = None
-      OnClick = btnTubesLinksClick
-    end
   end
-  object FDTable1: TFDTable
+  inherited FDTable1: TFDTable
     Active = True
-    IndexName = 'serial_by_label'
-    Connection = db.FDConnection1
-    ResourceOptions.AssignedValues = [rvEscapeExpand]
-    TableName = 'serial'
-    Left = 64
-    Top = 208
-  end
-  object BindSourceDB1: TBindSourceDB
-    DataSet = FDTable1
-    ScopeMappings = <>
-    Left = 88
-    Top = 304
-  end
-  object BindingsList1: TBindingsList
-    Methods = <>
-    OutputConverters = <>
-    Left = 20
-    Top = 5
-    object LinkListControlToField1: TLinkListControlToField
-      Category = 'Liaisons rapides'
-      DataSource = BindSourceDB1
-      FieldName = 'label'
-      Control = ListView1
-      FillExpressions = <
-        item
-          SourceMemberName = 'url'
-          ControlMemberName = 'Detail'
-        end>
-      FillHeaderExpressions = <>
-      FillBreakGroups = <>
+    TableName = 'serial_tube'
+    Left = 112
+    Top = 296
+    object FDTable1tube_code: TIntegerField
+      FieldName = 'tube_code'
+      Origin = 'tube_code'
+      Required = True
     end
+    object FDTable1serial_code: TIntegerField
+      FieldName = 'serial_code'
+      Origin = 'serial_code'
+      Required = True
+    end
+    object FDTable1url: TWideMemoField
+      FieldName = 'url'
+      Origin = 'url'
+      Required = True
+      BlobType = ftWideMemo
+    end
+    object FDTable1comment: TWideMemoField
+      FieldName = 'comment'
+      Origin = 'comment'
+      Required = True
+      BlobType = ftWideMemo
+    end
+    object FDTable1label: TWideMemoField
+      FieldName = 'label'
+      Origin = 'label'
+      Required = True
+      BlobType = ftWideMemo
+    end
+    object FDTable1keyword: TWideMemoField
+      FieldName = 'keyword'
+      Origin = 'keyword'
+      Required = True
+      BlobType = ftWideMemo
+    end
+  end
+  inherited BindSourceDB1: TBindSourceDB
+    Left = 80
+    Top = 176
+  end
+  inherited BindingsList1: TBindingsList
     object LinkControlToField1: TLinkControlToField
-      Category = 'Liaisons rapides'
-      DataSource = BindSourceDB1
-      FieldName = 'label'
-      Control = edtLabel
-      Track = False
-    end
-    object LinkControlToField2: TLinkControlToField
       Category = 'Liaisons rapides'
       DataSource = BindSourceDB1
       FieldName = 'url'
       Control = edtURL
       Track = False
     end
-    object LinkControlToField3: TLinkControlToField
+    object LinkControlToField2: TLinkControlToField
       Category = 'Liaisons rapides'
       DataSource = BindSourceDB1
       FieldName = 'comment'
       Control = mmoComment
+      Track = False
+    end
+    object LinkControlToField3: TLinkControlToField
+      Category = 'Liaisons rapides'
+      DataSource = BindSourceDB1
+      FieldName = 'label'
+      Control = edtLabel
       Track = False
     end
     object LinkControlToField4: TLinkControlToField
