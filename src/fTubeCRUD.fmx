@@ -29,6 +29,7 @@ inherited frmTubeCRUD: TfrmTubeCRUD
       TabOrder = 0
       ItemAppearanceObjects.ItemObjects.Accessory.Visible = False
       ItemAppearanceObjects.ItemObjects.Image.Visible = False
+      CanSwipeDelete = False
       SearchVisible = True
     end
     object BindNavigator1: TBindNavigator
@@ -63,6 +64,7 @@ inherited frmTubeCRUD: TfrmTubeCRUD
       Size.Width = 694.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
+      TextSettings.Trimming = None
       Text = '&Label'
       TabOrder = 0
     end
@@ -92,6 +94,7 @@ inherited frmTubeCRUD: TfrmTubeCRUD
       Size.Width = 694.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
+      TextSettings.Trimming = None
       Text = '&URL'
       TabOrder = 2
     end
@@ -118,6 +121,7 @@ inherited frmTubeCRUD: TfrmTubeCRUD
         Size.PlatformDefault = False
         TabOrder = 0
         Text = '>'
+        TextSettings.Trimming = None
         OnClick = btnOpenURLClick
       end
     end
@@ -133,6 +137,7 @@ inherited frmTubeCRUD: TfrmTubeCRUD
       Size.Width = 694.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
+      TextSettings.Trimming = None
       Text = 'Template for generated &comments'
       TabOrder = 6
     end
@@ -165,6 +170,7 @@ inherited frmTubeCRUD: TfrmTubeCRUD
       Size.Width = 694.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
+      TextSettings.Trimming = None
       Text = '&Template for generated labels'
       TabOrder = 4
     end
@@ -180,6 +186,7 @@ inherited frmTubeCRUD: TfrmTubeCRUD
       Size.Width = 694.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
+      TextSettings.Trimming = None
       Text = 'Template for generated &keywords'
       TabOrder = 8
     end

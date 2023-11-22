@@ -19,6 +19,7 @@ inherited frmSerialCRUD: TfrmSerialCRUD
       TabOrder = 0
       ItemAppearanceObjects.ItemObjects.Accessory.Visible = False
       ItemAppearanceObjects.ItemObjects.Image.Visible = False
+      CanSwipeDelete = False
       SearchVisible = True
     end
     object BindNavigator1: TBindNavigator
@@ -153,8 +154,8 @@ inherited frmSerialCRUD: TfrmSerialCRUD
       Size.Height = 400.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 5
-      Viewport.Width = 454.000000000000000000
-      Viewport.Height = 400.000000000000000000
+      Viewport.Width = 450.000000000000000000
+      Viewport.Height = 396.000000000000000000
     end
     object lblKeywords: TLabel
       Align = Top

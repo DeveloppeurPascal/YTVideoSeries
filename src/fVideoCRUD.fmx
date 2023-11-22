@@ -47,6 +47,7 @@ inherited frmVideoCRUD: TfrmVideoCRUD
       Size.PlatformDefault = False
       TabOrder = 2
       ItemAppearanceObjects.ItemObjects.Image.Visible = False
+      CanSwipeDelete = False
       SearchVisible = True
     end
   end

@@ -28,6 +28,7 @@ object frmRootTubeLink: TfrmRootTubeLink
       Size.PlatformDefault = False
       TabOrder = 0
       ItemAppearanceObjects.ItemObjects.Accessory.Visible = False
+      CanSwipeDelete = False
       OnChange = ListView1Change
       SearchVisible = True
     end

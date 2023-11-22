@@ -24,6 +24,7 @@ object frmSelectRecord: TfrmSelectRecord
     ItemAppearanceObjects.ItemObjects.Accessory.Visible = False
     ItemAppearanceObjects.ItemObjects.Image.Visible = False
     OnDblClick = ListView1DblClick
+    CanSwipeDelete = False
     OnChange = ListView1Change
     SearchVisible = True
   end

@@ -31,6 +31,7 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
       TabOrder = 1
       ItemAppearanceObjects.ItemObjects.Accessory.Visible = False
       ItemAppearanceObjects.ItemObjects.Image.Visible = False
+      CanSwipeDelete = False
       SearchVisible = True
     end
     object cbSerialFilter: TComboBox
@@ -162,8 +163,8 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
       Size.Height = 400.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 11
-      Viewport.Width = 647.000000000000000000
-      Viewport.Height = 400.000000000000000000
+      Viewport.Width = 643.000000000000000000
+      Viewport.Height = 396.000000000000000000
     end
     object lblRecordDate: TLabel
       Align = Top
