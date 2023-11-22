@@ -23,6 +23,7 @@ object frmSelectRecord: TfrmSelectRecord
     TabOrder = 0
     ItemAppearanceObjects.ItemObjects.Accessory.Visible = False
     ItemAppearanceObjects.ItemObjects.Image.Visible = False
+    OnDblClick = ListView1DblClick
     OnChange = ListView1Change
     SearchVisible = True
   end

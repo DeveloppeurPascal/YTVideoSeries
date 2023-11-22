@@ -53,6 +53,7 @@ type
     LinkListControlToField1: TLinkListControlToField;
     procedure FormCreate(Sender: TObject);
     procedure ListView1Change(Sender: TObject);
+    procedure ListView1DblClick(Sender: TObject);
   private
     { Déclarations privées }
     class function CreateAndShowSelectForm(ASQL: string): integer;
@@ -131,6 +132,11 @@ end;
 procedure TfrmSelectRecord.ListView1Change(Sender: TObject);
 begin
   btnSelect.Enabled := ListView1.Itemindex >= 0;
+end;
+
+procedure TfrmSelectRecord.ListView1DblClick(Sender: TObject);
+begin
+  modalresult := mrOk;
 end;
 
 end.
