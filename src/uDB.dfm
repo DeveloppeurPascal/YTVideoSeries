@@ -10,6 +10,7 @@ object db: Tdb
       'LockingMode=Normal'
       'DriverID=SQLite')
     ConnectedStoredUsage = [auDesignTime]
+    Connected = True
     LoginPrompt = False
     AfterConnect = FDConnection1AfterConnect
     BeforeConnect = FDConnection1BeforeConnect
@@ -208,6 +209,11 @@ object db: Tdb
             ';'
           'ALTER TABLE "video" add "keyword" TEXT NOT NULL DEFAULT "";'
           'ALTER TABLE "video_tube" add "keyword" TEXT NOT NULL DEFAULT "";')
+      end
+      item
+        Name = 'v4'
+        SQL.Strings = (
+          'alter table tube drop template;')
       end>
     Connection = FDConnection1
     Params = <>
