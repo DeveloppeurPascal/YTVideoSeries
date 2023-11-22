@@ -22,8 +22,6 @@ x => CRUD
 x => infos tubes associés
 
 
-
-* génération du titre, du descriptif et des mots-clés d'un épisode pour un tube à copier/coller sur sa fiche lors de la publication de la vidéo
 * export de la base vers backup (ZIP) (#6)
 * import de la base depuis un backup (ZIP) (#7)
 * export de la base en JSON (#8)
@@ -32,10 +30,6 @@ x => infos tubes associés
 * mise en place d'un éventuel système de plugin pour les tubes
 
 * traiter TODO des codes sources
-
-
-* traiter double clic dans la fenêtre de sélection (même action que bouton SELECT si actif)
-
 
 * le jour où un écran de paramétrage existera, ajouter un truc pour changer la hauteur des MEMO (comment et/ou template et/ou EMBED)
 
