@@ -74,6 +74,8 @@ type
     procedure FormCreate(Sender: TObject);
     procedure edtURLChangeTracking(Sender: TObject);
     procedure btnOpenURLClick(Sender: TObject);
+    procedure ListView1ButtonClick(const Sender: TObject;
+      const AItem: TListItem; const AObject: TListItemSimpleControl);
   private
 
   protected
@@ -115,6 +117,12 @@ function TfrmVideoTubeLinkCRUD.GetLabelFromTheFilter: string;
 begin
   result := DB.FDConnection1.ExecSQLScalar
     ('select label from video where code=:c', [FFilterFieldValue]);
+end;
+
+procedure TfrmVideoTubeLinkCRUD.ListView1ButtonClick(const Sender: TObject;
+  const AItem: TListItem; const AObject: TListItemSimpleControl);
+begin
+// TODO : generation texte de l'épisode pour ce tube
 end;
 
 end.

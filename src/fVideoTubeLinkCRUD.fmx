@@ -2,6 +2,14 @@ inherited frmVideoTubeLinkCRUD: TfrmVideoTubeLinkCRUD
   Caption = 'frmVideoTubeLinkCRUD'
   OnCreate = FormCreate
   DesignerMasterStyle = 0
+  inherited lLeft: TLayout
+    inherited ListView1: TListView
+      ItemAppearanceClassName = 'TImageListItemRightButtonAppearance'
+      ItemEditAppearanceClassName = 'TImageListItemRightButtonDeleteAppearance'
+      ItemAppearanceObjects.ItemObjects.TextButton.Text = 'Export'
+      OnButtonClick = ListView1ButtonClick
+    end
+  end
   inherited sRight: TVertScrollBox
     Viewport.Width = 474.000000000000000000
     Viewport.Height = 550.000000000000000000
@@ -142,8 +150,8 @@ inherited frmVideoTubeLinkCRUD: TfrmVideoTubeLinkCRUD
       Size.Height = 400.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 9
-      Viewport.Width = 454.000000000000000000
-      Viewport.Height = 400.000000000000000000
+      Viewport.Width = 450.000000000000000000
+      Viewport.Height = 396.000000000000000000
     end
     object lblRecordDate: TLabel
       Align = Top
@@ -205,8 +213,8 @@ inherited frmVideoTubeLinkCRUD: TfrmVideoTubeLinkCRUD
       Size.Height = 100.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 7
-      Viewport.Width = 454.000000000000000000
-      Viewport.Height = 100.000000000000000000
+      Viewport.Width = 450.000000000000000000
+      Viewport.Height = 96.000000000000000000
     end
   end
   inherited FDTable1: TFDTable
