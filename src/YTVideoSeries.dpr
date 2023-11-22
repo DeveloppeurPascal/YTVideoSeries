@@ -18,7 +18,8 @@ uses
   fRootTubeLink in 'fRootTubeLink.pas' {frmRootTubeLink},
   fSerialTubeLinkCRUD in 'fSerialTubeLinkCRUD.pas' {frmSerialTubeLinkCRUD},
   fSeasonTubeLinkCRUD in 'fSeasonTubeLinkCRUD.pas' {frmSeasonTubeLinkCRUD},
-  fVideoTubeLinkCRUD in 'fVideoTubeLinkCRUD.pas' {frmVideoTubeLinkCRUD};
+  fVideoTubeLinkCRUD in 'fVideoTubeLinkCRUD.pas' {frmVideoTubeLinkCRUD},
+  uBuilder in 'uBuilder.pas';
 
 {$R *.res}
 

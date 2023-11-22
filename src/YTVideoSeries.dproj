@@ -410,6 +410,7 @@
             <Form>frmVideoTubeLinkCRUD</Form>
             <FormType>fmx</FormType>
         </DCCReference>
+        <DCCReference Include="uBuilder.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
