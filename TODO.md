@@ -34,5 +34,3 @@ x => infos tubes associés
 * le jour où un écran de paramétrage existera, ajouter un truc pour changer la hauteur des MEMO (comment et/ou template et/ou EMBED)
 
 * changer d'icone (trop moche)
-
-* sur chaque écran de saisie ayant des boutons liés à la fiche active, les sortir du TVertScrollBox
