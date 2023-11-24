@@ -100,7 +100,7 @@ type
     FDTable1keyword: TWideMemoField;
     LinkControlToField8: TLinkControlToField;
     btnSerialSelect: TButton;
-    lBottomMargin: TLayout;
+    lRight: TLayout;
     btnTubesLinks: TButton;
     procedure FDTable1CalcFields(DataSet: TDataSet);
     procedure btnSerialSelectClick(Sender: TObject);

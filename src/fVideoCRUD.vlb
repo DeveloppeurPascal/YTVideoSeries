@@ -124,3 +124,6 @@ Coordinates=120,20,90,51
 [frmVideoTubeLinkCRUD.FDTable1]
 Visible=False
 
+[frmSelectRecord.FDQuery1]
+Visible=False
+

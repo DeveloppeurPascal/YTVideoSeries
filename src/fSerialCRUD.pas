@@ -72,10 +72,10 @@ type
     lblKeywords: TLabel;
     edtKeywords: TEdit;
     LinkControlToField4: TLinkControlToField;
-    btnSeasons: TButton;
-    btnVideos: TButton;
-    lBottomMargin: TLayout;
+    lRight: TLayout;
     btnTubesLinks: TButton;
+    btnVideos: TButton;
+    btnSeasons: TButton;
     procedure btnOpenURLClick(Sender: TObject);
     procedure edtURLChangeTracking(Sender: TObject);
     procedure btnSeasonsClick(Sender: TObject);

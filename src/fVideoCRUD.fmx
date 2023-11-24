@@ -60,288 +60,288 @@ inherited frmVideoCRUD: TfrmVideoCRUD
     Size.Height = 874.000000000000000000
     Size.PlatformDefault = False
   end
-  object sbRight: TVertScrollBox
+  object lRight: TLayout
     Align = Client
     Size.Width = 647.000000000000000000
     Size.Height = 874.000000000000000000
     Size.PlatformDefault = False
-    TabOrder = 2
-    Viewport.Width = 631.000000000000000000
-    Viewport.Height = 874.000000000000000000
-    object lblLabel: TLabel
-      Align = Top
-      FocusControl = edtLabel
-      Margins.Left = 10.000000000000000000
-      Margins.Top = 10.000000000000000000
-      Margins.Right = 10.000000000000000000
-      Margins.Bottom = 5.000000000000000000
-      Position.X = 10.000000000000000000
-      Position.Y = 10.000000000000000000
-      Size.Width = 611.000000000000000000
-      Size.Height = 17.000000000000000000
+    TabOrder = 5
+    object sbRight: TVertScrollBox
+      Align = Client
+      Size.Width = 647.000000000000000000
+      Size.Height = 832.000000000000000000
       Size.PlatformDefault = False
-      TextSettings.Trimming = None
-      Text = '&Label'
       TabOrder = 0
-    end
-    object edtLabel: TEdit
-      Touch.InteractiveGestures = [LongTap, DoubleTap]
-      Align = Top
-      TabOrder = 1
-      Position.X = 10.000000000000000000
-      Position.Y = 37.000000000000000000
-      Margins.Left = 10.000000000000000000
-      Margins.Top = 5.000000000000000000
-      Margins.Right = 10.000000000000000000
-      Margins.Bottom = 10.000000000000000000
-      Size.Width = 611.000000000000000000
-      Size.Height = 22.000000000000000000
-      Size.PlatformDefault = False
-    end
-    object lblURL: TLabel
-      Align = Top
-      FocusControl = edtURL
-      Margins.Left = 10.000000000000000000
-      Margins.Top = 10.000000000000000000
-      Margins.Right = 10.000000000000000000
-      Margins.Bottom = 5.000000000000000000
-      Position.X = 10.000000000000000000
-      Position.Y = 318.000000000000000000
-      Size.Width = 611.000000000000000000
-      Size.Height = 17.000000000000000000
-      Size.PlatformDefault = False
-      TextSettings.Trimming = None
-      Text = '&URL'
-      TabOrder = 9
-    end
-    object edtURL: TEdit
-      Touch.InteractiveGestures = [LongTap, DoubleTap]
-      Align = Top
-      TabOrder = 10
-      Position.X = 10.000000000000000000
-      Position.Y = 345.000000000000000000
-      Margins.Left = 10.000000000000000000
-      Margins.Top = 5.000000000000000000
-      Margins.Right = 37.000000000000000000
-      Margins.Bottom = 10.000000000000000000
-      Size.Width = 584.000000000000000000
-      Size.Height = 22.000000000000000000
-      Size.PlatformDefault = False
-      OnChangeTracking = edtURLChangeTracking
-      object btnOpenURL: TButton
-        Align = Right
-        Margins.Right = -27.000000000000000000
-        Position.X = 589.000000000000000000
-        Size.Width = 22.000000000000000000
-        Size.Height = 22.000000000000000000
+      Viewport.Width = 631.000000000000000000
+      Viewport.Height = 832.000000000000000000
+      object lblLabel: TLabel
+        Align = Top
+        FocusControl = edtLabel
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 10.000000000000000000
+        Size.Width = 611.000000000000000000
+        Size.Height = 17.000000000000000000
         Size.PlatformDefault = False
+        TextSettings.Trimming = None
+        Text = '&Label'
         TabOrder = 0
-        Text = '>'
-        TextSettings.Trimming = None
-        OnClick = btnOpenURLClick
       end
-    end
-    object lblComment: TLabel
-      Align = Top
-      FocusControl = mmoComment
-      Margins.Left = 10.000000000000000000
-      Margins.Top = 10.000000000000000000
-      Margins.Right = 10.000000000000000000
-      Margins.Bottom = 5.000000000000000000
-      Position.X = 10.000000000000000000
-      Position.Y = 387.000000000000000000
-      Size.Width = 611.000000000000000000
-      Size.Height = 17.000000000000000000
-      Size.PlatformDefault = False
-      TextSettings.Trimming = None
-      Text = '&Comment'
-      TabOrder = 11
-    end
-    object lblRecordDate: TLabel
-      Align = Top
-      FocusControl = edtRecordDate
-      Margins.Left = 10.000000000000000000
-      Margins.Top = 10.000000000000000000
-      Margins.Right = 10.000000000000000000
-      Margins.Bottom = 5.000000000000000000
-      Position.X = 10.000000000000000000
-      Position.Y = 249.000000000000000000
-      Size.Width = 611.000000000000000000
-      Size.Height = 17.000000000000000000
-      Size.PlatformDefault = False
-      TextSettings.Trimming = None
-      Text = '&Record date'
-      TabOrder = 7
-    end
-    object edtRecordDate: TEdit
-      Touch.InteractiveGestures = [LongTap, DoubleTap]
-      Align = Top
-      TabOrder = 8
-      Position.X = 10.000000000000000000
-      Position.Y = 276.000000000000000000
-      Margins.Left = 10.000000000000000000
-      Margins.Top = 5.000000000000000000
-      Margins.Right = 10.000000000000000000
-      Margins.Bottom = 10.000000000000000000
-      Size.Width = 611.000000000000000000
-      Size.Height = 22.000000000000000000
-      Size.PlatformDefault = False
-    end
-    object edtVideoNumber: TEdit
-      Touch.InteractiveGestures = [LongTap, DoubleTap]
-      Align = Top
-      TabOrder = 6
-      Position.X = 10.000000000000000000
-      Position.Y = 207.000000000000000000
-      Margins.Left = 10.000000000000000000
-      Margins.Top = 5.000000000000000000
-      Margins.Right = 10.000000000000000000
-      Margins.Bottom = 10.000000000000000000
-      Size.Width = 611.000000000000000000
-      Size.Height = 22.000000000000000000
-      Size.PlatformDefault = False
-    end
-    object lblVideoNumber: TLabel
-      Align = Top
-      FocusControl = edtVideoNumber
-      Margins.Left = 10.000000000000000000
-      Margins.Top = 10.000000000000000000
-      Margins.Right = 10.000000000000000000
-      Margins.Bottom = 5.000000000000000000
-      Position.X = 10.000000000000000000
-      Position.Y = 180.000000000000000000
-      Size.Width = 611.000000000000000000
-      Size.Height = 17.000000000000000000
-      Size.PlatformDefault = False
-      TextSettings.Trimming = None
-      Text = 'Video &number'
-      TabOrder = 5
-    end
-    object lblSerial: TLabel
-      Align = Top
-      FocusControl = btnSerialSelect
-      Margins.Left = 10.000000000000000000
-      Margins.Top = 10.000000000000000000
-      Margins.Right = 10.000000000000000000
-      Margins.Bottom = 5.000000000000000000
-      Position.X = 10.000000000000000000
-      Position.Y = 79.000000000000000000
-      Size.Width = 611.000000000000000000
-      Size.Height = 17.000000000000000000
-      Size.PlatformDefault = False
-      TextSettings.Trimming = None
-      Text = '&Serial and season'
-      TabOrder = 2
-    end
-    object edtSerialLabel: TEdit
-      Touch.InteractiveGestures = [LongTap, DoubleTap]
-      Align = Top
-      TabOrder = 3
-      ReadOnly = True
-      Position.X = 10.000000000000000000
-      Position.Y = 106.000000000000000000
-      Margins.Left = 10.000000000000000000
-      Margins.Top = 5.000000000000000000
-      Margins.Right = 10.000000000000000000
-      Margins.Bottom = 10.000000000000000000
-      Size.Width = 611.000000000000000000
-      Size.Height = 22.000000000000000000
-      Size.PlatformDefault = False
-    end
-    object mmoComment: TMemo
-      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
-      DataDetectorTypes = []
-      Align = Top
-      Margins.Left = 10.000000000000000000
-      Margins.Top = 5.000000000000000000
-      Margins.Right = 10.000000000000000000
-      Margins.Bottom = 10.000000000000000000
-      Position.X = 10.000000000000000000
-      Position.Y = 414.000000000000000000
-      Size.Width = 611.000000000000000000
-      Size.Height = 400.000000000000000000
-      Size.PlatformDefault = False
-      TabOrder = 12
-      Viewport.Width = 607.000000000000000000
-      Viewport.Height = 396.000000000000000000
-    end
-    object edtSaisonLabel: TEdit
-      Touch.InteractiveGestures = [LongTap, DoubleTap]
-      Align = Top
-      TabOrder = 4
-      ReadOnly = True
-      Position.X = 10.000000000000000000
-      Position.Y = 143.000000000000000000
-      Margins.Left = 10.000000000000000000
-      Margins.Top = 5.000000000000000000
-      Margins.Right = 37.000000000000000000
-      Margins.Bottom = 5.000000000000000000
-      Size.Width = 584.000000000000000000
-      Size.Height = 22.000000000000000000
-      Size.PlatformDefault = False
-      object btnSerialSelect: TButton
-        Align = Right
-        Margins.Right = -27.000000000000000000
-        Position.X = 589.000000000000000000
-        Size.Width = 22.000000000000000000
+      object edtLabel: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 1
+        Position.X = 10.000000000000000000
+        Position.Y = 37.000000000000000000
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Size.Width = 611.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
-        TabOrder = 4
-        Text = '...'
-        TextSettings.Trimming = None
-        OnClick = btnSerialSelectClick
       end
-    end
-    object lblKeywords: TLabel
-      Align = Top
-      FocusControl = edtKeywords
-      Margins.Left = 10.000000000000000000
-      Margins.Top = 10.000000000000000000
-      Margins.Right = 10.000000000000000000
-      Margins.Bottom = 5.000000000000000000
-      Position.X = 10.000000000000000000
-      Position.Y = 834.000000000000000000
-      Size.Width = 611.000000000000000000
-      Size.Height = 17.000000000000000000
-      Size.PlatformDefault = False
-      TextSettings.Trimming = None
-      Text = '&Keywords'
-      TabOrder = 13
-    end
-    object edtKeywords: TEdit
-      Touch.InteractiveGestures = [LongTap, DoubleTap]
-      Align = Top
-      TabOrder = 14
-      Position.X = 10.000000000000000000
-      Position.Y = 861.000000000000000000
-      Margins.Left = 10.000000000000000000
-      Margins.Top = 5.000000000000000000
-      Margins.Right = 10.000000000000000000
-      Margins.Bottom = 10.000000000000000000
-      Size.Width = 611.000000000000000000
-      Size.Height = 22.000000000000000000
-      Size.PlatformDefault = False
-    end
-    object lBottomMargin: TLayout
-      Align = Top
-      Position.Y = 935.000000000000000000
-      Size.Width = 631.000000000000000000
-      Size.Height = 20.000000000000000000
-      Size.PlatformDefault = False
-      TabOrder = 16
+      object lblURL: TLabel
+        Align = Top
+        FocusControl = edtURL
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 318.000000000000000000
+        Size.Width = 611.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Trimming = None
+        Text = '&URL'
+        TabOrder = 9
+      end
+      object edtURL: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 10
+        Position.X = 10.000000000000000000
+        Position.Y = 345.000000000000000000
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 37.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Size.Width = 584.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        OnChangeTracking = edtURLChangeTracking
+        object btnOpenURL: TButton
+          Align = Right
+          Margins.Right = -27.000000000000000000
+          Position.X = 589.000000000000000000
+          Size.Width = 22.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = '>'
+          TextSettings.Trimming = None
+          OnClick = btnOpenURLClick
+        end
+      end
+      object lblComment: TLabel
+        Align = Top
+        FocusControl = mmoComment
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 387.000000000000000000
+        Size.Width = 611.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Trimming = None
+        Text = '&Comment'
+        TabOrder = 11
+      end
+      object lblRecordDate: TLabel
+        Align = Top
+        FocusControl = edtRecordDate
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 249.000000000000000000
+        Size.Width = 611.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Trimming = None
+        Text = '&Record date'
+        TabOrder = 7
+      end
+      object edtRecordDate: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 8
+        Position.X = 10.000000000000000000
+        Position.Y = 276.000000000000000000
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Size.Width = 611.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object edtVideoNumber: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 6
+        Position.X = 10.000000000000000000
+        Position.Y = 207.000000000000000000
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Size.Width = 611.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object lblVideoNumber: TLabel
+        Align = Top
+        FocusControl = edtVideoNumber
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 180.000000000000000000
+        Size.Width = 611.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Trimming = None
+        Text = 'Video &number'
+        TabOrder = 5
+      end
+      object lblSerial: TLabel
+        Align = Top
+        FocusControl = btnSerialSelect
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 79.000000000000000000
+        Size.Width = 611.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Trimming = None
+        Text = '&Serial and season'
+        TabOrder = 2
+      end
+      object edtSerialLabel: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 3
+        ReadOnly = True
+        Position.X = 10.000000000000000000
+        Position.Y = 106.000000000000000000
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Size.Width = 611.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object mmoComment: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        TextSettings.WordWrap = True
+        Align = Top
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 414.000000000000000000
+        Size.Width = 611.000000000000000000
+        Size.Height = 400.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 12
+        Viewport.Width = 607.000000000000000000
+        Viewport.Height = 396.000000000000000000
+      end
+      object edtSaisonLabel: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 4
+        ReadOnly = True
+        Position.X = 10.000000000000000000
+        Position.Y = 143.000000000000000000
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 37.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Size.Width = 584.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        object btnSerialSelect: TButton
+          Align = Right
+          Margins.Right = -27.000000000000000000
+          Position.X = 589.000000000000000000
+          Size.Width = 22.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          Text = '...'
+          TextSettings.Trimming = None
+          OnClick = btnSerialSelectClick
+        end
+      end
+      object lblKeywords: TLabel
+        Align = Top
+        FocusControl = edtKeywords
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 834.000000000000000000
+        Size.Width = 611.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Trimming = None
+        Text = '&Keywords'
+        TabOrder = 13
+      end
+      object edtKeywords: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 14
+        Position.X = 10.000000000000000000
+        Position.Y = 861.000000000000000000
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Size.Width = 611.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
     end
     object btnTubesLinks: TButton
-      Align = Top
+      Align = Bottom
       Margins.Left = 10.000000000000000000
       Margins.Top = 10.000000000000000000
       Margins.Right = 10.000000000000000000
       Margins.Bottom = 10.000000000000000000
       Position.X = 10.000000000000000000
-      Position.Y = 903.000000000000000000
-      Size.Width = 611.000000000000000000
+      Position.Y = 842.000000000000000000
+      Size.Width = 627.000000000000000000
       Size.Height = 22.000000000000000000
       Size.PlatformDefault = False
-      TabOrder = 15
+      TabOrder = 1
       Text = 'Edit its tubes'
       TextSettings.Trimming = None
       OnClick = btnTubesLinksClick

@@ -19,7 +19,8 @@ uses
   fSerialTubeLinkCRUD in 'fSerialTubeLinkCRUD.pas' {frmSerialTubeLinkCRUD},
   fSeasonTubeLinkCRUD in 'fSeasonTubeLinkCRUD.pas' {frmSeasonTubeLinkCRUD},
   fVideoTubeLinkCRUD in 'fVideoTubeLinkCRUD.pas' {frmVideoTubeLinkCRUD},
-  uBuilder in 'uBuilder.pas';
+  uBuilder in 'uBuilder.pas',
+  fShowMemo in 'fShowMemo.pas' {frmShowMemo};
 
 {$R *.res}
 

@@ -94,7 +94,8 @@ implementation
 
 uses
   u_urlOpen,
-  uBuilder;
+  uBuilder,
+  fShowMemo;
 
 { TfrmVideoTubeLinkCRUD }
 
@@ -122,10 +123,12 @@ end;
 
 procedure TfrmVideoTubeLinkCRUD.ListView1ButtonClick(const Sender: TObject;
   const AItem: TListItem; const AObject: TListItemSimpleControl);
+var
+  ExportedText: string;
 begin
-  // TODO : generation texte de l'épisode pour ce tube
-  showmessage(GetTextFromTemplate(fdtable1.FieldByName('video_code').AsInteger,
-    fdtable1.FieldByName('tube_code').AsInteger));
+  ExportedText := GetTextFromTemplate(fdtable1.FieldByName('video_code')
+    .AsInteger, fdtable1.FieldByName('tube_code').AsInteger);
+  TfrmShowMemo.Execute(self, 'Exported text', ExportedText);
 end;
 
 end.

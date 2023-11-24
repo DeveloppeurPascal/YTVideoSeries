@@ -144,6 +144,7 @@ inherited frmTubeCRUD: TfrmTubeCRUD
     object mmoTemplateComment: TMemo
       Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
       DataDetectorTypes = []
+      TextSettings.WordWrap = True
       Align = Top
       Margins.Left = 10.000000000000000000
       Margins.Top = 5.000000000000000000
@@ -193,6 +194,7 @@ inherited frmTubeCRUD: TfrmTubeCRUD
     object mmoTemplateLabel: TMemo
       Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
       DataDetectorTypes = []
+      TextSettings.WordWrap = True
       Align = Top
       Margins.Left = 10.000000000000000000
       Margins.Top = 5.000000000000000000
@@ -210,6 +212,7 @@ inherited frmTubeCRUD: TfrmTubeCRUD
     object mmoTemplateKeywords: TMemo
       Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
       DataDetectorTypes = []
+      TextSettings.WordWrap = True
       Align = Top
       Margins.Left = 10.000000000000000000
       Margins.Top = 5.000000000000000000

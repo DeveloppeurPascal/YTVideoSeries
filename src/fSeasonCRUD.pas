@@ -94,9 +94,9 @@ type
     lblKeywords: TLabel;
     edtKeywords: TEdit;
     LinkControlToField7: TLinkControlToField;
-    btnVideos: TButton;
-    lBottomMargin: TLayout;
+    lRight: TLayout;
     btnTubesLinks: TButton;
+    btnVideos: TButton;
     procedure FDTable1CalcFields(DataSet: TDataSet);
     procedure btnOpenURLClick(Sender: TObject);
     procedure edtURLChangeTracking(Sender: TObject);

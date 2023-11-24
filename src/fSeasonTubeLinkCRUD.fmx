@@ -131,6 +131,7 @@ inherited frmSeasonTubeLinkCRUD: TfrmSeasonTubeLinkCRUD
     object mmoComment: TMemo
       Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
       DataDetectorTypes = []
+      TextSettings.WordWrap = True
       Align = Top
       Margins.Left = 10.000000000000000000
       Margins.Top = 5.000000000000000000
