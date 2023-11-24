@@ -8,6 +8,12 @@ Il n'y a pas de listes d'éléments à afficher pour un autre élément.
 !$if exists_Table_Champ$! est vrai si le "Champ" de la "Table" n'est pas vide.
 !$Table_Champ$! remplace par le contenu du "Champ" dans la "Table".
 
+## Mots clés génériques (hors tables)
+
+!$date$!
+!$date-iso$!
+!$date-rfc822$!
+
 ## Tube (tube)
 
 - if exists_tube_label
