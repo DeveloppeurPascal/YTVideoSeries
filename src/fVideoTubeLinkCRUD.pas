@@ -93,7 +93,8 @@ implementation
 {$R *.fmx}
 
 uses
-  u_urlOpen;
+  u_urlOpen,
+  uBuilder;
 
 { TfrmVideoTubeLinkCRUD }
 
@@ -122,7 +123,9 @@ end;
 procedure TfrmVideoTubeLinkCRUD.ListView1ButtonClick(const Sender: TObject;
   const AItem: TListItem; const AObject: TListItemSimpleControl);
 begin
-// TODO : generation texte de l'épisode pour ce tube
+  // TODO : generation texte de l'épisode pour ce tube
+  showmessage(GetTextFromTemplate(fdtable1.FieldByName('video_code').AsInteger,
+    fdtable1.FieldByName('tube_code').AsInteger));
 end;
 
 end.
