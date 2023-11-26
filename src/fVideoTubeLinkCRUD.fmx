@@ -151,12 +151,12 @@ inherited frmVideoTubeLinkCRUD: TfrmVideoTubeLinkCRUD
       Size.Height = 400.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 9
-      Viewport.Width = 454.000000000000000000
-      Viewport.Height = 400.000000000000000000
+      Viewport.Width = 450.000000000000000000
+      Viewport.Height = 396.000000000000000000
     end
-    object lblRecordDate: TLabel
+    object lblPublishedDate: TLabel
       Align = Top
-      FocusControl = edtRecordDate
+      FocusControl = edtPublishedDate
       Margins.Left = 10.000000000000000000
       Margins.Top = 10.000000000000000000
       Margins.Right = 10.000000000000000000
@@ -167,10 +167,10 @@ inherited frmVideoTubeLinkCRUD: TfrmVideoTubeLinkCRUD
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
       TextSettings.Trimming = None
-      Text = '&Record date'
+      Text = '&Published date'
       TabOrder = 2
     end
-    object edtRecordDate: TEdit
+    object edtPublishedDate: TEdit
       Touch.InteractiveGestures = [LongTap, DoubleTap]
       Align = Top
       TabOrder = 3
@@ -215,8 +215,8 @@ inherited frmVideoTubeLinkCRUD: TfrmVideoTubeLinkCRUD
       Size.Height = 100.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 7
-      Viewport.Width = 454.000000000000000000
-      Viewport.Height = 100.000000000000000000
+      Viewport.Width = 450.000000000000000000
+      Viewport.Height = 96.000000000000000000
     end
   end
   inherited FDTable1: TFDTable
@@ -273,5 +273,49 @@ inherited frmVideoTubeLinkCRUD: TfrmVideoTubeLinkCRUD
   inherited BindSourceDB1: TBindSourceDB
     Left = 96
     Top = 184
+  end
+  inherited BindingsList1: TBindingsList
+    object LinkControlToField1: TLinkControlToField
+      Category = 'Liaisons rapides'
+      DataSource = BindSourceDB1
+      FieldName = 'publish_date'
+      Control = edtPublishedDate
+      Track = False
+    end
+    object LinkControlToField2: TLinkControlToField
+      Category = 'Liaisons rapides'
+      DataSource = BindSourceDB1
+      FieldName = 'url'
+      Control = edtURL
+      Track = False
+    end
+    object LinkControlToField3: TLinkControlToField
+      Category = 'Liaisons rapides'
+      DataSource = BindSourceDB1
+      FieldName = 'comment'
+      Control = mmoComment
+      Track = False
+    end
+    object LinkControlToField4: TLinkControlToField
+      Category = 'Liaisons rapides'
+      DataSource = BindSourceDB1
+      FieldName = 'keyword'
+      Control = edtKeywords
+      Track = False
+    end
+    object LinkControlToField5: TLinkControlToField
+      Category = 'Liaisons rapides'
+      DataSource = BindSourceDB1
+      FieldName = 'embed'
+      Control = mmoEmbed
+      Track = False
+    end
+    object LinkControlToField6: TLinkControlToField
+      Category = 'Liaisons rapides'
+      DataSource = BindSourceDB1
+      FieldName = 'label'
+      Control = edtLabel
+      Track = False
+    end
   end
 end

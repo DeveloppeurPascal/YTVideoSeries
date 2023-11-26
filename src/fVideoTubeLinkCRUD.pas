@@ -67,10 +67,16 @@ type
     lblLabel: TLabel;
     lblURL: TLabel;
     mmoComment: TMemo;
-    lblRecordDate: TLabel;
-    edtRecordDate: TEdit;
+    lblPublishedDate: TLabel;
+    edtPublishedDate: TEdit;
     lblEmbed: TLabel;
     mmoEmbed: TMemo;
+    LinkControlToField1: TLinkControlToField;
+    LinkControlToField2: TLinkControlToField;
+    LinkControlToField3: TLinkControlToField;
+    LinkControlToField4: TLinkControlToField;
+    LinkControlToField5: TLinkControlToField;
+    LinkControlToField6: TLinkControlToField;
     procedure FormCreate(Sender: TObject);
     procedure edtURLChangeTracking(Sender: TObject);
     procedure btnOpenURLClick(Sender: TObject);
