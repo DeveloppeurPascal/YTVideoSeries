@@ -17,7 +17,7 @@ object frmMain: TfrmMain
   object OlfAboutDialog1: TOlfAboutDialog
     Titre = 'YT Video Series'
     VersionNumero = '1.1'
-    VersionDate = '20231124'
+    VersionDate = '20231126'
     MultiResBitmap = <
       item
       end>
