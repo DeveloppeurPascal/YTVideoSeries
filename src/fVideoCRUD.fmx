@@ -269,8 +269,8 @@ inherited frmVideoCRUD: TfrmVideoCRUD
         Size.Height = 400.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 12
-        Viewport.Width = 607.000000000000000000
-        Viewport.Height = 396.000000000000000000
+        Viewport.Width = 611.000000000000000000
+        Viewport.Height = 400.000000000000000000
       end
       object edtSaisonLabel: TEdit
         Touch.InteractiveGestures = [LongTap, DoubleTap]
@@ -409,16 +409,19 @@ inherited frmVideoCRUD: TfrmVideoCRUD
     object FDTable1SerialLabel: TStringField
       FieldKind = fkCalculated
       FieldName = 'SerialLabel'
+      Size = 100
       Calculated = True
     end
     object FDTable1SeasonLabel: TStringField
       FieldKind = fkCalculated
       FieldName = 'SeasonLabel'
+      Size = 100
       Calculated = True
     end
     object FDTable1SerialSeasonLabel: TStringField
       FieldKind = fkCalculated
       FieldName = 'SerialSeasonLabel'
+      Size = 100
       Calculated = True
     end
     object FDTable1keyword: TWideMemoField
