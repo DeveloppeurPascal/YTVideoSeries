@@ -49,7 +49,7 @@ type
     FCurrentScreen: TRootFrame;
     procedure SetCurrentScreen(const Value: TRootFrame);
   protected
-    procedure SetFormTitle;
+    procedure InitMainFormCaption;
   public
     { Déclarations publiques }
     property CurrentScreen: TRootFrame read FCurrentScreen
@@ -72,6 +72,8 @@ uses
 
 procedure TfrmMain.FormCreate(Sender: TObject);
 begin
+  InitMainFormCaption;
+
 {$IF Defined(MACOS)}
   mnuQuit.Visible := false; // added by default in Mac system menu
   mnuQuit.text := mnuQuit.text + ' ' + OlfAboutDialog1.Titre;
@@ -82,8 +84,22 @@ begin
   mnuMacSystem.Visible := false;
 {$ENDIF}
   mnuAbout.text := mnuAbout.text + ' ' + OlfAboutDialog1.Titre;
-  SetFormTitle;
+
   FCurrentScreen := nil;
+end;
+
+procedure TfrmMain.InitMainFormCaption;
+begin
+{$IFDEF DEBUG}
+  caption := '[DEBUG] ';
+{$ELSE}
+  caption := '';
+{$ENDIF}
+  caption := caption + OlfAboutDialog1.Titre + ' v' +
+    OlfAboutDialog1.VersionNumero;
+
+  if assigned(FCurrentScreen) then
+    caption := caption + ' - ' + FCurrentScreen.GetFormTitle;
 end;
 
 procedure TfrmMain.mnuAboutClick(Sender: TObject);
@@ -131,19 +147,7 @@ begin
     FCurrentScreen.Parent := self;
     FCurrentScreen.onshow;
   end;
-  SetFormTitle;
-end;
-
-procedure TfrmMain.SetFormTitle;
-begin
-{$IFDEF DEBUG}
-  caption := '[DEBUG] ' + OlfAboutDialog1.Titre + ' v' +
-    OlfAboutDialog1.VersionNumero;
-{$ELSE}
-  caption := OlfAboutDialog1.Titre + ' v' + OlfAboutDialog1.VersionNumero;
-{$ENDIF}
-  if assigned(FCurrentScreen) then
-    caption := caption + ' - ' + FCurrentScreen.GetFormTitle;
+  InitMainFormCaption;
 end;
 
 initialization

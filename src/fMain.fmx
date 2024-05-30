@@ -24,17 +24,6 @@ object frmMain: TfrmMain
     Images = DMLogo.ProgIcon
     ImageIndex = 0
     URL = 'https://ytvideoseries.olfsoftware.fr'
-    Licence.Strings = (
-      
-        'This software is supplied as is, with or without bugs. No warran' +
-        'ty is offered as to its operation or the data processed. Make ba' +
-        'ckups!'
-      ''
-      
-        'This program is distributed as shareware. If you use it (especia' +
-        'lly for commercial or income-generating purposes), please rememb' +
-        'er the author and contribute to its development by purchasing a ' +
-        'license.')
     onURLClick = OlfAboutDialog1URLClick
     Langue = EN
     Left = 320
