@@ -47,7 +47,8 @@ uses
   Data.Bind.EngExt,
   FMX.Bind.DBEngExt,
   Data.Bind.Components,
-  Data.Bind.DBScope;
+  Data.Bind.DBScope,
+  FMX.Calendar;
 
 type
   TfrmSeasonCRUD = class(TRootFrame)
@@ -97,6 +98,9 @@ type
     lRight: TLayout;
     btnTubesLinks: TButton;
     btnVideos: TButton;
+    btnShowCalendar: TDropDownEditButton;
+    Popup1: TPopup;
+    Calendar1: TCalendar;
     procedure FDTable1CalcFields(DataSet: TDataSet);
     procedure btnOpenURLClick(Sender: TObject);
     procedure edtURLChangeTracking(Sender: TObject);
@@ -105,6 +109,8 @@ type
     procedure btnVideosClick(Sender: TObject);
     procedure btnTubesLinksClick(Sender: TObject);
     procedure FDTable1AfterPost(DataSet: TDataSet);
+    procedure Calendar1DateSelected(Sender: TObject);
+    procedure btnShowCalendarClick(Sender: TObject);
   private
   protected
     procedure SetTableFilter;
@@ -120,6 +126,7 @@ implementation
 {$R *.fmx}
 
 uses
+  System.DateUtils,
   u_urlOpen,
   fSelectRecord,
   fMain,
@@ -147,6 +154,17 @@ begin
   end;
 end;
 
+procedure TfrmSeasonCRUD.btnShowCalendarClick(Sender: TObject);
+begin
+  Popup1.Width := Calendar1.Margins.Left + Calendar1.Width +
+    Calendar1.Margins.right;
+  Popup1.Height := Calendar1.Margins.top + Calendar1.Height +
+    Calendar1.Margins.Bottom;
+  Popup1.IsOpen := not Popup1.IsOpen;
+  if Popup1.IsOpen then
+    Calendar1.TagString := edtRecordDate.Text;
+end;
+
 procedure TfrmSeasonCRUD.btnTubesLinksClick(Sender: TObject);
 var
   frm: TfrmSeasonTubeLinkCRUD;
@@ -166,6 +184,15 @@ begin
   frmmain.CurrentScreen := TfrmVideoCRUD.GetInstance<TfrmVideoCRUD>(self,
     FDTable1.FieldByName('serial_code').AsInteger, FDTable1.FieldByName('code')
     .AsInteger);
+end;
+
+procedure TfrmSeasonCRUD.Calendar1DateSelected(Sender: TObject);
+begin
+  if not(FDTable1.State in dsEditModes) then
+    FDTable1.Edit;
+
+  FDTable1.FieldByName('record_date').AsString :=
+    Calendar1.DateTime.ToISO8601.Substring(0, 10);
 end;
 
 procedure TfrmSeasonCRUD.cbSerialFilterChange(Sender: TObject);

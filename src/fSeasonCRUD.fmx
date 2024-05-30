@@ -170,8 +170,8 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
         Size.Height = 400.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 11
-        Viewport.Width = 643.000000000000000000
-        Viewport.Height = 396.000000000000000000
+        Viewport.Width = 647.000000000000000000
+        Viewport.Height = 400.000000000000000000
       end
       object lblRecordDate: TLabel
         Align = Top
@@ -202,6 +202,17 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
         Size.Width = 647.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
+        object btnShowCalendar: TDropDownEditButton
+          Touch.InteractiveGestures = [LongTap]
+          CanFocus = False
+          Cursor = crArrow
+          TextSettings.Trimming = None
+          Size.Width = 28.000000000000000000
+          Size.Height = 18.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          OnClick = btnShowCalendarClick
+        end
       end
       object edtSeasonNumber: TEdit
         Touch.InteractiveGestures = [LongTap, DoubleTap]
@@ -338,6 +349,21 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
       Text = 'Edit its videos'
       TextSettings.Trimming = None
       OnClick = btnVideosClick
+    end
+  end
+  object Popup1: TPopup
+    Placement = BottomCenter
+    PlacementTarget = edtRecordDate
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    TabOrder = 7
+    object Calendar1: TCalendar
+      Date = 45442.000000000000000000
+      Size.Width = 180.000000000000000000
+      Size.Height = 160.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      OnDateSelected = Calendar1DateSelected
     end
   end
   object FDTable1: TFDTable
