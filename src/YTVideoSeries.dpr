@@ -4,9 +4,6 @@ uses
   System.StartUpCopy,
   FMX.Forms,
   fMain in 'fMain.pas' {frmMain},
-  u_urlOpen in '..\lib-externes\librairies\u_urlOpen.pas',
-  Olf.FMX.AboutDialog in '..\lib-externes\AboutDialog-Delphi-Component\sources\Olf.FMX.AboutDialog.pas',
-  Olf.FMX.AboutDialogForm in '..\lib-externes\AboutDialog-Delphi-Component\sources\Olf.FMX.AboutDialogForm.pas' {OlfAboutDialogForm},
   uDB in 'uDB.pas' {db: TDataModule},
   uDMLogo in 'uDMLogo.pas' {DMLogo: TDataModule},
   cadRootFrame in 'cadRootFrame.pas' {RootFrame: TFrame},
@@ -20,7 +17,10 @@ uses
   fSeasonTubeLinkCRUD in 'fSeasonTubeLinkCRUD.pas' {frmSeasonTubeLinkCRUD},
   fVideoTubeLinkCRUD in 'fVideoTubeLinkCRUD.pas' {frmVideoTubeLinkCRUD},
   uBuilder in 'uBuilder.pas',
-  fShowMemo in 'fShowMemo.pas' {frmShowMemo};
+  fShowMemo in 'fShowMemo.pas' {frmShowMemo},
+  u_urlOpen in '..\lib-externes\librairies\src\u_urlOpen.pas',
+  Olf.FMX.AboutDialog in '..\lib-externes\AboutDialog-Delphi-Component\src\Olf.FMX.AboutDialog.pas',
+  Olf.FMX.AboutDialogForm in '..\lib-externes\AboutDialog-Delphi-Component\src\Olf.FMX.AboutDialogForm.pas' {OlfAboutDialogForm};
 
 {$R *.res}
 

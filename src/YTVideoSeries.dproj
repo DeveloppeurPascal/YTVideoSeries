@@ -9,6 +9,7 @@
         <TargetedPlatforms>135171</TargetedPlatforms>
         <AppType>Application</AppType>
         <MainSource>YTVideoSeries.dpr</MainSource>
+        <ProjectName Condition="'$(ProjectName)'==''">YTVideoSeries</ProjectName>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
         <Base>true</Base>
@@ -365,12 +366,6 @@
             <Form>frmMain</Form>
             <FormType>fmx</FormType>
         </DCCReference>
-        <DCCReference Include="..\lib-externes\librairies\u_urlOpen.pas"/>
-        <DCCReference Include="..\lib-externes\AboutDialog-Delphi-Component\sources\Olf.FMX.AboutDialog.pas"/>
-        <DCCReference Include="..\lib-externes\AboutDialog-Delphi-Component\sources\Olf.FMX.AboutDialogForm.pas">
-            <Form>OlfAboutDialogForm</Form>
-            <FormType>fmx</FormType>
-        </DCCReference>
         <DCCReference Include="uDB.pas">
             <Form>db</Form>
             <FormType>dfm</FormType>
@@ -429,6 +424,12 @@
         <DCCReference Include="uBuilder.pas"/>
         <DCCReference Include="fShowMemo.pas">
             <Form>frmShowMemo</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="..\lib-externes\librairies\src\u_urlOpen.pas"/>
+        <DCCReference Include="..\lib-externes\AboutDialog-Delphi-Component\src\Olf.FMX.AboutDialog.pas"/>
+        <DCCReference Include="..\lib-externes\AboutDialog-Delphi-Component\src\Olf.FMX.AboutDialogForm.pas">
+            <Form>OlfAboutDialogForm</Form>
             <FormType>fmx</FormType>
         </DCCReference>
         <BuildConfiguration Include="Base">
@@ -1279,6 +1280,9 @@
                     <Platform Name="Win64">
                         <Operation>1</Operation>
                     </Platform>
+                    <Platform Name="Win64x">
+                        <Operation>1</Operation>
+                    </Platform>
                 </DeployClass>
                 <DeployClass Name="ProjectiOSDeviceDebug">
                     <Platform Name="iOSDevice32">
@@ -1571,12 +1575,14 @@
                 <ProjectRoot Platform="OSXARM64" Name="$(PROJECTNAME).app"/>
                 <ProjectRoot Platform="Win32" Name="$(PROJECTNAME)"/>
                 <ProjectRoot Platform="Win64" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="Win64x" Name="$(PROJECTNAME)"/>
             </Deployment>
             <Platforms>
                 <Platform value="Android">False</Platform>
                 <Platform value="Android64">False</Platform>
                 <Platform value="iOSDevice64">False</Platform>
                 <Platform value="iOSSimARM64">False</Platform>
+                <Platform value="Linux64">False</Platform>
                 <Platform value="OSX64">True</Platform>
                 <Platform value="OSXARM64">True</Platform>
                 <Platform value="Win32">True</Platform>
