@@ -10,19 +10,17 @@ Ce dépôt de code contient un projet développé en langage Pascal Objet sous D
 
 ## Utiliser ce logiciel
 
-**Travail en cours, le programme n'est pas encore disponible en version compilée autonome.**
+Ce logiciel est disponible dans une version de production directement installable ou exécutable. Il est distribué en shareware.
 
-~~Ce logiciel est disponible dans une version de production directement installable ou exécutable. Il est distribué en shareware.~~
+Vous pouvez le télécharger et le rediffuser gratuitement à condition de ne pas en modifier le contenu (installeur, programme, fichiers annexes, ...).
 
-~~Vous pouvez le télécharger et le rediffuser gratuitement à condition de ne pas en modifier le contenu (installeur, programme, fichiers annexes, ...).~~
+[Télécharger le programme ou son installeur](https://olfsoftware.lemonsqueezy.com/buy/6f0c4eac-98dc-49ef-ba29-56e6a03f2e77)
 
-~~[Télécharger le programme ou son installeur](https://ytvideoseries.olfsoftware.fr/)~~
+Si vous utilisez régulièrement ce logiciel et en êtes satisfait vous êtes invité à en acheter une licence d'utilisateur final. L'achat d'une licence vous donnera accès aux mises à jour du logiciel en plus d'activer d'évenuelles fonctionnalités optionnelles.
 
-~~Si vous utilisez régulièrement ce logiciel et en êtes satisfait vous êtes invité à en acheter une licence d'utilisateur final. L'achat d'une licence vous donnera accès aux mises à jour du logiciel en plus d'activer d'évenuelles fonctionnalités optionnelles.~~
+[Acheter une licence](https://olfsoftware.lemonsqueezy.com/buy/11c9497d-8b96-441a-8d3b-0ad88ecefd89)
 
-~~[Acheter une licence](https://ytvideoseries.olfsoftware.fr/)~~
-
-~~Vous pouvez aussi [consulter le site du logiciel](https://ytvideoseries.olfsoftware.fr/) pour en savoir plus sur son fonctionnement, accéder à des vidéos et articles, connaître les différentes versions disponibles et leurs fonctionnalités, contacter le support utilisateurs...~~
+Vous pouvez aussi [consulter le site du logiciel](https://ytvideoseries.olfsoftware.fr/) pour en savoir plus sur son fonctionnement, accéder à des vidéos et articles, connaître les différentes versions disponibles et leurs fonctionnalités, contacter le support utilisateurs...
 
 ## Installation des codes sources
 

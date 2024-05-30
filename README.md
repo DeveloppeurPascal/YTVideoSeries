@@ -10,19 +10,17 @@ This code repository contains a project developed in Object Pascal language unde
 
 ## Using this software
 
-**Work in progress, the programme is not yet available in a standalone compiled version.**
+This software is available in a directly installable or executable production version. It is distributed as shareware.
 
-~~This software is available in a directly installable or executable production version. It is distributed as shareware.~~
+You can download and redistribute it free of charge, provided you do not modify its content (installer, program, additional files, etc.).
 
-~~You can download and redistribute it free of charge, provided you do not modify its content (installer, program, additional files, etc.).~~
+[Download program or installer](https://olfsoftware.lemonsqueezy.com/buy/6f0c4eac-98dc-49ef-ba29-56e6a03f2e77)
 
-~~[Download program or installer](https://ytvideoseries.olfsoftware.fr/)~~
+If you use this software regularly and are satisfied with it, you are invited to purchase an end-user license. Purchasing a license will give you access to software updates, as well as enabling optional features.
 
-~~If you use this software regularly and are satisfied with it, you are invited to purchase an end-user license. Purchasing a license will give you access to software updates, as well as enabling optional features.~~
+[Buy a license](https://olfsoftware.lemonsqueezy.com/buy/11c9497d-8b96-441a-8d3b-0ad88ecefd89)
 
-~~[Buy a license](https://ytvideoseries.olfsoftware.fr/)~~
-
-~~You can also [visit the software website](https://ytvideoseries.olfsoftware.fr/) to find out more about how it works, access videos and articles, find out about the different versions available and their features, contact user support...~~
+You can also [visit the software website](https://ytvideoseries.olfsoftware.fr/) to find out more about how it works, access videos and articles, find out about the different versions available and their features, contact user support...
 
 ## Source code installation
 
