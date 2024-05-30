@@ -104,6 +104,7 @@ type
     procedure cbSerialFilterChange(Sender: TObject);
     procedure btnVideosClick(Sender: TObject);
     procedure btnTubesLinksClick(Sender: TObject);
+    procedure FDTable1AfterPost(DataSet: TDataSet);
   private
   protected
     procedure SetTableFilter;
@@ -177,21 +178,28 @@ begin
   btnOpenURL.Enabled := not edtURL.Text.IsEmpty;
 end;
 
+procedure TfrmSeasonCRUD.FDTable1AfterPost(DataSet: TDataSet);
+begin
+  DB.FDConnection1.ExecSQL('update video set serial_code=' +
+    DataSet.FieldByName('serial_code').AsString + ' where season_code=' +
+    DataSet.FieldByName('code').AsString);
+end;
+
 procedure TfrmSeasonCRUD.FDTable1CalcFields(DataSet: TDataSet);
 var
   LSerialLabel: string;
 begin
   if DataSet.FieldByName('serial_code').IsNull or
     (DataSet.FieldByName('serial_code').AsInteger < 1) then
-    DataSet.FieldByName('SerialLabel').asstring := ''
+    DataSet.FieldByName('SerialLabel').AsString := ''
   else
     try
       LSerialLabel := DB.FDConnection1.ExecSQLScalar
         ('select label from serial where code=:c',
         [DataSet.FieldByName('serial_code').AsInteger]);
-      DataSet.FieldByName('SerialLabel').asstring := LSerialLabel;
+      DataSet.FieldByName('SerialLabel').AsString := LSerialLabel;
     except
-      DataSet.FieldByName('SerialLabel').asstring := '';
+      DataSet.FieldByName('SerialLabel').AsString := '';
     end;
 end;
 
@@ -212,7 +220,7 @@ begin
     while not qry.Eof do
     begin
       NewItemIndex := cbSerialFilter.Items.Add(qry.FieldByName('label')
-        .asstring);
+        .AsString);
       cbSerialFilter.ListItems[NewItemIndex].Tag := qry.FieldByName('code')
         .AsInteger;
       if (ffiltercode1 = qry.FieldByName('code').AsInteger) then
