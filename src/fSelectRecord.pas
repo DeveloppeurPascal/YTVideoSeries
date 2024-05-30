@@ -72,6 +72,7 @@ class function TfrmSelectRecord.CreateAndShowSelectForm(ASQL: string): integer;
 var
   frm: TfrmSelectRecord;
 begin
+result := -1;
   frm := TfrmSelectRecord.Create(nil);
   try
     frm.FDQuery1.Open(ASQL);
