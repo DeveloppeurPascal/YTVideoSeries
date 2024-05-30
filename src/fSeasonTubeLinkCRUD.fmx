@@ -143,14 +143,17 @@ inherited frmSeasonTubeLinkCRUD: TfrmSeasonTubeLinkCRUD
       Size.Height = 400.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 5
-      Viewport.Width = 450.000000000000000000
-      Viewport.Height = 396.000000000000000000
+      Viewport.Width = 454.000000000000000000
+      Viewport.Height = 400.000000000000000000
     end
   end
   inherited FDTable1: TFDTable
     TableName = 'season_tube'
     Left = 184
     Top = 184
+    inherited FDTable1TubeLabel: TStringField
+      Size = 100
+    end
     object FDTable1tube_code: TIntegerField
       FieldName = 'tube_code'
       Origin = 'tube_code'
