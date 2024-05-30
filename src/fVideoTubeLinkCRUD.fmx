@@ -223,6 +223,9 @@ inherited frmVideoTubeLinkCRUD: TfrmVideoTubeLinkCRUD
     TableName = 'video_tube'
     Left = 112
     Top = 296
+    inherited FDTable1TubeLabel: TStringField
+      Size = 100
+    end
     object FDTable1tube_code: TIntegerField
       FieldName = 'tube_code'
       Origin = 'tube_code'
