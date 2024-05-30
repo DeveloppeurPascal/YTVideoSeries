@@ -108,7 +108,7 @@ procedure Tdb.FDConnection1BeforeConnect(Sender: TObject);
 begin
   FDConnection1.Params.Clear;
   FDConnection1.Params.AddPair('DriverID', 'SQLite');
-    FDConnection1.Params.AddPair('LockingMode', 'Normal');
+  FDConnection1.Params.AddPair('LockingMode', 'Normal');
   FDConnection1.Params.AddPair('Database', dbname + '.db');
 end;
 
@@ -132,7 +132,12 @@ begin
       else
         raise exception.Create('Don''t know the type of "' + DataSet.Fields[i]
           .FieldName + '" field.');
-      end;
+      end
+    else if (DataSet.Fields[i].FieldName = 'label') and
+      DataSet.Fields[i].AsString.StartsWith('_') then
+      while DataSet.Fields[i].AsString.StartsWith('_') do
+        DataSet.Fields[i].AsString := ' ' + DataSet.Fields[i]
+          .AsString.Substring(1);
 end;
 
 end.
