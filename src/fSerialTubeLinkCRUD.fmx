@@ -114,8 +114,8 @@ inherited frmSerialTubeLinkCRUD: TfrmSerialTubeLinkCRUD
       Size.Height = 400.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 5
-      Viewport.Width = 450.000000000000000000
-      Viewport.Height = 396.000000000000000000
+      Viewport.Width = 454.000000000000000000
+      Viewport.Height = 400.000000000000000000
     end
     object lblKeywords: TLabel
       Align = Top
@@ -149,10 +149,12 @@ inherited frmSerialTubeLinkCRUD: TfrmSerialTubeLinkCRUD
     end
   end
   inherited FDTable1: TFDTable
-    Active = True
     TableName = 'serial_tube'
     Left = 112
     Top = 296
+    inherited FDTable1TubeLabel: TStringField
+      Size = 100
+    end
     object FDTable1tube_code: TIntegerField
       FieldName = 'tube_code'
       Origin = 'tube_code'
