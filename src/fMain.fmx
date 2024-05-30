@@ -26,6 +26,7 @@ object frmMain: TfrmMain
     URL = 'https://ytvideoseries.olfsoftware.fr'
     onURLClick = OlfAboutDialog1URLClick
     Langue = EN
+    Copyright = '(c) 2024 Patrick Pr'#233'martin'
     Left = 320
     Top = 80
   end
