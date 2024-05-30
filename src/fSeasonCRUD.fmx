@@ -170,8 +170,8 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
         Size.Height = 400.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 11
-        Viewport.Width = 643.000000000000000000
-        Viewport.Height = 396.000000000000000000
+        Viewport.Width = 647.000000000000000000
+        Viewport.Height = 400.000000000000000000
       end
       object lblRecordDate: TLabel
         Align = Top
@@ -341,7 +341,6 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
     end
   end
   object FDTable1: TFDTable
-    Active = True
     OnCalcFields = FDTable1CalcFields
     IndexFieldNames = 'code'
     Connection = db.FDConnection1
@@ -352,6 +351,7 @@ inherited frmSeasonCRUD: TfrmSeasonCRUD
     object FDTable1SerialLabel: TStringField
       FieldKind = fkCalculated
       FieldName = 'SerialLabel'
+      Size = 100
       Calculated = True
     end
     object FDTable1code: TFDAutoIncField
