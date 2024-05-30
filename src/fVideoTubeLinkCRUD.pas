@@ -46,7 +46,8 @@ uses
   FMX.Memo.Types,
   FMX.ScrollBox,
   FMX.Memo,
-  uDB;
+  uDB,
+  FMX.Calendar;
 
 type
   TfrmVideoTubeLinkCRUD = class(TfrmRootTubeLink)
@@ -77,11 +78,16 @@ type
     LinkControlToField4: TLinkControlToField;
     LinkControlToField5: TLinkControlToField;
     LinkControlToField6: TLinkControlToField;
+    btnShowCalendar: TDropDownEditButton;
+    Popup1: TPopup;
+    Calendar1: TCalendar;
     procedure FormCreate(Sender: TObject);
     procedure edtURLChangeTracking(Sender: TObject);
     procedure btnOpenURLClick(Sender: TObject);
     procedure ListView1ButtonClick(const Sender: TObject;
       const AItem: TListItem; const AObject: TListItemSimpleControl);
+    procedure Calendar1DateSelected(Sender: TObject);
+    procedure btnShowCalendarClick(Sender: TObject);
   private
 
   protected
@@ -99,6 +105,7 @@ implementation
 {$R *.fmx}
 
 uses
+  System.DateUtils,
   u_urlOpen,
   uBuilder,
   fShowMemo;
@@ -109,6 +116,26 @@ procedure TfrmVideoTubeLinkCRUD.btnOpenURLClick(Sender: TObject);
 begin
   if not edtURL.Text.IsEmpty then
     url_Open_In_Browser(edtURL.Text);
+end;
+
+procedure TfrmVideoTubeLinkCRUD.btnShowCalendarClick(Sender: TObject);
+begin
+  Popup1.Width := Calendar1.Margins.Left + Calendar1.Width +
+    Calendar1.Margins.right;
+  Popup1.Height := Calendar1.Margins.top + Calendar1.Height +
+    Calendar1.Margins.Bottom;
+  Popup1.IsOpen := not Popup1.IsOpen;
+  if Popup1.IsOpen then
+    Calendar1.TagString := edtPublishedDate.Text;
+end;
+
+procedure TfrmVideoTubeLinkCRUD.Calendar1DateSelected(Sender: TObject);
+begin
+  if not(FDTable1.State in dsEditModes) then
+    FDTable1.Edit;
+
+  FDTable1.FieldByName('publish_date').AsString :=
+    Calendar1.DateTime.ToISO8601.Substring(0, 10);
 end;
 
 procedure TfrmVideoTubeLinkCRUD.edtURLChangeTracking(Sender: TObject);
@@ -132,8 +159,8 @@ procedure TfrmVideoTubeLinkCRUD.ListView1ButtonClick(const Sender: TObject;
 var
   ExportedText: string;
 begin
-  ExportedText := GetTextFromTemplate(fdtable1.FieldByName('video_code')
-    .AsInteger, fdtable1.FieldByName('tube_code').AsInteger);
+  ExportedText := GetTextFromTemplate(FDTable1.FieldByName('video_code')
+    .AsInteger, FDTable1.FieldByName('tube_code').AsInteger);
   TfrmShowMemo.Execute(self, 'Exported text', ExportedText);
 end;
 

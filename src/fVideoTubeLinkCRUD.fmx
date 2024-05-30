@@ -183,6 +183,17 @@ inherited frmVideoTubeLinkCRUD: TfrmVideoTubeLinkCRUD
       Size.Width = 454.000000000000000000
       Size.Height = 22.000000000000000000
       Size.PlatformDefault = False
+      object btnShowCalendar: TDropDownEditButton
+        Touch.InteractiveGestures = [LongTap]
+        CanFocus = False
+        Cursor = crArrow
+        TextSettings.Trimming = None
+        Size.Width = 28.000000000000000000
+        Size.Height = 18.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        OnClick = btnShowCalendarClick
+      end
     end
     object lblEmbed: TLabel
       Align = Top
@@ -217,6 +228,19 @@ inherited frmVideoTubeLinkCRUD: TfrmVideoTubeLinkCRUD
       TabOrder = 7
       Viewport.Width = 450.000000000000000000
       Viewport.Height = 96.000000000000000000
+    end
+  end
+  object Popup1: TPopup [4]
+    Placement = BottomCenter
+    PlacementTarget = edtPublishedDate
+    TabOrder = 7
+    object Calendar1: TCalendar
+      Date = 45442.000000000000000000
+      Size.Width = 180.000000000000000000
+      Size.Height = 160.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      OnDateSelected = Calendar1DateSelected
     end
   end
   inherited FDTable1: TFDTable
