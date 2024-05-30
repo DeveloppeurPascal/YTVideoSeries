@@ -47,7 +47,8 @@ uses
   Data.Bind.EngExt,
   FMX.Bind.DBEngExt,
   Data.Bind.Components,
-  Data.Bind.DBScope;
+  Data.Bind.DBScope,
+  FMX.Calendar;
 
 type
   TfrmVideoCRUD = class(TRootFrame)
@@ -102,6 +103,9 @@ type
     btnSerialSelect: TButton;
     lRight: TLayout;
     btnTubesLinks: TButton;
+    btnShowCalendar: TDropDownEditButton;
+    Popup1: TPopup;
+    Calendar1: TCalendar;
     procedure FDTable1CalcFields(DataSet: TDataSet);
     procedure btnSerialSelectClick(Sender: TObject);
     procedure btnOpenURLClick(Sender: TObject);
@@ -110,6 +114,8 @@ type
     procedure cbSeasonFilterChange(Sender: TObject);
     procedure FDTable1AfterInsert(DataSet: TDataSet);
     procedure btnTubesLinksClick(Sender: TObject);
+    procedure Calendar1DateSelected(Sender: TObject);
+    procedure btnShowCalendarClick(Sender: TObject);
   private
   protected
     procedure SetTableFilter;
@@ -129,6 +135,7 @@ implementation
 {$R *.fmx}
 
 uses
+  System.DateUtils,
   u_urlOpen,
   fSelectRecord,
   fVideoTubeLinkCRUD;
@@ -157,6 +164,17 @@ begin
   end;
 end;
 
+procedure TfrmVideoCRUD.btnShowCalendarClick(Sender: TObject);
+begin
+  Popup1.Width := Calendar1.Margins.Left + Calendar1.Width +
+    Calendar1.Margins.right;
+  Popup1.Height := Calendar1.Margins.top + Calendar1.Height +
+    Calendar1.Margins.Bottom;
+  Popup1.IsOpen := not Popup1.IsOpen;
+  if Popup1.IsOpen then
+    Calendar1.TagString := edtRecordDate.Text;
+end;
+
 procedure TfrmVideoCRUD.btnTubesLinksClick(Sender: TObject);
 var
   frm: TfrmVideoTubeLinkCRUD;
@@ -168,6 +186,15 @@ begin
   finally
     frm.Free;
   end;
+end;
+
+procedure TfrmVideoCRUD.Calendar1DateSelected(Sender: TObject);
+begin
+  if not(FDTable1.State in dsEditModes) then
+    FDTable1.Edit;
+
+  FDTable1.FieldByName('record_date').AsString :=
+    Calendar1.DateTime.ToISO8601.Substring(0, 10);
 end;
 
 procedure TfrmVideoCRUD.cbSeasonFilterChange(Sender: TObject);
@@ -204,38 +231,38 @@ var
 begin
   if DataSet.FieldByName('serial_code').IsNull or
     (DataSet.FieldByName('serial_code').AsInteger < 1) then
-    DataSet.FieldByName('SerialLabel').asstring := ''
+    DataSet.FieldByName('SerialLabel').AsString := ''
   else
     try
       LSerialLabel := DB.FDConnection1.ExecSQLScalar
         ('select label from serial where code=:c',
         [DataSet.FieldByName('serial_code').AsInteger]);
-      DataSet.FieldByName('SerialLabel').asstring := LSerialLabel;
+      DataSet.FieldByName('SerialLabel').AsString := LSerialLabel;
     except
-      DataSet.FieldByName('SerialLabel').asstring := '';
+      DataSet.FieldByName('SerialLabel').AsString := '';
     end;
   if DataSet.FieldByName('season_code').IsNull or
     (DataSet.FieldByName('season_code').AsInteger < 1) then
-    DataSet.FieldByName('SeasonLabel').asstring := ''
+    DataSet.FieldByName('SeasonLabel').AsString := ''
   else
     try
       LSeasonLabel := DB.FDConnection1.ExecSQLScalar
         ('select label from season where code=:c',
         [DataSet.FieldByName('season_code').AsInteger]);
-      DataSet.FieldByName('SeasonLabel').asstring := LSeasonLabel;
+      DataSet.FieldByName('SeasonLabel').AsString := LSeasonLabel;
     except
-      DataSet.FieldByName('SeasonLabel').asstring := '';
+      DataSet.FieldByName('SeasonLabel').AsString := '';
     end;
-  if DataSet.FieldByName('SerialLabel').asstring.IsEmpty then
-    DataSet.FieldByName('SerialSeasonLabel').asstring :=
-      DataSet.FieldByName('SeasonLabel').asstring
-  else if DataSet.FieldByName('SeasonLabel').asstring.IsEmpty then
-    DataSet.FieldByName('SerialSeasonLabel').asstring :=
-      DataSet.FieldByName('SerialLabel').asstring
+  if DataSet.FieldByName('SerialLabel').AsString.IsEmpty then
+    DataSet.FieldByName('SerialSeasonLabel').AsString :=
+      DataSet.FieldByName('SeasonLabel').AsString
+  else if DataSet.FieldByName('SeasonLabel').AsString.IsEmpty then
+    DataSet.FieldByName('SerialSeasonLabel').AsString :=
+      DataSet.FieldByName('SerialLabel').AsString
   else
-    DataSet.FieldByName('SerialSeasonLabel').asstring :=
-      DataSet.FieldByName('SerialLabel').asstring + ' - ' +
-      DataSet.FieldByName('SeasonLabel').asstring;
+    DataSet.FieldByName('SerialSeasonLabel').AsString :=
+      DataSet.FieldByName('SerialLabel').AsString + ' - ' +
+      DataSet.FieldByName('SeasonLabel').AsString;
 end;
 
 procedure TfrmVideoCRUD.FillSeasonFilter;
@@ -262,7 +289,7 @@ begin
       while not qry.Eof do
       begin
         NewItemIndex := cbSeasonFilter.Items.Add(qry.FieldByName('label')
-          .asstring);
+          .AsString);
         cbSeasonFilter.ListItems[NewItemIndex].Tag := qry.FieldByName('code')
           .AsInteger;
         if (ffiltercode2 = qry.FieldByName('code').AsInteger) then
@@ -296,7 +323,7 @@ begin
       while not qry.Eof do
       begin
         NewItemIndex := cbSerialFilter.Items.Add(qry.FieldByName('label')
-          .asstring);
+          .AsString);
         cbSerialFilter.ListItems[NewItemIndex].Tag := qry.FieldByName('code')
           .AsInteger;
         if (ffiltercode1 = qry.FieldByName('code').AsInteger) then

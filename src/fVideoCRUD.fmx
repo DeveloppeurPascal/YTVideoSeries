@@ -192,6 +192,17 @@ inherited frmVideoCRUD: TfrmVideoCRUD
         Size.Width = 611.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
+        object btnShowCalendar: TDropDownEditButton
+          Touch.InteractiveGestures = [LongTap]
+          CanFocus = False
+          Cursor = crArrow
+          TextSettings.Trimming = None
+          Size.Width = 28.000000000000000000
+          Size.Height = 18.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          OnClick = btnShowCalendarClick
+        end
       end
       object edtVideoNumber: TEdit
         Touch.InteractiveGestures = [LongTap, DoubleTap]
@@ -345,6 +356,21 @@ inherited frmVideoCRUD: TfrmVideoCRUD
       Text = 'Edit its tubes'
       TextSettings.Trimming = None
       OnClick = btnTubesLinksClick
+    end
+  end
+  object Popup1: TPopup
+    Placement = BottomCenter
+    PlacementTarget = edtRecordDate
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    TabOrder = 7
+    object Calendar1: TCalendar
+      Date = 45442.000000000000000000
+      Size.Width = 180.000000000000000000
+      Size.Height = 160.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      OnDateSelected = Calendar1DateSelected
     end
   end
   object FDTable1: TFDTable
