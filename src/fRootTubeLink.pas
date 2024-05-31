@@ -98,6 +98,7 @@ implementation
 {$R *.fmx}
 
 uses
+  FMX.DialogService,
   fSelectRecord;
 
 procedure TfrmRootTubeLink.btnCloseClick(Sender: TObject);
@@ -164,7 +165,29 @@ end;
 procedure TfrmRootTubeLink.FormCloseQuery(Sender: TObject;
   var CanClose: Boolean);
 begin
-  // TODO : tester si record en ajout/modif pour demander confirmation avant
+  if FDTable1.State in dsEditModes then
+  begin
+    CanClose := false;
+    TDialogService.MessageDialog
+      ('This record has been edited. Do you want to save the changes ?',
+      TMsgDlgType.mtWarning, mbyesno, tmsgdlgbtn.mbYes, 0,
+      procedure(const AResult: TModalResult)
+      begin
+        case AResult of
+          mryes:
+            FDTable1.Post;
+        else
+          FDTable1.Cancel;
+        end;
+        tthread.forcequeue(nil,
+          procedure
+          begin
+            close;
+          end);
+      end);
+  end
+  else
+    CanClose := true;
 end;
 
 procedure TfrmRootTubeLink.initFieldsForInsert;
