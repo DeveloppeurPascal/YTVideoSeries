@@ -109,9 +109,26 @@ end;
 
 procedure TfrmSerialCRUD.btnSeasonsClick(Sender: TObject);
 begin
-  // TODO : tester si record en ajout/modif pour demander confirmation avant
-  frmmain.CurrentScreen := TfrmSeasonCRUD.GetInstance<TfrmSeasonCRUD>(self,
-    FDTable1.FieldByName('code').AsInteger);
+  if FDTable1.State in dsEditModes then
+  begin
+    TDialogService.MessageDialog
+      ('This record has been edited. Do you want to save the changes ?',
+      TMsgDlgType.mtWarning, mbyesno, tmsgdlgbtn.mbYes, 0,
+      procedure(const AResult: TModalResult)
+      begin
+        case AResult of
+          mryes:
+            FDTable1.Post;
+        else
+          FDTable1.Cancel;
+        end;
+        frmmain.CurrentScreen := TfrmSeasonCRUD.GetInstance<TfrmSeasonCRUD>
+          (self, FDTable1.FieldByName('code').AsInteger);
+      end);
+  end
+  else
+    frmmain.CurrentScreen := TfrmSeasonCRUD.GetInstance<TfrmSeasonCRUD>(self,
+      FDTable1.FieldByName('code').AsInteger);
 end;
 
 procedure TfrmSerialCRUD.btnTubesLinksClick(Sender: TObject);
@@ -129,9 +146,26 @@ end;
 
 procedure TfrmSerialCRUD.btnVideosClick(Sender: TObject);
 begin
-  // TODO : tester si record en ajout/modif pour demander confirmation avant
-  frmmain.CurrentScreen := TfrmVideoCRUD.GetInstance<TfrmVideoCRUD>(self,
-    FDTable1.FieldByName('code').AsInteger);
+  if FDTable1.State in dsEditModes then
+  begin
+    TDialogService.MessageDialog
+      ('This record has been edited. Do you want to save the changes ?',
+      TMsgDlgType.mtWarning, mbyesno, tmsgdlgbtn.mbYes, 0,
+      procedure(const AResult: TModalResult)
+      begin
+        case AResult of
+          mryes:
+            FDTable1.Post;
+        else
+          FDTable1.Cancel;
+        end;
+        frmmain.CurrentScreen := TfrmVideoCRUD.GetInstance<TfrmVideoCRUD>(self,
+          FDTable1.FieldByName('code').AsInteger);
+      end);
+  end
+  else
+    frmmain.CurrentScreen := TfrmVideoCRUD.GetInstance<TfrmVideoCRUD>(self,
+      FDTable1.FieldByName('code').AsInteger);
 end;
 
 procedure TfrmSerialCRUD.edtURLChangeTracking(Sender: TObject);
