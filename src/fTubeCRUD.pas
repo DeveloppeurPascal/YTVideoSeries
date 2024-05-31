@@ -91,6 +91,7 @@ implementation
 {$R *.fmx}
 
 uses
+  FMX.DialogService,
   u_urlOpen;
 
 procedure TfrmTubeCRUD.btnOpenURLClick(Sender: TObject);
@@ -111,8 +112,24 @@ end;
 
 procedure TfrmTubeCRUD.OnHide;
 begin
-  // TODO : tester si record en ajout/modif pour demander confirmation avant
-  FDTable1.Active := false;
+  if FDTable1.State in dsEditModes then
+  begin
+    TDialogService.MessageDialog
+      ('This record has been edited. Do you want to save the changes ?',
+      TMsgDlgType.mtWarning, mbyesno, tmsgdlgbtn.mbYes, 0,
+      procedure(const AResult: TModalResult)
+      begin
+        case AResult of
+          mryes:
+            FDTable1.Post;
+        else
+          FDTable1.Cancel;
+        end;
+        FDTable1.Active := false;
+      end);
+  end
+  else
+    FDTable1.Active := false;
   inherited;
 end;
 
