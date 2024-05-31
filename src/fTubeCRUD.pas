@@ -138,6 +138,7 @@ begin
   inherited;
   btnOpenURL.Enabled := false;
   FDTable1.BeforePost := DB.InitDefaultFieldsValues;
+  FDTable1.BeforeDelete := DB.BeforeDeleteOnTable;
   FDTable1.Active := true;
 end;
 
