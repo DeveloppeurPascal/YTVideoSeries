@@ -90,7 +90,6 @@ var
   ListeAvaitElem: boolean;
   AfficheBlocsPrecedents: tstack<boolean>;
   AfficheBlocEnCours: boolean;
-  ListeNomTable: string;
 begin
   if ATemplate.Trim.IsEmpty then
   begin
