@@ -45,6 +45,7 @@ type
     procedure mnuSerialClick(Sender: TObject);
     procedure mnuSeasonClick(Sender: TObject);
     procedure mnuVideoClick(Sender: TObject);
+    procedure FormCloseQuery(Sender: TObject; var CanClose: Boolean);
   private
     FCurrentScreen: TRootFrame;
     procedure SetCurrentScreen(const Value: TRootFrame);
@@ -65,11 +66,48 @@ implementation
 {$R *.fmx}
 
 uses
+  FMX.DialogService,
   u_urlOpen,
   fSeasonCRUD,
   fSerialCRUD,
   fTubeCRUD,
   fVideoCRUD;
+
+procedure TfrmMain.FormCloseQuery(Sender: TObject; var CanClose: Boolean);
+var
+  i: integer;
+  // tab: TFDTable;
+begin
+  CanClose := true;
+  for i := 0 to ComponentCount - 1 do
+    // if (components[i] is TFDTable) and (components[i] as TFDTable).Active and
+    // ((components[i] as TFDTable).State in dsEditModes) then
+    // begin
+    // CanClose := false;
+    // tab := components[i] as TFDTable;
+    // TDialogService.MessageDialog
+    // ('This record has been edited. Do you want to save the changes ?',
+    // TMsgDlgType.mtWarning, mbyesno, tmsgdlgbtn.mbYes, 0,
+    // procedure(const AResult: TModalResult)
+    // begin
+    // case AResult of
+    // mryes:
+    // tab.Post;
+    // else
+    // tab.Cancel;
+    // end;
+    // tthread.forcequeue(nil,
+    // procedure
+    // begin
+    // close;
+    // end);
+    // end);
+    // end
+    // else
+    if (components[i] is TRootFrame) and (components[i] as TRootFrame).visible
+    then
+      (components[i] as TRootFrame).OnHide;
+end;
 
 procedure TfrmMain.FormCreate(Sender: TObject);
 begin
@@ -78,13 +116,13 @@ begin
   InitAboutDialogDescriptionAndLicense;
 
 {$IF Defined(MACOS)}
-  mnuQuit.Visible := false; // added by default in Mac system menu
+  mnuQuit.visible := false; // added by default in Mac system menu
   mnuQuit.text := mnuQuit.text + ' ' + OlfAboutDialog1.Titre;
-  mnuFile.Visible := false;
+  mnuFile.visible := false;
   mnuAbout.Parent := mnuMacSystem;
-  mnuHelp.Visible := false;
+  mnuHelp.visible := false;
 {$ELSE}
-  mnuMacSystem.Visible := false;
+  mnuMacSystem.visible := false;
 {$ENDIF}
   mnuAbout.text := mnuAbout.text + ' ' + OlfAboutDialog1.Titre;
 
@@ -93,14 +131,14 @@ end;
 
 procedure TfrmMain.InitAboutDialogDescriptionAndLicense;
 begin
-  OlfAboutDialog1.Licence.Text :=
+  OlfAboutDialog1.Licence.text :=
     'This program is distributed as shareware. If you use it (especially for ' +
     'commercial or income-generating purposes), please remember the author and '
     + 'contribute to its development by purchasing a license.' + slinebreak +
     slinebreak +
     'This software is supplied as is, with or without bugs. No warranty is offered '
     + 'as to its operation or the data processed. Make backups!';
-  OlfAboutDialog1.Description.Text :=
+  OlfAboutDialog1.Description.text :=
     'Utility for managing a local database of series and episodes published or to be published on video-on-demand sites (such as YouTube).'
     + slinebreak + slinebreak + '*****************' + slinebreak +
     '* Publisher info' + slinebreak + slinebreak +
@@ -174,7 +212,7 @@ end;
 procedure TfrmMain.SetCurrentScreen(const Value: TRootFrame);
 begin
   if assigned(FCurrentScreen) then
-    FCurrentScreen.onhide;
+    FCurrentScreen.OnHide;
   FCurrentScreen := Value;
   if assigned(FCurrentScreen) then
   begin
