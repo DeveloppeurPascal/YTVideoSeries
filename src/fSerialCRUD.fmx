@@ -161,8 +161,8 @@ inherited frmSerialCRUD: TfrmSerialCRUD
         Size.Height = 400.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 5
-        Viewport.Width = 450.000000000000000000
-        Viewport.Height = 396.000000000000000000
+        Viewport.Width = 454.000000000000000000
+        Viewport.Height = 400.000000000000000000
       end
       object lblKeywords: TLabel
         Align = Top
@@ -246,7 +246,6 @@ inherited frmSerialCRUD: TfrmSerialCRUD
   end
   object FDTable1: TFDTable
     Active = True
-    IndexName = 'serial_by_label'
     Connection = db.FDConnection1
     ResourceOptions.AssignedValues = [rvEscapeExpand]
     TableName = 'serial'
