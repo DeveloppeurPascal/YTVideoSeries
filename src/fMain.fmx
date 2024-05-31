@@ -4,10 +4,6 @@ object frmMain: TfrmMain
   Caption = 'YT Video Series'
   ClientHeight = 600
   ClientWidth = 800
-  Padding.Left = 10.000000000000000000
-  Padding.Top = 10.000000000000000000
-  Padding.Right = 10.000000000000000000
-  Padding.Bottom = 10.000000000000000000
   Position = ScreenCenter
   FormFactor.Width = 320
   FormFactor.Height = 480
@@ -28,8 +24,8 @@ object frmMain: TfrmMain
     onURLClick = OlfAboutDialog1URLClick
     Langue = EN
     Copyright = '(c) 2024 Patrick Pr'#233'martin'
-    Left = 320
-    Top = 80
+    Left = 504
+    Top = 208
   end
   object MainMenu1: TMainMenu
     Left = 304
@@ -98,5 +94,118 @@ object frmMain: TfrmMain
         OnClick = mnuAboutClick
       end
     end
+  end
+  object ToolBar1: TToolBar
+    Size.Width = 800.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object btnShowTubes: TButton
+      Align = Left
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Tubes'
+      TextSettings.Trimming = None
+      OnClick = mnuTubeClick
+    end
+    object btnShowSerials: TButton
+      Align = Left
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 95.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Serials'
+      TextSettings.Trimming = None
+      OnClick = mnuSerialClick
+    end
+    object btnShowSeasons: TButton
+      Align = Left
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 185.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'Seasons'
+      TextSettings.Trimming = None
+      OnClick = mnuSeasonClick
+    end
+    object btnAbout: TButton
+      Align = Right
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 625.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'About'
+      TextSettings.Trimming = None
+      OnClick = mnuAboutClick
+    end
+    object btnShowVideos: TButton
+      Align = Left
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 275.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      Text = 'Videos'
+      TextSettings.Trimming = None
+      OnClick = mnuVideoClick
+    end
+    object btnQuit: TButton
+      Align = MostRight
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 715.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      Text = 'Quit'
+      TextSettings.Trimming = None
+      OnClick = mnuQuitClick
+    end
+  end
+  object lFrame: TLayout
+    Align = Client
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    Size.Width = 780.000000000000000000
+    Size.Height = 540.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
   end
 end

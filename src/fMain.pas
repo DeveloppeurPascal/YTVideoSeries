@@ -16,7 +16,10 @@ uses
   Olf.FMX.AboutDialog,
   FMX.Menus,
   uDMLogo,
-  cadRootFrame;
+  cadRootFrame,
+  FMX.StdCtrls,
+  FMX.Controls.Presentation,
+  FMX.Layouts;
 
 type
   TfrmMain = class(TForm)
@@ -37,6 +40,14 @@ type
     MenuItem1: TMenuItem;
     mnuBackupDB: TMenuItem;
     mnuRestoreDB: TMenuItem;
+    ToolBar1: TToolBar;
+    btnShowTubes: TButton;
+    btnShowSerials: TButton;
+    btnShowSeasons: TButton;
+    btnAbout: TButton;
+    btnShowVideos: TButton;
+    btnQuit: TButton;
+    lFrame: TLayout;
     procedure mnuAboutClick(Sender: TObject);
     procedure mnuQuitClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
@@ -216,7 +227,7 @@ begin
   FCurrentScreen := Value;
   if assigned(FCurrentScreen) then
   begin
-    FCurrentScreen.Parent := self;
+    FCurrentScreen.Parent := lFrame;
     FCurrentScreen.onshow;
   end;
   InitMainFormCaption;
