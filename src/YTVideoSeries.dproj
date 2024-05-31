@@ -303,6 +303,8 @@
         <VerInfo_Locale>1033</VerInfo_Locale>
         <Icon_MainIcon>..\assets\icons\YTVideoSeries.ico</Icon_MainIcon>
         <Icns_MainIcns>..\assets\icons\YTVideoSeries.icns</Icns_MainIcns>
+        <VerInfo_Build>2</VerInfo_Build>
+        <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=1.0.0.2;InternalName=;LegalCopyright=2023 Patrick Prémartin;LegalTrademarks=;OriginalFilename=;ProgramID=fr.olfsoftware.ytvideoseries;ProductName=$(MSBuildProjectName);ProductVersion=1.0;Comments=</VerInfo_Keys>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1_Win64)'!=''">
         <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
@@ -432,6 +434,7 @@
             <Form>OlfAboutDialogForm</Form>
             <FormType>fmx</FormType>
         </DCCReference>
+        <DCCReference Include="..\lib-externes\librairies\src\Olf.RTL.GenRandomID.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
@@ -560,6 +563,12 @@
                 <DeployFile LocalName="..\assets\icons\YTVideoSeries.icns" Configuration="Release" Class="ProjectOSXResource">
                     <Platform Name="OSXARM64">
                         <RemoteName>YTVideoSeries.icns</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="OSXARM64\Debug\YTVideoSeries.dSYM" Configuration="Debug" Class="ProjectOSXDebug">
+                    <Platform Name="OSXARM64">
+                        <RemoteName>YTVideoSeries</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
