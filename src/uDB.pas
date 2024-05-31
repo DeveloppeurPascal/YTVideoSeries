@@ -55,7 +55,8 @@ implementation
 {$R *.dfm}
 
 uses
-  System.IOUtils;
+  System.IOUtils,
+  Olf.RTL.GenRandomID;
 
 procedure Tdb.DataModuleCreate(Sender: TObject);
 begin
@@ -119,7 +120,7 @@ begin
   for i := 0 to DataSet.FieldCount - 1 do
     if (DataSet.Fields[i].FieldName = 'id') and
       ((DataSet.Fields[i].IsNull) or (DataSet.Fields[i].AsString.IsEmpty)) then
-      DataSet.Fields[i].AsString := '' // TODO : initialiser valeurs de ID
+      DataSet.Fields[i].AsString := TOlfRandomIDGenerator.getIDBase62(15)
     else if (DataSet.Fields[i].IsNull) then
       case DataSet.Fields[i].DataType of
         TFieldType.ftAutoInc:
