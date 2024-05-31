@@ -4,3 +4,6 @@
 [submodule "lib-externes/librairies"]
 	path = lib-externes/librairies
 	url = https://github.com/DeveloppeurPascal/librairies
+[submodule "lib-externes/DelphiBooks-Common"]
+	path = lib-externes/DelphiBooks-Common
+	url = https://github.com/DeveloppeurPascal/DelphiBooks-Common.git
