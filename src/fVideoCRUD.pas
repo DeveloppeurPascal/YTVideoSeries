@@ -180,12 +180,31 @@ procedure TfrmVideoCRUD.btnTubesLinksClick(Sender: TObject);
 var
   frm: TfrmVideoTubeLinkCRUD;
 begin
-  frm := TfrmVideoTubeLinkCRUD.Create(self, 'video_code',
-    FDTable1.FieldByName('code').AsInteger);
-  try
-    frm.ShowModal;
-  finally
-    frm.Free;
+  if FDTable1.State in dsEditModes then
+  begin
+    TDialogService.MessageDialog
+      ('This record has been edited. Do you want to save the changes ?',
+      TMsgDlgType.mtWarning, mbyesno, tmsgdlgbtn.mbYes, 0,
+      procedure(const AResult: TModalResult)
+      begin
+        case AResult of
+          mryes:
+            FDTable1.Post;
+        else
+          FDTable1.Cancel;
+        end;
+        btnTubesLinksClick(Sender);
+      end);
+  end
+  else
+  begin
+    frm := TfrmVideoTubeLinkCRUD.Create(self, 'video_code',
+      FDTable1.FieldByName('code').AsInteger);
+    try
+      frm.ShowModal;
+    finally
+      frm.Free;
+    end;
   end;
 end;
 
