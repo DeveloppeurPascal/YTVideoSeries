@@ -78,7 +78,6 @@ result := -1;
     frm.FDQuery1.Open(ASQL);
     if frm.ListView1.ItemCount > 0 then
     begin
-      // TODO : prérenseigner la sélection avec la valeur actuelle (si elle existe)
       frm.ListView1.Itemindex := 0; // don't call onChange event
       if assigned(frm.ListView1.OnChange) then
         frm.ListView1.OnChange(frm.ListView1);
