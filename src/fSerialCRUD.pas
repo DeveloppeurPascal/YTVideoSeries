@@ -135,12 +135,31 @@ procedure TfrmSerialCRUD.btnTubesLinksClick(Sender: TObject);
 var
   frm: TfrmSerialTubeLinkCRUD;
 begin
-  frm := TfrmSerialTubeLinkCRUD.Create(self, 'serial_code',
-    FDTable1.FieldByName('code').AsInteger);
-  try
-    frm.ShowModal;
-  finally
-    frm.Free;
+  if FDTable1.State in dsEditModes then
+  begin
+    TDialogService.MessageDialog
+      ('This record has been edited. Do you want to save the changes ?',
+      TMsgDlgType.mtWarning, mbyesno, tmsgdlgbtn.mbYes, 0,
+      procedure(const AResult: TModalResult)
+      begin
+        case AResult of
+          mryes:
+            FDTable1.Post;
+        else
+          FDTable1.Cancel;
+        end;
+        btnTubesLinksClick(Sender);
+      end);
+  end
+  else
+  begin
+    frm := TfrmSerialTubeLinkCRUD.Create(self, 'serial_code',
+      FDTable1.FieldByName('code').AsInteger);
+    try
+      frm.ShowModal;
+    finally
+      frm.Free;
+    end;
   end;
 end;
 
