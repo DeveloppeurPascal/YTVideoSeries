@@ -29,6 +29,7 @@ Pour télécharger ce dépôt de code il est recommandé de passer par "git" mai
 Ce projet utilise des dépendances sous forme de sous modules. Ils seront absents du fichier ZIP. Vous devrez les télécharger à la main.
 
 * [DeveloppeurPascal/AboutDialog-Delphi-Component](https://github.com/DeveloppeurPascal/AboutDialog-Delphi-Component) doit être installé dans le sous dossier ./lib-externes/AboutDialog-Delphi-Component
+* [DeveloppeurPascal/DelphiBooks-Common](https://github.com/DeveloppeurPascal/DelphiBooks-Common) doit être installé dans le sous dossier ./lib-externes/DelphiBooks-Common
 * [DeveloppeurPascal/librairies](https://github.com/DeveloppeurPascal/librairies) doit être installé dans le sous dossier ./lib-externes/librairies
 
 ## Licence d'utilisation de ce dépôt de code et de son contenu
