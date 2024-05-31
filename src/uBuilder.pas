@@ -23,7 +23,8 @@ uses
   Data.DB,
   FireDAC.Comp.DataSet,
   FireDAC.Comp.Client,
-  uDB;
+  uDB,
+  DelphiBooks.Tools;
 
 type
   TFDQueryDictionary = TObjectDictionary<string, TFDQuery>;
@@ -63,20 +64,11 @@ function BuildTextFromTemplate(Const AQryList: TFDQueryDictionary;
     result := '';
     // mots clés en dur
     if Marqueur = 'date' then
-    begin
-      // TODO : récupérer fonctions de conversion de dates depuis le dépôt de génération de Delphi-Books.com
-      // result := Date8ToString(DateToString8(now));
-    end
+      result := Date8ToString(DateToString8(now))
     else if Marqueur = 'date-iso' then
-    begin
-      // TODO : récupérer fonctions de conversion de dates depuis le dépôt de génération de Delphi-Books.com
-      // result := Date8ToStringISO(DateToString8(now));
-    end
+      result := Date8ToStringISO(DateToString8(now))
     else if Marqueur = 'date-rfc822' then
-    begin
-      // TODO : récupérer fonctions de conversion de dates depuis le dépôt de génération de Delphi-Books.com
-      // result := Date8ToStringRFC822(DateToString8(now));
-    end
+      result := Date8ToStringRFC822(DateToString8(now))
     else
       // mots clés liés à la base de données
       try
