@@ -38,12 +38,12 @@ type
     procedure DataModuleCreate(Sender: TObject);
     procedure FDConnection1BeforeConnect(Sender: TObject);
     procedure FDConnection1AfterConnect(Sender: TObject);
-    procedure InitDefaultFieldsValues(DataSet: TDataSet);
   private
     { Déclarations privées }
     function dbname: string;
   public
-    { Déclarations publiques }
+    procedure InitDefaultFieldsValues(DataSet: TDataSet);
+    procedure BeforeDeleteOnTable(DataSet: TDataSet);
   end;
 
 var
@@ -57,6 +57,77 @@ implementation
 uses
   System.IOUtils,
   Olf.RTL.GenRandomID;
+
+procedure Tdb.BeforeDeleteOnTable(DataSet: TDataSet);
+var
+  Tab: TFDTable;
+  DataSetCodeAsString: string;
+  Nb: integer;
+begin
+  if (DataSet is TFDTable) then
+  begin
+    Tab := DataSet as TFDTable;
+    if (Tab.TableName.ToLower = 'tube') then
+    begin
+      DataSetCodeAsString := Tab.FieldByName('code').AsString;
+      Nb := FDConnection1.ExecSQLScalar
+        ('select count(*) from serial_tube where tube_code=' +
+        DataSetCodeAsString);
+      if (Nb > 0) then
+        raise Exception.create('This tube is used by a serial.');
+      Nb := FDConnection1.ExecSQLScalar
+        ('select count(*) from season_tube where tube_code=' +
+        DataSetCodeAsString);
+      if (Nb > 0) then
+        raise Exception.create('This tube is used by a season.');
+      Nb := FDConnection1.ExecSQLScalar
+        ('select count(*) from video_tube where tube_code=' +
+        DataSetCodeAsString);
+      if (Nb > 0) then
+        raise Exception.create('This tube is used by a video.');
+    end
+    else if (Tab.TableName.ToLower = 'serial') then
+    begin
+      DataSetCodeAsString := Tab.FieldByName('code').AsString;
+      Nb := FDConnection1.ExecSQLScalar
+        ('select count(*) from serial_tube where serial_code=' +
+        DataSetCodeAsString);
+      if (Nb > 0) then
+        raise Exception.create('This serial is used by a tube.');
+      Nb := FDConnection1.ExecSQLScalar
+        ('select count(*) from season where serial_code=' +
+        DataSetCodeAsString);
+      if (Nb > 0) then
+        raise Exception.create('This serial is used by a season.');
+      Nb := FDConnection1.ExecSQLScalar
+        ('select count(*) from video where serial_code=' + DataSetCodeAsString);
+      if (Nb > 0) then
+        raise Exception.create('This serial is used by a video.');
+    end
+    else if (Tab.TableName.ToLower = 'season') then
+    begin
+      DataSetCodeAsString := Tab.FieldByName('code').AsString;
+      Nb := FDConnection1.ExecSQLScalar
+        ('select count(*) from season_tube where season_code=' +
+        DataSetCodeAsString);
+      if (Nb > 0) then
+        raise Exception.create('This season is used by a tube.');
+      Nb := FDConnection1.ExecSQLScalar
+        ('select count(*) from video where season_code=' + DataSetCodeAsString);
+      if (Nb > 0) then
+        raise Exception.create('This season is used by a video.');
+    end
+    else if (Tab.TableName.ToLower = 'video') then
+    begin
+      DataSetCodeAsString := Tab.FieldByName('code').AsString;
+      Nb := FDConnection1.ExecSQLScalar
+        ('select count(*) from video_tube where video_code=' +
+        DataSetCodeAsString);
+      if (Nb > 0) then
+        raise Exception.create('This video is used by a tube.');
+    end;
+  end;
+end;
 
 procedure Tdb.DataModuleCreate(Sender: TObject);
 begin
@@ -131,7 +202,7 @@ begin
         TFieldType.ftInteger:
           DataSet.Fields[i].AsInteger := 0;
       else
-        raise exception.Create('Don''t know the type of "' + DataSet.Fields[i]
+        raise Exception.create('Don''t know the type of "' + DataSet.Fields[i]
           .FieldName + '" field.');
       end
     else if (DataSet.Fields[i].FieldName = 'label') and
