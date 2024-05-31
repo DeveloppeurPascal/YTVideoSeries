@@ -13,8 +13,8 @@ object frmMain: TfrmMain
   DesignerMasterStyle = 0
   object OlfAboutDialog1: TOlfAboutDialog
     Titre = 'YT Video Series'
-    VersionNumero = '1.1'
-    VersionDate = '20231126'
+    VersionNumero = '1.2'
+    VersionDate = '20240531'
     MultiResBitmap = <
       item
       end>
@@ -23,7 +23,7 @@ object frmMain: TfrmMain
     URL = 'https://ytvideoseries.olfsoftware.fr'
     onURLClick = OlfAboutDialog1URLClick
     Langue = EN
-    Copyright = '(c) 2024 Patrick Pr'#233'martin'
+    Copyright = '(c) 2023-2024 Patrick Pr'#233'martin'
     Left = 504
     Top = 208
   end
