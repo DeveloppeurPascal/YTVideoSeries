@@ -181,7 +181,19 @@ begin
 end;
 
 procedure Tdb.FDConnection1BeforeConnect(Sender: TObject);
+var
+  version: integer;
+  fichier_VersionDB: string;
 begin
+  fichier_VersionDB := dbname + '.dbv';
+  if tfile.Exists(fichier_VersionDB) then
+  begin
+    version := tfile.ReadAllText(fichier_VersionDB).ToInteger;
+    if (version > FDScript1.SQLScripts.Count - 1) then
+      raise Exception.create
+        ('This program has a wrong database level. Please update it !');
+  end;
+
   FDConnection1.Params.Clear;
   FDConnection1.Params.AddPair('DriverID', 'SQLite');
   FDConnection1.Params.AddPair('LockingMode', 'Normal');
