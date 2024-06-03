@@ -44,196 +44,219 @@ inherited frmTubeCRUD: TfrmTubeCRUD
       yRadius = 4.000000000000000000
     end
   end
-  object sbRight: TVertScrollBox
+  object lRight: TLayout
     Align = Client
     Size.Width = 714.000000000000000000
     Size.Height = 844.000000000000000000
     Size.PlatformDefault = False
-    TabOrder = 6
-    Viewport.Width = 714.000000000000000000
-    Viewport.Height = 844.000000000000000000
-    object lblLabel: TLabel
-      Align = Top
-      FocusControl = edtLabel
-      Margins.Left = 10.000000000000000000
-      Margins.Top = 10.000000000000000000
-      Margins.Right = 10.000000000000000000
-      Margins.Bottom = 5.000000000000000000
-      Position.X = 10.000000000000000000
-      Position.Y = 10.000000000000000000
-      Size.Width = 694.000000000000000000
-      Size.Height = 17.000000000000000000
+    TabOrder = 9
+    object sbRight: TVertScrollBox
+      Align = Client
+      Size.Width = 714.000000000000000000
+      Size.Height = 802.000000000000000000
       Size.PlatformDefault = False
-      TextSettings.Trimming = None
-      Text = '&Label'
-      TabOrder = 0
-    end
-    object edtLabel: TEdit
-      Touch.InteractiveGestures = [LongTap, DoubleTap]
-      Align = Top
-      TabOrder = 1
-      Position.X = 10.000000000000000000
-      Position.Y = 37.000000000000000000
-      Margins.Left = 10.000000000000000000
-      Margins.Top = 5.000000000000000000
-      Margins.Right = 10.000000000000000000
-      Margins.Bottom = 10.000000000000000000
-      Size.Width = 694.000000000000000000
-      Size.Height = 22.000000000000000000
-      Size.PlatformDefault = False
-    end
-    object lblURL: TLabel
-      Align = Top
-      FocusControl = edtURL
-      Margins.Left = 10.000000000000000000
-      Margins.Top = 10.000000000000000000
-      Margins.Right = 10.000000000000000000
-      Margins.Bottom = 5.000000000000000000
-      Position.X = 10.000000000000000000
-      Position.Y = 79.000000000000000000
-      Size.Width = 694.000000000000000000
-      Size.Height = 17.000000000000000000
-      Size.PlatformDefault = False
-      TextSettings.Trimming = None
-      Text = '&URL'
-      TabOrder = 2
-    end
-    object edtURL: TEdit
-      Touch.InteractiveGestures = [LongTap, DoubleTap]
-      Align = Top
-      TabOrder = 3
-      Position.X = 10.000000000000000000
-      Position.Y = 106.000000000000000000
-      Margins.Left = 10.000000000000000000
-      Margins.Top = 5.000000000000000000
-      Margins.Right = 37.000000000000000000
-      Margins.Bottom = 10.000000000000000000
-      Size.Width = 667.000000000000000000
-      Size.Height = 22.000000000000000000
-      Size.PlatformDefault = False
-      OnChangeTracking = edtURLChangeTracking
-      object btnOpenURL: TButton
-        Align = Right
-        Margins.Right = -27.000000000000000000
-        Position.X = 672.000000000000000000
-        Size.Width = 22.000000000000000000
+      TabOrder = 6
+      Viewport.Width = 714.000000000000000000
+      Viewport.Height = 802.000000000000000000
+      object lblLabel: TLabel
+        Align = Top
+        FocusControl = edtLabel
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 10.000000000000000000
+        Size.Width = 694.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Trimming = None
+        Text = '&Label'
+        TabOrder = 0
+      end
+      object edtLabel: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 1
+        Position.X = 10.000000000000000000
+        Position.Y = 37.000000000000000000
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Size.Width = 694.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
-        TabOrder = 0
-        Text = '>'
+      end
+      object lblURL: TLabel
+        Align = Top
+        FocusControl = edtURL
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 79.000000000000000000
+        Size.Width = 694.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
         TextSettings.Trimming = None
-        OnClick = btnOpenURLClick
+        Text = '&URL'
+        TabOrder = 2
+      end
+      object edtURL: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 3
+        Position.X = 10.000000000000000000
+        Position.Y = 106.000000000000000000
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 37.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Size.Width = 667.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        OnChangeTracking = edtURLChangeTracking
+        object btnOpenURL: TButton
+          Align = Right
+          Margins.Right = -27.000000000000000000
+          Position.X = 672.000000000000000000
+          Size.Width = 22.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = '>'
+          TextSettings.Trimming = None
+          OnClick = btnOpenURLClick
+        end
+      end
+      object lblTemplateComment: TLabel
+        Align = Top
+        FocusControl = mmoTemplateComment
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 295.000000000000000000
+        Size.Width = 694.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Trimming = None
+        Text = 'Template for generated &comments'
+        TabOrder = 6
+      end
+      object mmoTemplateComment: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        TextSettings.WordWrap = True
+        Align = Top
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 322.000000000000000000
+        Size.Width = 694.000000000000000000
+        Size.Height = 100.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 7
+        Viewport.Width = 690.000000000000000000
+        Viewport.Height = 96.000000000000000000
+      end
+      object lblTemplateLabel: TLabel
+        Align = Top
+        FocusControl = mmoTemplateLabel
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 148.000000000000000000
+        Size.Width = 694.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Trimming = None
+        Text = '&Template for generated labels'
+        TabOrder = 4
+      end
+      object lblTemplateKeywords: TLabel
+        Align = Top
+        FocusControl = mmoTemplateKeywords
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 442.000000000000000000
+        Size.Width = 694.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Trimming = None
+        Text = 'Template for generated &keywords'
+        TabOrder = 8
+      end
+      object mmoTemplateLabel: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        TextSettings.WordWrap = True
+        Align = Top
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 175.000000000000000000
+        Size.Width = 694.000000000000000000
+        Size.Height = 100.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 5
+        Viewport.Width = 690.000000000000000000
+        Viewport.Height = 96.000000000000000000
+      end
+      object mmoTemplateKeywords: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        TextSettings.WordWrap = True
+        Align = Top
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 469.000000000000000000
+        Size.Width = 694.000000000000000000
+        Size.Height = 100.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 9
+        Viewport.Width = 690.000000000000000000
+        Viewport.Height = 96.000000000000000000
+      end
+      object lBottomMargin: TLayout
+        Align = Top
+        Position.Y = 579.000000000000000000
+        Size.Width = 714.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 10
       end
     end
-    object lblTemplateComment: TLabel
-      Align = Top
-      FocusControl = mmoTemplateComment
+    object btnExportAllVideos: TButton
+      Align = Bottom
       Margins.Left = 10.000000000000000000
       Margins.Top = 10.000000000000000000
       Margins.Right = 10.000000000000000000
-      Margins.Bottom = 5.000000000000000000
-      Position.X = 10.000000000000000000
-      Position.Y = 295.000000000000000000
-      Size.Width = 694.000000000000000000
-      Size.Height = 17.000000000000000000
-      Size.PlatformDefault = False
-      TextSettings.Trimming = None
-      Text = 'Template for generated &comments'
-      TabOrder = 6
-    end
-    object mmoTemplateComment: TMemo
-      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
-      DataDetectorTypes = []
-      TextSettings.WordWrap = True
-      Align = Top
-      Margins.Left = 10.000000000000000000
-      Margins.Top = 5.000000000000000000
-      Margins.Right = 10.000000000000000000
       Margins.Bottom = 10.000000000000000000
       Position.X = 10.000000000000000000
-      Position.Y = 322.000000000000000000
+      Position.Y = 812.000000000000000000
       Size.Width = 694.000000000000000000
-      Size.Height = 100.000000000000000000
+      Size.Height = 22.000000000000000000
       Size.PlatformDefault = False
-      TabOrder = 7
-      Viewport.Width = 690.000000000000000000
-      Viewport.Height = 96.000000000000000000
-    end
-    object lblTemplateLabel: TLabel
-      Align = Top
-      FocusControl = mmoTemplateLabel
-      Margins.Left = 10.000000000000000000
-      Margins.Top = 10.000000000000000000
-      Margins.Right = 10.000000000000000000
-      Margins.Bottom = 5.000000000000000000
-      Position.X = 10.000000000000000000
-      Position.Y = 148.000000000000000000
-      Size.Width = 694.000000000000000000
-      Size.Height = 17.000000000000000000
-      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Export all videos descriptions'
       TextSettings.Trimming = None
-      Text = '&Template for generated labels'
-      TabOrder = 4
-    end
-    object lblTemplateKeywords: TLabel
-      Align = Top
-      FocusControl = mmoTemplateKeywords
-      Margins.Left = 10.000000000000000000
-      Margins.Top = 10.000000000000000000
-      Margins.Right = 10.000000000000000000
-      Margins.Bottom = 5.000000000000000000
-      Position.X = 10.000000000000000000
-      Position.Y = 442.000000000000000000
-      Size.Width = 694.000000000000000000
-      Size.Height = 17.000000000000000000
-      Size.PlatformDefault = False
-      TextSettings.Trimming = None
-      Text = 'Template for generated &keywords'
-      TabOrder = 8
-    end
-    object mmoTemplateLabel: TMemo
-      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
-      DataDetectorTypes = []
-      TextSettings.WordWrap = True
-      Align = Top
-      Margins.Left = 10.000000000000000000
-      Margins.Top = 5.000000000000000000
-      Margins.Right = 10.000000000000000000
-      Margins.Bottom = 10.000000000000000000
-      Position.X = 10.000000000000000000
-      Position.Y = 175.000000000000000000
-      Size.Width = 694.000000000000000000
-      Size.Height = 100.000000000000000000
-      Size.PlatformDefault = False
-      TabOrder = 5
-      Viewport.Width = 690.000000000000000000
-      Viewport.Height = 96.000000000000000000
-    end
-    object mmoTemplateKeywords: TMemo
-      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
-      DataDetectorTypes = []
-      TextSettings.WordWrap = True
-      Align = Top
-      Margins.Left = 10.000000000000000000
-      Margins.Top = 5.000000000000000000
-      Margins.Right = 10.000000000000000000
-      Margins.Bottom = 10.000000000000000000
-      Position.X = 10.000000000000000000
-      Position.Y = 469.000000000000000000
-      Size.Width = 694.000000000000000000
-      Size.Height = 100.000000000000000000
-      Size.PlatformDefault = False
-      TabOrder = 9
-      Viewport.Width = 690.000000000000000000
-      Viewport.Height = 96.000000000000000000
-    end
-    object lBottomMargin: TLayout
-      Align = Top
-      Position.Y = 579.000000000000000000
-      Size.Width = 714.000000000000000000
-      Size.Height = 20.000000000000000000
-      Size.PlatformDefault = False
-      TabOrder = 10
+      OnClick = btnExportAllVideosClick
     end
   end
   object FDTable1: TFDTable

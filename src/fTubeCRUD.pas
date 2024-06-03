@@ -76,8 +76,11 @@ type
     LinkControlToField4: TLinkControlToField;
     LinkControlToField5: TLinkControlToField;
     lBottomMargin: TLayout;
+    lRight: TLayout;
+    btnExportAllVideos: TButton;
     procedure edtURLChangeTracking(Sender: TObject);
     procedure btnOpenURLClick(Sender: TObject);
+    procedure btnExportAllVideosClick(Sender: TObject);
   private
     { Déclarations privées }
   public
@@ -92,7 +95,53 @@ implementation
 
 uses
   FMX.DialogService,
-  u_urlOpen;
+  u_urlOpen,
+  uBuilder,
+  fShowMemo;
+
+procedure TfrmTubeCRUD.btnExportAllVideosClick(Sender: TObject);
+var
+  ExportedText: string;
+  Qry: TFDQuery;
+begin
+  ExportedText := '';
+  Qry := TFDQuery.Create(self);
+  try
+    Qry.Connection := FDTable1.Connection;
+    Qry.sql.Text :=
+      'select video_tube.video_code, video.label as video_label, season.label as season_label, serial.label as serial_label '
+      + 'from video_tube, video, season, serial ' +
+      'where (serial.code=video.serial_code) and (season.code=video.season_code) and'
+      + ' (video_tube.video_code=video.code) and (video_tube.tube_code=' +
+      FDTable1.FieldByName('code').asstring + ') ' +
+      'order by serial.label, season.label, video.label';
+    Qry.Open;
+    while not Qry.eof do
+    begin
+      ExportedText := ExportedText + '****************************************'
+        + slinebreak;
+      ExportedText := ExportedText + FDTable1.FieldByName('label').asstring +
+        slinebreak;
+      ExportedText := ExportedText + Qry.FieldByName('serial_label').asstring +
+        slinebreak;
+      ExportedText := ExportedText + Qry.FieldByName('season_label').asstring +
+        slinebreak;
+      ExportedText := ExportedText + Qry.FieldByName('video_label').asstring +
+        slinebreak;
+      ExportedText := ExportedText + '****************************************'
+        + slinebreak;
+      ExportedText := ExportedText + slinebreak;
+      ExportedText := ExportedText + GetTextFromTemplate
+        (Qry.FieldByName('video_code').AsInteger, FDTable1.FieldByName('code')
+        .AsInteger);
+      ExportedText := ExportedText + slinebreak;
+      Qry.next;
+    end;
+  finally
+    Qry.free;
+  end;
+  TfrmShowMemo.Execute(self, 'Exported text', ExportedText);
+end;
 
 procedure TfrmTubeCRUD.btnOpenURLClick(Sender: TObject);
 begin
