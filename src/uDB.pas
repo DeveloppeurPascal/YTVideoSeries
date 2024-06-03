@@ -147,7 +147,11 @@ begin
 {$ENDIF}
   if not TDirectory.Exists(chemin) then
     TDirectory.CreateDirectory(chemin);
+{$IFDEF DEBUG}
+  result := TPath.Combine(chemin, 'ytvideoseries-debug');
+{$ELSE}
   result := TPath.Combine(chemin, 'ytvideoseries');
+{$ENDIF}
 end;
 
 procedure Tdb.FDConnection1AfterConnect(Sender: TObject);
