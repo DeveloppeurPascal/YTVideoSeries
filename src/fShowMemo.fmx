@@ -13,6 +13,7 @@ object frmShowMemo: TfrmShowMemo
   object Memo1: TMemo
     Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
     DataDetectorTypes = []
+    ReadOnly = True
     TextSettings.WordWrap = True
     Align = Client
     Size.Width = 640.000000000000000000
