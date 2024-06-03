@@ -159,7 +159,7 @@ object frmMain: TfrmMain
       Size.Width = 80.000000000000000000
       Size.Height = 30.000000000000000000
       Size.PlatformDefault = False
-      TabOrder = 3
+      TabOrder = 4
       Text = 'About'
       TextSettings.Trimming = None
       OnClick = mnuAboutClick
@@ -175,7 +175,7 @@ object frmMain: TfrmMain
       Size.Width = 80.000000000000000000
       Size.Height = 30.000000000000000000
       Size.PlatformDefault = False
-      TabOrder = 4
+      TabOrder = 3
       Text = 'Videos'
       TextSettings.Trimming = None
       OnClick = mnuVideoClick
