@@ -35,14 +35,26 @@ function BuildTextFromTemplate(Const AQryList: TFDQueryDictionary;
 /// <param name="Marqueur">
 /// Le marqueur est en format "Table_Field" avec éventuellement plusieurs oulignés au niveau de la table, mais la dernière partie est forcément le champ.
 /// </param>
-  function GetValue(Const Marqueur: string): string;
+  function GetValue(Const AMarqueur: string): string;
   var
     QRY: TFDQuery;
     Table, Field: string;
-    UnderscorePosition: integer;
+    UnderscorePosition, FormateurSeparateurPosition: integer;
     Found: boolean;
+    ContentFound: string;
+    Marqueur, Formateur: string;
   begin
-    result := '';
+    FormateurSeparateurPosition := AMarqueur.IndexOf('-');
+    if (FormateurSeparateurPosition < 0) then
+    begin
+      Marqueur := AMarqueur;
+      Formateur := '';
+    end
+    else
+    begin
+      Marqueur := AMarqueur.Substring(0, FormateurSeparateurPosition);
+      Formateur := AMarqueur.Substring(FormateurSeparateurPosition + 1).ToLower;
+    end;
     Found := false;
     UnderscorePosition := Marqueur.LastIndexOf('_');
     while (UnderscorePosition >= 0) and (not Found) do
@@ -52,7 +64,7 @@ function BuildTextFromTemplate(Const AQryList: TFDQueryDictionary;
       if AQryList.TryGetValue(Table, QRY) and assigned(QRY) and QRY.Active and
         (not QRY.Eof) then
         try
-          result := QRY.FieldByName(Field).asstring;
+          ContentFound := QRY.FieldByName(Field).asstring;
           Found := true;
         except
         end;
@@ -60,10 +72,22 @@ function BuildTextFromTemplate(Const AQryList: TFDQueryDictionary;
     end;
 
     if Found then
+    begin
       // traite les marqueurs, listes et conditions dans le champ récupéré
-      result := BuildTextFromTemplate(AQryList, result)
+      result := BuildTextFromTemplate(AQryList, ContentFound);
+      if not Formateur.IsEmpty then
+      begin
+        if Field.EndsWith('date') and formateur.Equals('tostring') then
+        begin
+          if (result.Length = 10) then
+            result := result.Replace('-', '');
+          if (result.Length = 8) then
+            result := Date8ToString(result)
+        end;
+      end;
+    end
     else
-      raise Exception.Create('Unknow tag "' + Marqueur + '".');
+      raise Exception.Create('Unknow tag "' + AMarqueur + '".');
   end;
 
   function RemplaceMarqueur(Const Marqueur: string): string;
