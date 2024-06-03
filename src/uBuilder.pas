@@ -39,24 +39,31 @@ function BuildTextFromTemplate(Const AQryList: TFDQueryDictionary;
   var
     QRY: TFDQuery;
     Table, Field: string;
+    UnderscorePosition: integer;
+    Found: boolean;
   begin
-    Field := Marqueur.Substring(Marqueur.LastIndexOf('_') + 1);
-    Table := Marqueur.Substring(0, Marqueur.Length - Field.Length - 1);
-    if (not AQryList.TryGetValue(Table, QRY)) then
-      raise exception.Create('Unknown table "' + Table + '" for keyword "' +
-        Marqueur + '".');
-    if assigned(QRY) and QRY.Active and (not QRY.Eof) then
-      try
-        result := QRY.FieldByName(Field).asstring
-      except
-        raise exception.Create('Unknown field "' + Field + '" in the table "' +
-          Table + '" for keyword "' + Marqueur + '".');
-      end
-    else
-      result := '';
+    result := '';
+    Found := false;
+    UnderscorePosition := Marqueur.LastIndexOf('_');
+    while (UnderscorePosition >= 0) and (not Found) do
+    begin
+      Field := Marqueur.Substring(UnderscorePosition + 1);
+      Table := Marqueur.Substring(0, Marqueur.Length - Field.Length - 1);
+      if AQryList.TryGetValue(Table, QRY) and assigned(QRY) and QRY.Active and
+        (not QRY.Eof) then
+        try
+          result := QRY.FieldByName(Field).asstring;
+          Found := true;
+        except
+        end;
+      UnderscorePosition := Marqueur.LastIndexOf('_', UnderscorePosition - 1);
+    end;
 
-    // traite les marqueurs, listes et conditions dans le champ récupéré
-    result := BuildTextFromTemplate(AQryList, result);
+    if Found then
+      // traite les marqueurs, listes et conditions dans le champ récupéré
+      result := BuildTextFromTemplate(AQryList, result)
+    else
+      raise Exception.Create('Unknow tag "' + Marqueur + '".');
   end;
 
   function RemplaceMarqueur(Const Marqueur: string): string;
@@ -74,7 +81,7 @@ function BuildTextFromTemplate(Const AQryList: TFDQueryDictionary;
       try
         result := GetValue(Marqueur).Trim;
       except
-        raise exception.Create('Unknown tag "' + Marqueur + '".');
+        raise Exception.Create('Unknown tag "' + Marqueur + '".');
       end;
   end;
 
@@ -234,7 +241,7 @@ begin
                       end;
                     end
                     else
-                      raise exception.Create('Unknown tag "' + Marqueur + '"');
+                      raise Exception.Create('Unknown tag "' + Marqueur + '"');
 {$ENDREGION}
                     // On n'accepte l'affichage que si le bloc précédent (donc celui dans lequel on se trouve) était déjà affichable
                     AfficheBlocEnCours := AfficheBlocsPrecedents.Peek and
@@ -313,13 +320,13 @@ begin
     QryVideo := GetQuery('select * from video where code=' +
       AVideoCode.ToString);
     if not assigned(QryVideo) then
-      raise exception('Can''t find the video n°' + AVideoCode.ToString +
+      raise Exception('Can''t find the video n°' + AVideoCode.ToString +
         ' in the database.');
     QryList.Add('video', QryVideo);
 
     QryTube := GetQuery('select * from tube where code=' + ATubeCode.ToString);
     if not assigned(QryVideo) then
-      raise exception('Can''t find the tube n°' + ATubeCode.ToString +
+      raise Exception('Can''t find the tube n°' + ATubeCode.ToString +
         ' in the database.');
     QryList.Add('tube', QryTube);
 
