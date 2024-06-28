@@ -9,3 +9,6 @@ https://pictogrammers.com/library/mdi/icon/filmstrip/
 
 * Database Import (Michael Richins)
 https://pictogrammers.com/library/mdi/icon/database-import/
+
+* Database (Simran B)
+https://pictogrammers.com/library/mdi/icon/database/
