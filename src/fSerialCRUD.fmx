@@ -246,6 +246,7 @@ inherited frmSerialCRUD: TfrmSerialCRUD
   end
   object FDTable1: TFDTable
     Active = True
+    IndexFieldNames = 'code'
     Connection = db.FDConnection1
     ResourceOptions.AssignedValues = [rvEscapeExpand]
     TableName = 'serial'
