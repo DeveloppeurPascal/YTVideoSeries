@@ -1,0 +1,2038 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD>
+<BODY>
+    <OBJECT type="text/site properties">
+      <param name="Window Styles" value="0x800227">
+    </OBJECT>
+    <UL>      <LI> <OBJECT type="text/sitemap">
+          <param name="Name" value="YTVideoSeries">
+          <param name="Local" value="YTVideoSeries.html">
+          </OBJECT>
+          <UL>
+              <LI> <OBJECT type="text/sitemap">
+                  <param name="Name" value="cadRootFrame">
+                  <param name="Local" value="cadRootFrame.html">
+                  </OBJECT>
+                  <UL>
+                      <LI> <OBJECT type="text/sitemap">
+                          <param name="Name" value="Classes">
+                          </OBJECT>
+                          <UL>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="TRootFrame">
+                                  <param name="Local" value="cadRootFrame.TRootFrame.html">
+                                  </OBJECT>
+                                  <UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Constructors">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Create">
+                                                  <param name="Local" value="cadRootFrame.TRootFrame.Create.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Destroy">
+                                                  <param name="Local" value="cadRootFrame.TRootFrame.Destroy.html">
+                                                  </OBJECT>
+                                          </UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Methods">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Finalize">
+                                                  <param name="Local" value="cadRootFrame.TRootFrame.Finalize.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="GetFormTitle">
+                                                  <param name="Local" value="cadRootFrame.TRootFrame.GetFormTitle.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="GetInstance&lt;T&gt;">
+                                                  <param name="Local" value="cadRootFrame.TRootFrame.GetInstance(T).html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Initialize">
+                                                  <param name="Local" value="cadRootFrame.TRootFrame.Initialize.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="OnHide">
+                                                  <param name="Local" value="cadRootFrame.TRootFrame.OnHide.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="OnShow">
+                                                  <param name="Local" value="cadRootFrame.TRootFrame.OnShow.html">
+                                                  </OBJECT>
+                                          </UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Fields">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FFilterCode1">
+                                                  <param name="Local" value="cadRootFrame.TRootFrame.FFilterCode1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FFilterCode2">
+                                                  <param name="Local" value="cadRootFrame.TRootFrame.FFilterCode2.html">
+                                                  </OBJECT>
+                                          </UL>
+                                  </UL>
+                          </UL>
+                  </UL>
+              <LI> <OBJECT type="text/sitemap">
+                  <param name="Name" value="fMain">
+                  <param name="Local" value="fMain.html">
+                  </OBJECT>
+                  <UL>
+                      <LI> <OBJECT type="text/sitemap">
+                          <param name="Name" value="Classes">
+                          </OBJECT>
+                          <UL>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="TfrmMain">
+                                  <param name="Local" value="fMain.TfrmMain.html">
+                                  </OBJECT>
+                                  <UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Properties">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="CurrentScreen">
+                                                  <param name="Local" value="fMain.TfrmMain.CurrentScreen.html">
+                                                  </OBJECT>
+                                          </UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Methods">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FormCloseQuery">
+                                                  <param name="Local" value="fMain.TfrmMain.FormCloseQuery.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FormCreate">
+                                                  <param name="Local" value="fMain.TfrmMain.FormCreate.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="InitAboutDialogDescriptionAndLicense">
+                                                  <param name="Local" value="fMain.TfrmMain.InitAboutDialogDescriptionAndLicense.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="InitMainFormCaption">
+                                                  <param name="Local" value="fMain.TfrmMain.InitMainFormCaption.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="OlfAboutDialog1URLClick">
+                                                  <param name="Local" value="fMain.TfrmMain.OlfAboutDialog1URLClick.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="mnuAboutClick">
+                                                  <param name="Local" value="fMain.TfrmMain.mnuAboutClick.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="mnuQuitClick">
+                                                  <param name="Local" value="fMain.TfrmMain.mnuQuitClick.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="mnuSeasonClick">
+                                                  <param name="Local" value="fMain.TfrmMain.mnuSeasonClick.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="mnuSerialClick">
+                                                  <param name="Local" value="fMain.TfrmMain.mnuSerialClick.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="mnuTubeClick">
+                                                  <param name="Local" value="fMain.TfrmMain.mnuTubeClick.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="mnuVideoClick">
+                                                  <param name="Local" value="fMain.TfrmMain.mnuVideoClick.html">
+                                                  </OBJECT>
+                                          </UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Fields">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="MainMenu1">
+                                                  <param name="Local" value="fMain.TfrmMain.MainMenu1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="MenuItem1">
+                                                  <param name="Local" value="fMain.TfrmMain.MenuItem1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="OlfAboutDialog1">
+                                                  <param name="Local" value="fMain.TfrmMain.OlfAboutDialog1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="ToolBar1">
+                                                  <param name="Local" value="fMain.TfrmMain.ToolBar1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnAbout">
+                                                  <param name="Local" value="fMain.TfrmMain.btnAbout.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnQuit">
+                                                  <param name="Local" value="fMain.TfrmMain.btnQuit.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnShowSeasons">
+                                                  <param name="Local" value="fMain.TfrmMain.btnShowSeasons.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnShowSerials">
+                                                  <param name="Local" value="fMain.TfrmMain.btnShowSerials.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnShowTubes">
+                                                  <param name="Local" value="fMain.TfrmMain.btnShowTubes.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnShowVideos">
+                                                  <param name="Local" value="fMain.TfrmMain.btnShowVideos.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lFrame">
+                                                  <param name="Local" value="fMain.TfrmMain.lFrame.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="mnuAbout">
+                                                  <param name="Local" value="fMain.TfrmMain.mnuAbout.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="mnuBackupDB">
+                                                  <param name="Local" value="fMain.TfrmMain.mnuBackupDB.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="mnuData">
+                                                  <param name="Local" value="fMain.TfrmMain.mnuData.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="mnuFile">
+                                                  <param name="Local" value="fMain.TfrmMain.mnuFile.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="mnuHelp">
+                                                  <param name="Local" value="fMain.TfrmMain.mnuHelp.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="mnuMacSystem">
+                                                  <param name="Local" value="fMain.TfrmMain.mnuMacSystem.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="mnuOptions">
+                                                  <param name="Local" value="fMain.TfrmMain.mnuOptions.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="mnuQuit">
+                                                  <param name="Local" value="fMain.TfrmMain.mnuQuit.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="mnuRestoreDB">
+                                                  <param name="Local" value="fMain.TfrmMain.mnuRestoreDB.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="mnuSeason">
+                                                  <param name="Local" value="fMain.TfrmMain.mnuSeason.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="mnuSerial">
+                                                  <param name="Local" value="fMain.TfrmMain.mnuSerial.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="mnuTools">
+                                                  <param name="Local" value="fMain.TfrmMain.mnuTools.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="mnuTube">
+                                                  <param name="Local" value="fMain.TfrmMain.mnuTube.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="mnuVideo">
+                                                  <param name="Local" value="fMain.TfrmMain.mnuVideo.html">
+                                                  </OBJECT>
+                                          </UL>
+                                  </UL>
+                          </UL>
+                      <LI> <OBJECT type="text/sitemap">
+                          <param name="Name" value="Variables">
+                          </OBJECT>
+                          <UL>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="frmMain">
+                                  <param name="Local" value="fMain.frmMain.html">
+                                  </OBJECT>
+                          </UL>
+                  </UL>
+              <LI> <OBJECT type="text/sitemap">
+                  <param name="Name" value="fRootTubeLink">
+                  <param name="Local" value="fRootTubeLink.html">
+                  </OBJECT>
+                  <UL>
+                      <LI> <OBJECT type="text/sitemap">
+                          <param name="Name" value="Classes">
+                          </OBJECT>
+                          <UL>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="TfrmRootTubeLink">
+                                  <param name="Local" value="fRootTubeLink.TfrmRootTubeLink.html">
+                                  </OBJECT>
+                                  <UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Constructors">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Create">
+                                                  <param name="Local" value="fRootTubeLink.TfrmRootTubeLink.Create.html">
+                                                  </OBJECT>
+                                          </UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Methods">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1AfterInsert">
+                                                  <param name="Local" value="fRootTubeLink.TfrmRootTubeLink.FDTable1AfterInsert.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1BeforePost">
+                                                  <param name="Local" value="fRootTubeLink.TfrmRootTubeLink.FDTable1BeforePost.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1CalcFields">
+                                                  <param name="Local" value="fRootTubeLink.TfrmRootTubeLink.FDTable1CalcFields.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FillTableFromFields">
+                                                  <param name="Local" value="fRootTubeLink.TfrmRootTubeLink.FillTableFromFields.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FormCloseQuery">
+                                                  <param name="Local" value="fRootTubeLink.TfrmRootTubeLink.FormCloseQuery.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="GetLabelFromTheFilter">
+                                                  <param name="Local" value="fRootTubeLink.TfrmRootTubeLink.GetLabelFromTheFilter.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="ListView1Change">
+                                                  <param name="Local" value="fRootTubeLink.TfrmRootTubeLink.ListView1Change.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnCloseClick">
+                                                  <param name="Local" value="fRootTubeLink.TfrmRootTubeLink.btnCloseClick.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="initFieldsForInsert">
+                                                  <param name="Local" value="fRootTubeLink.TfrmRootTubeLink.initFieldsForInsert.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="initFieldsFromTable">
+                                                  <param name="Local" value="fRootTubeLink.TfrmRootTubeLink.initFieldsFromTable.html">
+                                                  </OBJECT>
+                                          </UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Fields">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="BindNavigator1">
+                                                  <param name="Local" value="fRootTubeLink.TfrmRootTubeLink.BindNavigator1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="BindSourceDB1">
+                                                  <param name="Local" value="fRootTubeLink.TfrmRootTubeLink.BindSourceDB1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="BindingsList1">
+                                                  <param name="Local" value="fRootTubeLink.TfrmRootTubeLink.BindingsList1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1">
+                                                  <param name="Local" value="fRootTubeLink.TfrmRootTubeLink.FDTable1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1TubeLabel">
+                                                  <param name="Local" value="fRootTubeLink.TfrmRootTubeLink.FDTable1TubeLabel.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FFilterFieldName">
+                                                  <param name="Local" value="fRootTubeLink.TfrmRootTubeLink.FFilterFieldName.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FFilterFieldValue">
+                                                  <param name="Local" value="fRootTubeLink.TfrmRootTubeLink.FFilterFieldValue.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="LinkListControlToField1">
+                                                  <param name="Local" value="fRootTubeLink.TfrmRootTubeLink.LinkListControlToField1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="ListView1">
+                                                  <param name="Local" value="fRootTubeLink.TfrmRootTubeLink.ListView1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Splitter1">
+                                                  <param name="Local" value="fRootTubeLink.TfrmRootTubeLink.Splitter1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnClose">
+                                                  <param name="Local" value="fRootTubeLink.TfrmRootTubeLink.btnClose.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lBottom">
+                                                  <param name="Local" value="fRootTubeLink.TfrmRootTubeLink.lBottom.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lBottomMargin">
+                                                  <param name="Local" value="fRootTubeLink.TfrmRootTubeLink.lBottomMargin.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lLeft">
+                                                  <param name="Local" value="fRootTubeLink.TfrmRootTubeLink.lLeft.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="sRight">
+                                                  <param name="Local" value="fRootTubeLink.TfrmRootTubeLink.sRight.html">
+                                                  </OBJECT>
+                                          </UL>
+                                  </UL>
+                          </UL>
+                      <LI> <OBJECT type="text/sitemap">
+                          <param name="Name" value="Variables">
+                          </OBJECT>
+                          <UL>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="frmRootTubeLink">
+                                  <param name="Local" value="fRootTubeLink.frmRootTubeLink.html">
+                                  </OBJECT>
+                          </UL>
+                  </UL>
+              <LI> <OBJECT type="text/sitemap">
+                  <param name="Name" value="fSeasonCRUD">
+                  <param name="Local" value="fSeasonCRUD.html">
+                  </OBJECT>
+                  <UL>
+                      <LI> <OBJECT type="text/sitemap">
+                          <param name="Name" value="Classes">
+                          </OBJECT>
+                          <UL>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="TfrmSeasonCRUD">
+                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.html">
+                                  </OBJECT>
+                                  <UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Methods">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Calendar1DateSelected">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.Calendar1DateSelected.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1AfterPost">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.FDTable1AfterPost.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1CalcFields">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.FDTable1CalcFields.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FillSerialFilter">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.FillSerialFilter.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="GetFormTitle">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.GetFormTitle.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="OnHide">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.OnHide.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="OnShow">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.OnShow.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="SetTableFilter">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.SetTableFilter.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnOpenURLClick">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.btnOpenURLClick.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnSerialSelectClick">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.btnSerialSelectClick.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnShowCalendarClick">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.btnShowCalendarClick.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnTubesLinksClick">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.btnTubesLinksClick.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnVideosClick">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.btnVideosClick.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="cbSerialFilterChange">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.cbSerialFilterChange.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="edtURLChangeTracking">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.edtURLChangeTracking.html">
+                                                  </OBJECT>
+                                          </UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Fields">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="BindNavigator1">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.BindNavigator1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="BindSourceDB1">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.BindSourceDB1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="BindingsList1">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.BindingsList1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Calendar1">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.Calendar1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.FDTable1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1SerialLabel">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.FDTable1SerialLabel.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1code">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.FDTable1code.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1comment">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.FDTable1comment.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1id">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.FDTable1id.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1keyword">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.FDTable1keyword.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1label">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.FDTable1label.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1order_in_serial">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.FDTable1order_in_serial.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1record_date">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.FDTable1record_date.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1serial_code">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.FDTable1serial_code.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1url">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.FDTable1url.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="LinkControlToField1">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.LinkControlToField1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="LinkControlToField2">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.LinkControlToField2.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="LinkControlToField3">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.LinkControlToField3.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="LinkControlToField4">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.LinkControlToField4.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="LinkControlToField5">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.LinkControlToField5.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="LinkControlToField6">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.LinkControlToField6.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="LinkControlToField7">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.LinkControlToField7.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="LinkListControlToField1">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.LinkListControlToField1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="ListView1">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.ListView1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Popup1">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.Popup1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Splitter1">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.Splitter1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnOpenURL">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.btnOpenURL.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnSerialSelect">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.btnSerialSelect.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnShowCalendar">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.btnShowCalendar.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnTubesLinks">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.btnTubesLinks.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnVideos">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.btnVideos.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="cbSerialFilter">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.cbSerialFilter.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="edtKeywords">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.edtKeywords.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="edtLabel">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.edtLabel.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="edtRecordDate">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.edtRecordDate.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="edtSeasonNumber">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.edtSeasonNumber.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="edtSerialLabel">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.edtSerialLabel.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="edtURL">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.edtURL.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lLeft">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.lLeft.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lRight">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.lRight.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lblComment">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.lblComment.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lblKeywords">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.lblKeywords.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lblLabel">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.lblLabel.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lblRecordDate">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.lblRecordDate.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lblSeasonNumber">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.lblSeasonNumber.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lblSerial">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.lblSerial.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lblURL">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.lblURL.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="mmoComment">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.mmoComment.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="sbRight">
+                                                  <param name="Local" value="fSeasonCRUD.TfrmSeasonCRUD.sbRight.html">
+                                                  </OBJECT>
+                                          </UL>
+                                  </UL>
+                          </UL>
+                  </UL>
+              <LI> <OBJECT type="text/sitemap">
+                  <param name="Name" value="fSeasonTubeLinkCRUD">
+                  <param name="Local" value="fSeasonTubeLinkCRUD.html">
+                  </OBJECT>
+                  <UL>
+                      <LI> <OBJECT type="text/sitemap">
+                          <param name="Name" value="Classes">
+                          </OBJECT>
+                          <UL>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="TfrmSeasonTubeLinkCRUD">
+                                  <param name="Local" value="fSeasonTubeLinkCRUD.TfrmSeasonTubeLinkCRUD.html">
+                                  </OBJECT>
+                                  <UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Methods">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FormCreate">
+                                                  <param name="Local" value="fSeasonTubeLinkCRUD.TfrmSeasonTubeLinkCRUD.FormCreate.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="GetLabelFromTheFilter">
+                                                  <param name="Local" value="fSeasonTubeLinkCRUD.TfrmSeasonTubeLinkCRUD.GetLabelFromTheFilter.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnOpenURLClick">
+                                                  <param name="Local" value="fSeasonTubeLinkCRUD.TfrmSeasonTubeLinkCRUD.btnOpenURLClick.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="edtURLChangeTracking">
+                                                  <param name="Local" value="fSeasonTubeLinkCRUD.TfrmSeasonTubeLinkCRUD.edtURLChangeTracking.html">
+                                                  </OBJECT>
+                                          </UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Fields">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1comment">
+                                                  <param name="Local" value="fSeasonTubeLinkCRUD.TfrmSeasonTubeLinkCRUD.FDTable1comment.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1keyword">
+                                                  <param name="Local" value="fSeasonTubeLinkCRUD.TfrmSeasonTubeLinkCRUD.FDTable1keyword.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1label">
+                                                  <param name="Local" value="fSeasonTubeLinkCRUD.TfrmSeasonTubeLinkCRUD.FDTable1label.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1season_code">
+                                                  <param name="Local" value="fSeasonTubeLinkCRUD.TfrmSeasonTubeLinkCRUD.FDTable1season_code.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1tube_code">
+                                                  <param name="Local" value="fSeasonTubeLinkCRUD.TfrmSeasonTubeLinkCRUD.FDTable1tube_code.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1url">
+                                                  <param name="Local" value="fSeasonTubeLinkCRUD.TfrmSeasonTubeLinkCRUD.FDTable1url.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="LinkControlToField1">
+                                                  <param name="Local" value="fSeasonTubeLinkCRUD.TfrmSeasonTubeLinkCRUD.LinkControlToField1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="LinkControlToField2">
+                                                  <param name="Local" value="fSeasonTubeLinkCRUD.TfrmSeasonTubeLinkCRUD.LinkControlToField2.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="LinkControlToField3">
+                                                  <param name="Local" value="fSeasonTubeLinkCRUD.TfrmSeasonTubeLinkCRUD.LinkControlToField3.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="LinkControlToField4">
+                                                  <param name="Local" value="fSeasonTubeLinkCRUD.TfrmSeasonTubeLinkCRUD.LinkControlToField4.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnOpenURL">
+                                                  <param name="Local" value="fSeasonTubeLinkCRUD.TfrmSeasonTubeLinkCRUD.btnOpenURL.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="edtKeywords">
+                                                  <param name="Local" value="fSeasonTubeLinkCRUD.TfrmSeasonTubeLinkCRUD.edtKeywords.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="edtLabel">
+                                                  <param name="Local" value="fSeasonTubeLinkCRUD.TfrmSeasonTubeLinkCRUD.edtLabel.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="edtURL">
+                                                  <param name="Local" value="fSeasonTubeLinkCRUD.TfrmSeasonTubeLinkCRUD.edtURL.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lblComment">
+                                                  <param name="Local" value="fSeasonTubeLinkCRUD.TfrmSeasonTubeLinkCRUD.lblComment.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lblKeywords">
+                                                  <param name="Local" value="fSeasonTubeLinkCRUD.TfrmSeasonTubeLinkCRUD.lblKeywords.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lblLabel">
+                                                  <param name="Local" value="fSeasonTubeLinkCRUD.TfrmSeasonTubeLinkCRUD.lblLabel.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lblURL">
+                                                  <param name="Local" value="fSeasonTubeLinkCRUD.TfrmSeasonTubeLinkCRUD.lblURL.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="mmoComment">
+                                                  <param name="Local" value="fSeasonTubeLinkCRUD.TfrmSeasonTubeLinkCRUD.mmoComment.html">
+                                                  </OBJECT>
+                                          </UL>
+                                  </UL>
+                          </UL>
+                      <LI> <OBJECT type="text/sitemap">
+                          <param name="Name" value="Variables">
+                          </OBJECT>
+                          <UL>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="frmSeasonTubeLinkCRUD">
+                                  <param name="Local" value="fSeasonTubeLinkCRUD.frmSeasonTubeLinkCRUD.html">
+                                  </OBJECT>
+                          </UL>
+                  </UL>
+              <LI> <OBJECT type="text/sitemap">
+                  <param name="Name" value="fSelectRecord">
+                  <param name="Local" value="fSelectRecord.html">
+                  </OBJECT>
+                  <UL>
+                      <LI> <OBJECT type="text/sitemap">
+                          <param name="Name" value="Classes">
+                          </OBJECT>
+                          <UL>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="TfrmSelectRecord">
+                                  <param name="Local" value="fSelectRecord.TfrmSelectRecord.html">
+                                  </OBJECT>
+                                  <UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Methods">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FormCreate">
+                                                  <param name="Local" value="fSelectRecord.TfrmSelectRecord.FormCreate.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FromSeasonTable">
+                                                  <param name="Local" value="fSelectRecord.TfrmSelectRecord.FromSeasonTable.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FromSerialTable">
+                                                  <param name="Local" value="fSelectRecord.TfrmSelectRecord.FromSerialTable.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FromTubeTable">
+                                                  <param name="Local" value="fSelectRecord.TfrmSelectRecord.FromTubeTable.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="ListView1Change">
+                                                  <param name="Local" value="fSelectRecord.TfrmSelectRecord.ListView1Change.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="ListView1DblClick">
+                                                  <param name="Local" value="fSelectRecord.TfrmSelectRecord.ListView1DblClick.html">
+                                                  </OBJECT>
+                                          </UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Fields">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="BindSourceDB1">
+                                                  <param name="Local" value="fSelectRecord.TfrmSelectRecord.BindSourceDB1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="BindingsList1">
+                                                  <param name="Local" value="fSelectRecord.TfrmSelectRecord.BindingsList1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDQuery1">
+                                                  <param name="Local" value="fSelectRecord.TfrmSelectRecord.FDQuery1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="GridPanelLayout1">
+                                                  <param name="Local" value="fSelectRecord.TfrmSelectRecord.GridPanelLayout1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="LinkListControlToField1">
+                                                  <param name="Local" value="fSelectRecord.TfrmSelectRecord.LinkListControlToField1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="ListView1">
+                                                  <param name="Local" value="fSelectRecord.TfrmSelectRecord.ListView1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnCancel">
+                                                  <param name="Local" value="fSelectRecord.TfrmSelectRecord.btnCancel.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnSelect">
+                                                  <param name="Local" value="fSelectRecord.TfrmSelectRecord.btnSelect.html">
+                                                  </OBJECT>
+                                          </UL>
+                                  </UL>
+                          </UL>
+                  </UL>
+              <LI> <OBJECT type="text/sitemap">
+                  <param name="Name" value="fSerialCRUD">
+                  <param name="Local" value="fSerialCRUD.html">
+                  </OBJECT>
+                  <UL>
+                      <LI> <OBJECT type="text/sitemap">
+                          <param name="Name" value="Classes">
+                          </OBJECT>
+                          <UL>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="TfrmSerialCRUD">
+                                  <param name="Local" value="fSerialCRUD.TfrmSerialCRUD.html">
+                                  </OBJECT>
+                                  <UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Methods">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="GetFormTitle">
+                                                  <param name="Local" value="fSerialCRUD.TfrmSerialCRUD.GetFormTitle.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="OnHide">
+                                                  <param name="Local" value="fSerialCRUD.TfrmSerialCRUD.OnHide.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="OnShow">
+                                                  <param name="Local" value="fSerialCRUD.TfrmSerialCRUD.OnShow.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnOpenURLClick">
+                                                  <param name="Local" value="fSerialCRUD.TfrmSerialCRUD.btnOpenURLClick.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnSeasonsClick">
+                                                  <param name="Local" value="fSerialCRUD.TfrmSerialCRUD.btnSeasonsClick.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnTubesLinksClick">
+                                                  <param name="Local" value="fSerialCRUD.TfrmSerialCRUD.btnTubesLinksClick.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnVideosClick">
+                                                  <param name="Local" value="fSerialCRUD.TfrmSerialCRUD.btnVideosClick.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="edtURLChangeTracking">
+                                                  <param name="Local" value="fSerialCRUD.TfrmSerialCRUD.edtURLChangeTracking.html">
+                                                  </OBJECT>
+                                          </UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Fields">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="BindNavigator1">
+                                                  <param name="Local" value="fSerialCRUD.TfrmSerialCRUD.BindNavigator1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="BindSourceDB1">
+                                                  <param name="Local" value="fSerialCRUD.TfrmSerialCRUD.BindSourceDB1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="BindingsList1">
+                                                  <param name="Local" value="fSerialCRUD.TfrmSerialCRUD.BindingsList1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1">
+                                                  <param name="Local" value="fSerialCRUD.TfrmSerialCRUD.FDTable1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="LinkControlToField1">
+                                                  <param name="Local" value="fSerialCRUD.TfrmSerialCRUD.LinkControlToField1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="LinkControlToField2">
+                                                  <param name="Local" value="fSerialCRUD.TfrmSerialCRUD.LinkControlToField2.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="LinkControlToField3">
+                                                  <param name="Local" value="fSerialCRUD.TfrmSerialCRUD.LinkControlToField3.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="LinkControlToField4">
+                                                  <param name="Local" value="fSerialCRUD.TfrmSerialCRUD.LinkControlToField4.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="LinkListControlToField1">
+                                                  <param name="Local" value="fSerialCRUD.TfrmSerialCRUD.LinkListControlToField1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="ListView1">
+                                                  <param name="Local" value="fSerialCRUD.TfrmSerialCRUD.ListView1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Splitter1">
+                                                  <param name="Local" value="fSerialCRUD.TfrmSerialCRUD.Splitter1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnOpenURL">
+                                                  <param name="Local" value="fSerialCRUD.TfrmSerialCRUD.btnOpenURL.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnSeasons">
+                                                  <param name="Local" value="fSerialCRUD.TfrmSerialCRUD.btnSeasons.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnTubesLinks">
+                                                  <param name="Local" value="fSerialCRUD.TfrmSerialCRUD.btnTubesLinks.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnVideos">
+                                                  <param name="Local" value="fSerialCRUD.TfrmSerialCRUD.btnVideos.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="edtKeywords">
+                                                  <param name="Local" value="fSerialCRUD.TfrmSerialCRUD.edtKeywords.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="edtLabel">
+                                                  <param name="Local" value="fSerialCRUD.TfrmSerialCRUD.edtLabel.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="edtURL">
+                                                  <param name="Local" value="fSerialCRUD.TfrmSerialCRUD.edtURL.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lLeft">
+                                                  <param name="Local" value="fSerialCRUD.TfrmSerialCRUD.lLeft.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lRight">
+                                                  <param name="Local" value="fSerialCRUD.TfrmSerialCRUD.lRight.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lblComment">
+                                                  <param name="Local" value="fSerialCRUD.TfrmSerialCRUD.lblComment.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lblKeywords">
+                                                  <param name="Local" value="fSerialCRUD.TfrmSerialCRUD.lblKeywords.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lblLabel">
+                                                  <param name="Local" value="fSerialCRUD.TfrmSerialCRUD.lblLabel.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lblURL">
+                                                  <param name="Local" value="fSerialCRUD.TfrmSerialCRUD.lblURL.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="mmoComment">
+                                                  <param name="Local" value="fSerialCRUD.TfrmSerialCRUD.mmoComment.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="sbRight">
+                                                  <param name="Local" value="fSerialCRUD.TfrmSerialCRUD.sbRight.html">
+                                                  </OBJECT>
+                                          </UL>
+                                  </UL>
+                          </UL>
+                  </UL>
+              <LI> <OBJECT type="text/sitemap">
+                  <param name="Name" value="fSerialTubeLinkCRUD">
+                  <param name="Local" value="fSerialTubeLinkCRUD.html">
+                  </OBJECT>
+                  <UL>
+                      <LI> <OBJECT type="text/sitemap">
+                          <param name="Name" value="Classes">
+                          </OBJECT>
+                          <UL>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="TfrmSerialTubeLinkCRUD">
+                                  <param name="Local" value="fSerialTubeLinkCRUD.TfrmSerialTubeLinkCRUD.html">
+                                  </OBJECT>
+                                  <UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Methods">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FormCreate">
+                                                  <param name="Local" value="fSerialTubeLinkCRUD.TfrmSerialTubeLinkCRUD.FormCreate.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="GetLabelFromTheFilter">
+                                                  <param name="Local" value="fSerialTubeLinkCRUD.TfrmSerialTubeLinkCRUD.GetLabelFromTheFilter.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnOpenURLClick">
+                                                  <param name="Local" value="fSerialTubeLinkCRUD.TfrmSerialTubeLinkCRUD.btnOpenURLClick.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="edtURLChangeTracking">
+                                                  <param name="Local" value="fSerialTubeLinkCRUD.TfrmSerialTubeLinkCRUD.edtURLChangeTracking.html">
+                                                  </OBJECT>
+                                          </UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Fields">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1comment">
+                                                  <param name="Local" value="fSerialTubeLinkCRUD.TfrmSerialTubeLinkCRUD.FDTable1comment.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1keyword">
+                                                  <param name="Local" value="fSerialTubeLinkCRUD.TfrmSerialTubeLinkCRUD.FDTable1keyword.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1label">
+                                                  <param name="Local" value="fSerialTubeLinkCRUD.TfrmSerialTubeLinkCRUD.FDTable1label.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1serial_code">
+                                                  <param name="Local" value="fSerialTubeLinkCRUD.TfrmSerialTubeLinkCRUD.FDTable1serial_code.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1tube_code">
+                                                  <param name="Local" value="fSerialTubeLinkCRUD.TfrmSerialTubeLinkCRUD.FDTable1tube_code.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1url">
+                                                  <param name="Local" value="fSerialTubeLinkCRUD.TfrmSerialTubeLinkCRUD.FDTable1url.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="LinkControlToField1">
+                                                  <param name="Local" value="fSerialTubeLinkCRUD.TfrmSerialTubeLinkCRUD.LinkControlToField1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="LinkControlToField2">
+                                                  <param name="Local" value="fSerialTubeLinkCRUD.TfrmSerialTubeLinkCRUD.LinkControlToField2.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="LinkControlToField3">
+                                                  <param name="Local" value="fSerialTubeLinkCRUD.TfrmSerialTubeLinkCRUD.LinkControlToField3.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="LinkControlToField4">
+                                                  <param name="Local" value="fSerialTubeLinkCRUD.TfrmSerialTubeLinkCRUD.LinkControlToField4.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnOpenURL">
+                                                  <param name="Local" value="fSerialTubeLinkCRUD.TfrmSerialTubeLinkCRUD.btnOpenURL.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="edtKeywords">
+                                                  <param name="Local" value="fSerialTubeLinkCRUD.TfrmSerialTubeLinkCRUD.edtKeywords.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="edtLabel">
+                                                  <param name="Local" value="fSerialTubeLinkCRUD.TfrmSerialTubeLinkCRUD.edtLabel.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="edtURL">
+                                                  <param name="Local" value="fSerialTubeLinkCRUD.TfrmSerialTubeLinkCRUD.edtURL.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lblComment">
+                                                  <param name="Local" value="fSerialTubeLinkCRUD.TfrmSerialTubeLinkCRUD.lblComment.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lblKeywords">
+                                                  <param name="Local" value="fSerialTubeLinkCRUD.TfrmSerialTubeLinkCRUD.lblKeywords.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lblLabel">
+                                                  <param name="Local" value="fSerialTubeLinkCRUD.TfrmSerialTubeLinkCRUD.lblLabel.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lblURL">
+                                                  <param name="Local" value="fSerialTubeLinkCRUD.TfrmSerialTubeLinkCRUD.lblURL.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="mmoComment">
+                                                  <param name="Local" value="fSerialTubeLinkCRUD.TfrmSerialTubeLinkCRUD.mmoComment.html">
+                                                  </OBJECT>
+                                          </UL>
+                                  </UL>
+                          </UL>
+                      <LI> <OBJECT type="text/sitemap">
+                          <param name="Name" value="Variables">
+                          </OBJECT>
+                          <UL>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="frmSerialTubeLinkCRUD">
+                                  <param name="Local" value="fSerialTubeLinkCRUD.frmSerialTubeLinkCRUD.html">
+                                  </OBJECT>
+                          </UL>
+                  </UL>
+              <LI> <OBJECT type="text/sitemap">
+                  <param name="Name" value="fShowMemo">
+                  <param name="Local" value="fShowMemo.html">
+                  </OBJECT>
+                  <UL>
+                      <LI> <OBJECT type="text/sitemap">
+                          <param name="Name" value="Classes">
+                          </OBJECT>
+                          <UL>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="TfrmShowMemo">
+                                  <param name="Local" value="fShowMemo.TfrmShowMemo.html">
+                                  </OBJECT>
+                                  <UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Methods">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Execute">
+                                                  <param name="Local" value="fShowMemo.TfrmShowMemo.Execute.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FormShow">
+                                                  <param name="Local" value="fShowMemo.TfrmShowMemo.FormShow.html">
+                                                  </OBJECT>
+                                          </UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Fields">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Layout1">
+                                                  <param name="Local" value="fShowMemo.TfrmShowMemo.Layout1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Memo1">
+                                                  <param name="Local" value="fShowMemo.TfrmShowMemo.Memo1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnClose">
+                                                  <param name="Local" value="fShowMemo.TfrmShowMemo.btnClose.html">
+                                                  </OBJECT>
+                                          </UL>
+                                  </UL>
+                          </UL>
+                  </UL>
+              <LI> <OBJECT type="text/sitemap">
+                  <param name="Name" value="fTubeCRUD">
+                  <param name="Local" value="fTubeCRUD.html">
+                  </OBJECT>
+                  <UL>
+                      <LI> <OBJECT type="text/sitemap">
+                          <param name="Name" value="Classes">
+                          </OBJECT>
+                          <UL>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="TfrmTubeCRUD">
+                                  <param name="Local" value="fTubeCRUD.TfrmTubeCRUD.html">
+                                  </OBJECT>
+                                  <UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Methods">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="GetFormTitle">
+                                                  <param name="Local" value="fTubeCRUD.TfrmTubeCRUD.GetFormTitle.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="OnHide">
+                                                  <param name="Local" value="fTubeCRUD.TfrmTubeCRUD.OnHide.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="OnShow">
+                                                  <param name="Local" value="fTubeCRUD.TfrmTubeCRUD.OnShow.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnExportAllVideosClick">
+                                                  <param name="Local" value="fTubeCRUD.TfrmTubeCRUD.btnExportAllVideosClick.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnOpenURLClick">
+                                                  <param name="Local" value="fTubeCRUD.TfrmTubeCRUD.btnOpenURLClick.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="edtURLChangeTracking">
+                                                  <param name="Local" value="fTubeCRUD.TfrmTubeCRUD.edtURLChangeTracking.html">
+                                                  </OBJECT>
+                                          </UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Fields">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="BindNavigator1">
+                                                  <param name="Local" value="fTubeCRUD.TfrmTubeCRUD.BindNavigator1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="BindSourceDB1">
+                                                  <param name="Local" value="fTubeCRUD.TfrmTubeCRUD.BindSourceDB1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="BindingsList1">
+                                                  <param name="Local" value="fTubeCRUD.TfrmTubeCRUD.BindingsList1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1">
+                                                  <param name="Local" value="fTubeCRUD.TfrmTubeCRUD.FDTable1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="LinkControlToField1">
+                                                  <param name="Local" value="fTubeCRUD.TfrmTubeCRUD.LinkControlToField1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="LinkControlToField2">
+                                                  <param name="Local" value="fTubeCRUD.TfrmTubeCRUD.LinkControlToField2.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="LinkControlToField3">
+                                                  <param name="Local" value="fTubeCRUD.TfrmTubeCRUD.LinkControlToField3.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="LinkControlToField4">
+                                                  <param name="Local" value="fTubeCRUD.TfrmTubeCRUD.LinkControlToField4.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="LinkControlToField5">
+                                                  <param name="Local" value="fTubeCRUD.TfrmTubeCRUD.LinkControlToField5.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="LinkListControlToField1">
+                                                  <param name="Local" value="fTubeCRUD.TfrmTubeCRUD.LinkListControlToField1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="ListView1">
+                                                  <param name="Local" value="fTubeCRUD.TfrmTubeCRUD.ListView1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Splitter1">
+                                                  <param name="Local" value="fTubeCRUD.TfrmTubeCRUD.Splitter1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnExportAllVideos">
+                                                  <param name="Local" value="fTubeCRUD.TfrmTubeCRUD.btnExportAllVideos.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnOpenURL">
+                                                  <param name="Local" value="fTubeCRUD.TfrmTubeCRUD.btnOpenURL.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="edtLabel">
+                                                  <param name="Local" value="fTubeCRUD.TfrmTubeCRUD.edtLabel.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="edtURL">
+                                                  <param name="Local" value="fTubeCRUD.TfrmTubeCRUD.edtURL.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lBottomMargin">
+                                                  <param name="Local" value="fTubeCRUD.TfrmTubeCRUD.lBottomMargin.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lLeft">
+                                                  <param name="Local" value="fTubeCRUD.TfrmTubeCRUD.lLeft.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lRight">
+                                                  <param name="Local" value="fTubeCRUD.TfrmTubeCRUD.lRight.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lblLabel">
+                                                  <param name="Local" value="fTubeCRUD.TfrmTubeCRUD.lblLabel.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lblTemplateComment">
+                                                  <param name="Local" value="fTubeCRUD.TfrmTubeCRUD.lblTemplateComment.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lblTemplateKeywords">
+                                                  <param name="Local" value="fTubeCRUD.TfrmTubeCRUD.lblTemplateKeywords.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lblTemplateLabel">
+                                                  <param name="Local" value="fTubeCRUD.TfrmTubeCRUD.lblTemplateLabel.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lblURL">
+                                                  <param name="Local" value="fTubeCRUD.TfrmTubeCRUD.lblURL.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="mmoTemplateComment">
+                                                  <param name="Local" value="fTubeCRUD.TfrmTubeCRUD.mmoTemplateComment.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="mmoTemplateKeywords">
+                                                  <param name="Local" value="fTubeCRUD.TfrmTubeCRUD.mmoTemplateKeywords.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="mmoTemplateLabel">
+                                                  <param name="Local" value="fTubeCRUD.TfrmTubeCRUD.mmoTemplateLabel.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="sbRight">
+                                                  <param name="Local" value="fTubeCRUD.TfrmTubeCRUD.sbRight.html">
+                                                  </OBJECT>
+                                          </UL>
+                                  </UL>
+                          </UL>
+                  </UL>
+              <LI> <OBJECT type="text/sitemap">
+                  <param name="Name" value="fVideoCRUD">
+                  <param name="Local" value="fVideoCRUD.html">
+                  </OBJECT>
+                  <UL>
+                      <LI> <OBJECT type="text/sitemap">
+                          <param name="Name" value="Classes">
+                          </OBJECT>
+                          <UL>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="TfrmVideoCRUD">
+                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.html">
+                                  </OBJECT>
+                                  <UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Methods">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Calendar1DateSelected">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.Calendar1DateSelected.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1AfterInsert">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.FDTable1AfterInsert.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1CalcFields">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.FDTable1CalcFields.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FillSeasonFilter">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.FillSeasonFilter.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FillSerialFilter">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.FillSerialFilter.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="GetFormTitle">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.GetFormTitle.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="OnHide">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.OnHide.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="OnShow">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.OnShow.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="SetTableFilter">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.SetTableFilter.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnOpenURLClick">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.btnOpenURLClick.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnSerialSelectClick">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.btnSerialSelectClick.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnShowCalendarClick">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.btnShowCalendarClick.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnTubesLinksClick">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.btnTubesLinksClick.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="cbSeasonFilterChange">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.cbSeasonFilterChange.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="cbSerialFilterChange">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.cbSerialFilterChange.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="edtURLChangeTracking">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.edtURLChangeTracking.html">
+                                                  </OBJECT>
+                                          </UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Fields">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="BindNavigator1">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.BindNavigator1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="BindSourceDB1">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.BindSourceDB1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="BindingsList1">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.BindingsList1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Calendar1">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.Calendar1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.FDTable1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1SeasonLabel">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.FDTable1SeasonLabel.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1SerialLabel">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.FDTable1SerialLabel.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1SerialSeasonLabel">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.FDTable1SerialSeasonLabel.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1code">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.FDTable1code.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1comment">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.FDTable1comment.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1id">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.FDTable1id.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1keyword">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.FDTable1keyword.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1label">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.FDTable1label.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1order_in_season">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.FDTable1order_in_season.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1record_date">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.FDTable1record_date.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1season_code">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.FDTable1season_code.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1serial_code">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.FDTable1serial_code.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1url">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.FDTable1url.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="LinkControlToField1">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.LinkControlToField1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="LinkControlToField2">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.LinkControlToField2.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="LinkControlToField3">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.LinkControlToField3.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="LinkControlToField4">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.LinkControlToField4.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="LinkControlToField5">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.LinkControlToField5.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="LinkControlToField6">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.LinkControlToField6.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="LinkControlToField7">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.LinkControlToField7.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="LinkControlToField8">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.LinkControlToField8.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="LinkListControlToField1">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.LinkListControlToField1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="ListView1">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.ListView1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Popup1">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.Popup1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Splitter1">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.Splitter1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnOpenURL">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.btnOpenURL.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnSerialSelect">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.btnSerialSelect.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnShowCalendar">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.btnShowCalendar.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnTubesLinks">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.btnTubesLinks.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="cbSeasonFilter">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.cbSeasonFilter.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="cbSerialFilter">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.cbSerialFilter.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="edtKeywords">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.edtKeywords.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="edtLabel">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.edtLabel.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="edtRecordDate">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.edtRecordDate.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="edtSaisonLabel">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.edtSaisonLabel.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="edtSerialLabel">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.edtSerialLabel.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="edtURL">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.edtURL.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="edtVideoNumber">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.edtVideoNumber.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lLeft">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.lLeft.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lRight">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.lRight.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lblComment">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.lblComment.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lblKeywords">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.lblKeywords.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lblLabel">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.lblLabel.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lblRecordDate">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.lblRecordDate.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lblSerial">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.lblSerial.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lblURL">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.lblURL.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lblVideoNumber">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.lblVideoNumber.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="mmoComment">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.mmoComment.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="sbRight">
+                                                  <param name="Local" value="fVideoCRUD.TfrmVideoCRUD.sbRight.html">
+                                                  </OBJECT>
+                                          </UL>
+                                  </UL>
+                          </UL>
+                      <LI> <OBJECT type="text/sitemap">
+                          <param name="Name" value="Variables">
+                          </OBJECT>
+                          <UL>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="frmVideoCRUD">
+                                  <param name="Local" value="fVideoCRUD.frmVideoCRUD.html">
+                                  </OBJECT>
+                          </UL>
+                  </UL>
+              <LI> <OBJECT type="text/sitemap">
+                  <param name="Name" value="fVideoTubeLinkCRUD">
+                  <param name="Local" value="fVideoTubeLinkCRUD.html">
+                  </OBJECT>
+                  <UL>
+                      <LI> <OBJECT type="text/sitemap">
+                          <param name="Name" value="Classes">
+                          </OBJECT>
+                          <UL>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="TfrmVideoTubeLinkCRUD">
+                                  <param name="Local" value="fVideoTubeLinkCRUD.TfrmVideoTubeLinkCRUD.html">
+                                  </OBJECT>
+                                  <UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Methods">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Calendar1DateSelected">
+                                                  <param name="Local" value="fVideoTubeLinkCRUD.TfrmVideoTubeLinkCRUD.Calendar1DateSelected.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FormCreate">
+                                                  <param name="Local" value="fVideoTubeLinkCRUD.TfrmVideoTubeLinkCRUD.FormCreate.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="GetLabelFromTheFilter">
+                                                  <param name="Local" value="fVideoTubeLinkCRUD.TfrmVideoTubeLinkCRUD.GetLabelFromTheFilter.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="ListView1ButtonClick">
+                                                  <param name="Local" value="fVideoTubeLinkCRUD.TfrmVideoTubeLinkCRUD.ListView1ButtonClick.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnOpenURLClick">
+                                                  <param name="Local" value="fVideoTubeLinkCRUD.TfrmVideoTubeLinkCRUD.btnOpenURLClick.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnShowCalendarClick">
+                                                  <param name="Local" value="fVideoTubeLinkCRUD.TfrmVideoTubeLinkCRUD.btnShowCalendarClick.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="edtURLChangeTracking">
+                                                  <param name="Local" value="fVideoTubeLinkCRUD.TfrmVideoTubeLinkCRUD.edtURLChangeTracking.html">
+                                                  </OBJECT>
+                                          </UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Fields">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Calendar1">
+                                                  <param name="Local" value="fVideoTubeLinkCRUD.TfrmVideoTubeLinkCRUD.Calendar1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1comment">
+                                                  <param name="Local" value="fVideoTubeLinkCRUD.TfrmVideoTubeLinkCRUD.FDTable1comment.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1embed">
+                                                  <param name="Local" value="fVideoTubeLinkCRUD.TfrmVideoTubeLinkCRUD.FDTable1embed.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1keyword">
+                                                  <param name="Local" value="fVideoTubeLinkCRUD.TfrmVideoTubeLinkCRUD.FDTable1keyword.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1label">
+                                                  <param name="Local" value="fVideoTubeLinkCRUD.TfrmVideoTubeLinkCRUD.FDTable1label.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1publish_date">
+                                                  <param name="Local" value="fVideoTubeLinkCRUD.TfrmVideoTubeLinkCRUD.FDTable1publish_date.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1tube_code">
+                                                  <param name="Local" value="fVideoTubeLinkCRUD.TfrmVideoTubeLinkCRUD.FDTable1tube_code.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1url">
+                                                  <param name="Local" value="fVideoTubeLinkCRUD.TfrmVideoTubeLinkCRUD.FDTable1url.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDTable1video_code">
+                                                  <param name="Local" value="fVideoTubeLinkCRUD.TfrmVideoTubeLinkCRUD.FDTable1video_code.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="LinkControlToField1">
+                                                  <param name="Local" value="fVideoTubeLinkCRUD.TfrmVideoTubeLinkCRUD.LinkControlToField1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="LinkControlToField2">
+                                                  <param name="Local" value="fVideoTubeLinkCRUD.TfrmVideoTubeLinkCRUD.LinkControlToField2.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="LinkControlToField3">
+                                                  <param name="Local" value="fVideoTubeLinkCRUD.TfrmVideoTubeLinkCRUD.LinkControlToField3.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="LinkControlToField4">
+                                                  <param name="Local" value="fVideoTubeLinkCRUD.TfrmVideoTubeLinkCRUD.LinkControlToField4.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="LinkControlToField5">
+                                                  <param name="Local" value="fVideoTubeLinkCRUD.TfrmVideoTubeLinkCRUD.LinkControlToField5.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="LinkControlToField6">
+                                                  <param name="Local" value="fVideoTubeLinkCRUD.TfrmVideoTubeLinkCRUD.LinkControlToField6.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Popup1">
+                                                  <param name="Local" value="fVideoTubeLinkCRUD.TfrmVideoTubeLinkCRUD.Popup1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnOpenURL">
+                                                  <param name="Local" value="fVideoTubeLinkCRUD.TfrmVideoTubeLinkCRUD.btnOpenURL.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnShowCalendar">
+                                                  <param name="Local" value="fVideoTubeLinkCRUD.TfrmVideoTubeLinkCRUD.btnShowCalendar.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="edtKeywords">
+                                                  <param name="Local" value="fVideoTubeLinkCRUD.TfrmVideoTubeLinkCRUD.edtKeywords.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="edtLabel">
+                                                  <param name="Local" value="fVideoTubeLinkCRUD.TfrmVideoTubeLinkCRUD.edtLabel.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="edtPublishedDate">
+                                                  <param name="Local" value="fVideoTubeLinkCRUD.TfrmVideoTubeLinkCRUD.edtPublishedDate.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="edtURL">
+                                                  <param name="Local" value="fVideoTubeLinkCRUD.TfrmVideoTubeLinkCRUD.edtURL.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lblComment">
+                                                  <param name="Local" value="fVideoTubeLinkCRUD.TfrmVideoTubeLinkCRUD.lblComment.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lblEmbed">
+                                                  <param name="Local" value="fVideoTubeLinkCRUD.TfrmVideoTubeLinkCRUD.lblEmbed.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lblKeywords">
+                                                  <param name="Local" value="fVideoTubeLinkCRUD.TfrmVideoTubeLinkCRUD.lblKeywords.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lblLabel">
+                                                  <param name="Local" value="fVideoTubeLinkCRUD.TfrmVideoTubeLinkCRUD.lblLabel.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lblPublishedDate">
+                                                  <param name="Local" value="fVideoTubeLinkCRUD.TfrmVideoTubeLinkCRUD.lblPublishedDate.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lblURL">
+                                                  <param name="Local" value="fVideoTubeLinkCRUD.TfrmVideoTubeLinkCRUD.lblURL.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="mmoComment">
+                                                  <param name="Local" value="fVideoTubeLinkCRUD.TfrmVideoTubeLinkCRUD.mmoComment.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="mmoEmbed">
+                                                  <param name="Local" value="fVideoTubeLinkCRUD.TfrmVideoTubeLinkCRUD.mmoEmbed.html">
+                                                  </OBJECT>
+                                          </UL>
+                                  </UL>
+                          </UL>
+                      <LI> <OBJECT type="text/sitemap">
+                          <param name="Name" value="Variables">
+                          </OBJECT>
+                          <UL>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="frmVideoTubeLinkCRUD">
+                                  <param name="Local" value="fVideoTubeLinkCRUD.frmVideoTubeLinkCRUD.html">
+                                  </OBJECT>
+                          </UL>
+                  </UL>
+              <LI> <OBJECT type="text/sitemap">
+                  <param name="Name" value="uBuilder">
+                  <param name="Local" value="uBuilder.html">
+                  </OBJECT>
+                  <UL>
+                      <LI> <OBJECT type="text/sitemap">
+                          <param name="Name" value="Routines">
+                          </OBJECT>
+                          <UL>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="GetTextFromTemplate">
+                                  <param name="Local" value="uBuilder.GetTextFromTemplate.html">
+                                  </OBJECT>
+                          </UL>
+                  </UL>
+              <LI> <OBJECT type="text/sitemap">
+                  <param name="Name" value="uDB">
+                  <param name="Local" value="uDB.html">
+                  </OBJECT>
+                  <UL>
+                      <LI> <OBJECT type="text/sitemap">
+                          <param name="Name" value="Classes">
+                          </OBJECT>
+                          <UL>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="Tdb">
+                                  <param name="Local" value="uDB.Tdb.html">
+                                  </OBJECT>
+                                  <UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Methods">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="BeforeDeleteOnTable">
+                                                  <param name="Local" value="uDB.Tdb.BeforeDeleteOnTable.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="DataModuleCreate">
+                                                  <param name="Local" value="uDB.Tdb.DataModuleCreate.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDConnection1AfterConnect">
+                                                  <param name="Local" value="uDB.Tdb.FDConnection1AfterConnect.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDConnection1BeforeConnect">
+                                                  <param name="Local" value="uDB.Tdb.FDConnection1BeforeConnect.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="InitDefaultFieldsValues">
+                                                  <param name="Local" value="uDB.Tdb.InitDefaultFieldsValues.html">
+                                                  </OBJECT>
+                                          </UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Fields">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDConnection1">
+                                                  <param name="Local" value="uDB.Tdb.FDConnection1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDPhysSQLiteDriverLink1">
+                                                  <param name="Local" value="uDB.Tdb.FDPhysSQLiteDriverLink1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FDScript1">
+                                                  <param name="Local" value="uDB.Tdb.FDScript1.html">
+                                                  </OBJECT>
+                                          </UL>
+                                  </UL>
+                          </UL>
+                      <LI> <OBJECT type="text/sitemap">
+                          <param name="Name" value="Variables">
+                          </OBJECT>
+                          <UL>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="DB">
+                                  <param name="Local" value="uDB.DB.html">
+                                  </OBJECT>
+                          </UL>
+                  </UL>
+              <LI> <OBJECT type="text/sitemap">
+                  <param name="Name" value="uDMLogo">
+                  <param name="Local" value="uDMLogo.html">
+                  </OBJECT>
+                  <UL>
+                      <LI> <OBJECT type="text/sitemap">
+                          <param name="Name" value="Classes">
+                          </OBJECT>
+                          <UL>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="TDMLogo">
+                                  <param name="Local" value="uDMLogo.TDMLogo.html">
+                                  </OBJECT>
+                                  <UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Fields">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="ProgIcon">
+                                                  <param name="Local" value="uDMLogo.TDMLogo.ProgIcon.html">
+                                                  </OBJECT>
+                                          </UL>
+                                  </UL>
+                          </UL>
+                      <LI> <OBJECT type="text/sitemap">
+                          <param name="Name" value="Variables">
+                          </OBJECT>
+                          <UL>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="DMLogo">
+                                  <param name="Local" value="uDMLogo.DMLogo.html">
+                                  </OBJECT>
+                          </UL>
+                  </UL>
+          </UL>
+    </UL>
+</BODY>
+</HTML>
