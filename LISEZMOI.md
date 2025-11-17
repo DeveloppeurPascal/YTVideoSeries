@@ -2,6 +2,19 @@
 
 [This page in English.](README.md)
 
+> [!WARNING]
+> Suite à la décision de Microsoft de fondre GitHub dans sa division IA à l'été 2025 et donc de ne considérer ce que nous publions dessus que comme une source d'entrainement de ses modèles sans contre partie (à part l'hébergement des codes sources) ou nous abreuver de leurs injonctions à utiliser Copilot partout, pour tout et n'importe quoi, j'ai pris la décision d'arrêter la maintenance des dépôts ici.
+>
+> La maintenance de ce projet est déplacée vers Codeberg sur https://codeberg.org/PatrickPremartin/YTVideoSeries
+>
+> Codeberg est un hébergement associatif situé en Europe, respectueux des développeurs, de la licence de chaque projet et de la vie privée des personnes qui s'y connectent.
+
+> [!NOTE]
+> Pour ouvrir ou intervenir sur un ticket de ce projet, rendez-vous sur https://codeberg.org/PatrickPremartin/YTVideoSeries/issues
+> Pour faire un PULL REQUEST sur ce projet, rendez-vous sur https://codeberg.org/PatrickPremartin/YTVideoSeries/pulls
+> Pour toute autre information ou me contacter vous pouvez aussi consulter le site Internet du projet sur https://ytvideoseries.olfsoftware.fr ou son devlog sur https://ytvideoseries.olfsoftware.fr/dev-corner.html
+> Ce dépôt de code sera archivé une fois la migration terminée et ne bénéficiera plus de mise à jour sur GitHub.
+
 Utilitaire permettant de gérer une base de données locale de séries et d'épisodes publiés ou à publier sur des sites de diffusion de videos à la demande (comme par exemple YouTube).
 
 Le projet est développé en Delphi et utilise une base de données SQLite. Il peut être compilé pour Windows, Mac et Linux mais pourrait aussi fonctionner sur tablettes et smartphones (iOS & Android) sous réserve d'ajouter une barre de boutons en remplacement du menu principal.
